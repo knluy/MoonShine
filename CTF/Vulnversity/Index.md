@@ -268,5 +268,28 @@ Click the "Positions" tab now, find the filename and "Add §" to the extension. 
 ![[Pasted image 20220814073720.png]]
 
 
+Now we know what extension we can use for our payload we can progress.
+
+We are going to use a PHP reverse shell as our payload. A reverse shell works by being called on the remote host and forcing this host to make a connection to you. So you'll listen for incoming connections, upload and have your shell executed which will beacon out to you to control!
+
+Download the following reverse PHP shell here.
+
+To gain remote access to this machine, follow these steps:
+
+Edit the php-reverse-shell.php file and edit the ip to be your tun0 ip (you can get this by going to http://10.10.10.10 in the browser of your TryHackMe connected device).
+
+Rename this file to php-reverse-shell.phtml
+
+We're now going to listen to incoming connections using netcat. Run the following command: nc -lvnp 1234
+
+Upload your shell and navigate to `http://<ip>:3333/internal/uploads/php-reverse-shell.phtml `- This will execute your payload
+
+You should see a connection on your netcat session
 
 ![[Pasted image 20220814074442.png]]
+
+![[Pasted image 20220814074625.png]]
+
+![[Pasted image 20220814074806.png]]
+
+
