@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/Reverse_shell.md",
+            "file": "CTF/PickleRick.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/Reverse_shell.md",
+                "file": "CTF/PickleRick.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/Reverse_shell.md",
+                "file": "CTF/PickleRick.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/Reverse_shell.md"
+                "file": "CTF/PickleRick.md"
               }
             }
           }
@@ -130,8 +130,8 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
-    "TOOLS/Nmap.md",
     "TOOLS/Reverse_shell.md",
+    "TOOLS/Nmap.md",
     "CTF/PickleRick.md",
     "README.md",
     "TOOLS/Hashcat.md",
