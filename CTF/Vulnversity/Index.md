@@ -314,6 +314,17 @@ $
 
 ```
 
-
+What is the name of the user who manages the webserver?
 
 Flag: 8bd7992fbe8a6ad22a63361004cfcedb
+
+```
+$ cat user.txt
+2fbe8a6ad22a63361004cfcedb
+$ 
+
+
+```
+
+###  Privilege Escalation
+
