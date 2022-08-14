@@ -204,10 +204,41 @@ GoBuster is a tool used to brute-force URIs (directories and files), DNS subdoma
 To get started, you will need a wordlist for GoBuster (which will be used to quickly go through the wordlist to identify if there is a public directory available. If you are using Kali Linux you can find many wordlists under /usr/share/wordlists.
 
 What is the directory that has an upload form page?
-Ans.
+Ans. /internal/
+
+```
+┌──(kali㉿kali)-[~]
+└─$ sudo gobuster dir -u "http://10.10.125.143:3333" -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt 
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.125.143:3333
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2022/08/14 07:03:27 Starting gobuster in directory enumeration mode
+===============================================================
+/images               (Status: 301) [Size: 322] [--> http://10.10.125.143:3333/images/]
+/css                  (Status: 301) [Size: 319] [--> http://10.10.125.143:3333/css/]   
+/js                   (Status: 301) [Size: 318] [--> http://10.10.125.143:3333/js/]    
+/fonts                (Status: 301) [Size: 321] [--> http://10.10.125.143:3333/fonts/] 
+/internal             (Status: 301) [Size: 324] [--> http://10.10.125.143:3333/internal/]
+Progress: 5564 / 220561 (2.52%)                                                         ^C
+[!] Keyboard interrupt detected, terminating.
+                                                                                         
+===============================================================
+2022/08/14 07:07:17 Finished
+===============================================================
+                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ 
+
 
 ```
 
-
-```
-
+#### Compromise the webserver
