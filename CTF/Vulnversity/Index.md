@@ -192,6 +192,9 @@ Its important to ensure you are always doing your reconnaissance thoroughly befo
 
 #### Locating directories using GoBuster
 
+new IP: 10.10.125.143
+
+
 Using a fast directory discovery tool called GoBuster you will locate a directory that you can use to upload a shell to.
 
 Lets first start of by scanning the website to find any hidden directories. To do this, we're going to use GoBuster.
