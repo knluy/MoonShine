@@ -242,3 +242,17 @@ Progress: 5564 / 220561 (2.52%)                                                 
 ```
 
 #### Compromise the webserver
+
+Now you have found a form to upload files, we can leverage this to upload and execute our payload that will lead to compromising the web server.
+
+Try upload a few file types to the server, what common extension seems to be blocked?
+Ans. .php
+
+![[Pasted image 20220814073059.png]]
+
+To identify which extensions are not blocked, we're going to fuzz the upload form.
+
+We're going to use Intruder (used for automating customised attacks).
+
+To begin, make a wordlist with the following extensions in:
+
