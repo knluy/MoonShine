@@ -75,4 +75,4 @@ What port is the web server running on?
 Its important to ensure you are always doing your reconnaissance thoroughly before progressing. Knowing all open services (which can all be points of exploitation) is very important, don't forget that ports on a higher range might be open so always scan ports after 1000 (even if you leave scanning in the background)
 
 
-#### 
+#### Locating directories using GoBuster
