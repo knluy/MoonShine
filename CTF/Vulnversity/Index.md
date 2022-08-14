@@ -328,3 +328,17 @@ $
 
 ###  Privilege Escalation
 
+Now you have compromised this machine, we are going to escalate our privileges and become the superuser (root).
+
+
+In Linux, SUID (set owner userId upon execution) is a special type of file permission given to a file. SUID gives temporary permissions to a user to run the program/file with the permission of the file owner (rather than the user who runs it).
+
+For example, the binary file to change your password has the SUID bit set on it (/usr/bin/passwd). This is because to change your password, it will need to write to the shadowers file that you do not have access to, root does, so it has root privileges to make the right changes.
+
+![[Pasted image 20220814090417.png]]
+
+On the system, search for all SUID files. What file stands out?
+Ans. /bin/systemctl
+
+![[Pasted image 20220814090500.png]]
+
