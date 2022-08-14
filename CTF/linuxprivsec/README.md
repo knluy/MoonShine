@@ -562,7 +562,6 @@ What is the value of the PATH variable in /etc/crontab?
 /home/user:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 
-===
 Cron Jobs - Wildcards
 
 View the contents of the other cron job script:
@@ -668,5 +667,10 @@ rm /home/user/--checkpoint-action=exec=shell.elf
 
 ===
 TERMINATED MACHINE
+
+
+===
+
+
 
 
