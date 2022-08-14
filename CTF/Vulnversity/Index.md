@@ -256,3 +256,14 @@ We're going to use Intruder (used for automating customised attacks).
 
 To begin, make a wordlist with the following extensions in:
 
+![[Pasted image 20220814073517.png]]
+
+Now make sure BurpSuite is configured to intercept all your browser traffic. Upload a file, once this request is captured, send it to the Intruder. Click on "Payloads" and select the "Sniper" attack type.
+
+Click the "Positions" tab now, find the filename and "Add §" to the extension. It should look like so:
+
+
+![[Pasted image 20220814073459.png]]
+
+![[Pasted image 20220814073720.png]]
+
