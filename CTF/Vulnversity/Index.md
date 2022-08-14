@@ -267,3 +267,6 @@ Click the "Positions" tab now, find the filename and "Add §" to the extension. 
 
 ![[Pasted image 20220814073720.png]]
 
+
+
+![[Pasted image 20220814074442.png]]
