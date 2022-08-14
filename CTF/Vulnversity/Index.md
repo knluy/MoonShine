@@ -342,3 +342,8 @@ Ans. /bin/systemctl
 
 ![[Pasted image 20220814090500.png]]
 
+GTFObins LInk: https://gtfobins.github.io/gtfobins/systemctl/
+
+![[Pasted image 20220814091544.png]]
+
+![[Pasted image 20220814091527.png]]

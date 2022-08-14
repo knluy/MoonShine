@@ -19,3 +19,8 @@ LinEnum.sh  linpeas.sh  lse.sh
 #### lse
 
 `lse.sh`
+
+
+#### GTFObins
+
+https://gtfobins.github.io/gtfobins/systemctl/
