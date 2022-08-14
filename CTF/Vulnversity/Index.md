@@ -192,3 +192,19 @@ Its important to ensure you are always doing your reconnaissance thoroughly befo
 
 #### Locating directories using GoBuster
 
+Using a fast directory discovery tool called GoBuster you will locate a directory that you can use to upload a shell to.
+
+Lets first start of by scanning the website to find any hidden directories. To do this, we're going to use GoBuster.
+
+GoBuster is a tool used to brute-force URIs (directories and files), DNS subdomains and virtual host names. For this machine, we will focus on using it to brute-force directories.
+
+To get started, you will need a wordlist for GoBuster (which will be used to quickly go through the wordlist to identify if there is a public directory available. If you are using Kali Linux you can find many wordlists under /usr/share/wordlists.
+
+What is the directory that has an upload form page?
+Ans.
+
+```
+
+
+```
+
