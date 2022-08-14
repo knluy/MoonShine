@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/PickleRick.md",
+            "file": "CTF/linuxprivsec/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/PickleRick.md",
+                "file": "CTF/linuxprivsec/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/PickleRick.md",
+                "file": "CTF/linuxprivsec/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/PickleRick.md"
+                "file": "CTF/linuxprivsec/README.md"
               }
             }
           }
@@ -130,9 +130,9 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "CTF/PickleRick.md",
     "TOOLS/Reverse_shell.md",
     "TOOLS/Nmap.md",
-    "CTF/PickleRick.md",
     "README.md",
     "TOOLS/Hashcat.md",
     "TOOLS/John the Ripper.md",
