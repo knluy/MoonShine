@@ -128,7 +128,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e37ef389650caf7b",
+  "active": "e883b8bc4934a695",
   "lastOpenFiles": [
     "TOOLS/Hashcat.md",
     "TOOLS/John the Ripper.md",
@@ -138,7 +138,7 @@
     "TOOLS/Gobuster.md",
     "TOOLS/Nmap.md",
     "CTF/PickleRIck/Untitled.md",
-    "CTF/linuxprivsec/README.md",
+    "linuxprivsec/README.md",
     "readme again.md"
   ]
 }
