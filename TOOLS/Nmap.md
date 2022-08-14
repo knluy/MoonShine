@@ -1,6 +1,6 @@
 ### Nmap
 
-- nmap is used to portscan hosts and open/closed ports
+- nmap is an free, open-source and powerful tool used to discover hosts and services on a computer network.
 
 ```
 nmap -sC -sV -oN nmap_results.txt <IP>
