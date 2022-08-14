@@ -178,6 +178,10 @@ What port is the web server running on?
 Ans. 3333
 
 ```
+3333/tcp open  http        Apache httpd 2.4.18 ((Ubuntu))
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Vuln University
+Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 
 ```
@@ -187,3 +191,4 @@ Its important to ensure you are always doing your reconnaissance thoroughly befo
 
 
 #### Locating directories using GoBuster
+
