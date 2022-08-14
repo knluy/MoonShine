@@ -342,8 +342,20 @@ Ans. /bin/systemctl
 
 ![[Pasted image 20220814090500.png]]
 
+
+Its challenge time! We have guided you through this far, are you able to exploit this system further to escalate your privileges and get the final answer?
+
+Become root and get the last flag (/root/root.txt)
+Ans. a58ff8579f0a9270368d33a9966c7fd5
+
+Check for privilege escalation of /bin/systemctl on GTFObins webpage
+
 GTFObins LInk: https://gtfobins.github.io/gtfobins/systemctl/
 
 ![[Pasted image 20220814091544.png]]
 
+Follow the instructions provided above then syntax cat /tmp/output to obtain the flag:
+
 ![[Pasted image 20220814091527.png]]
+
+END
