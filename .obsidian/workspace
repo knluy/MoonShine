@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/Privilege Escalation Tools.md",
+            "file": "CTF/linuxprivsec/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/Privilege Escalation Tools.md",
+                "file": "CTF/linuxprivsec/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/Privilege Escalation Tools.md",
+                "file": "CTF/linuxprivsec/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/Privilege Escalation Tools.md"
+                "file": "CTF/linuxprivsec/README.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "TOOLS/Privilege Escalation Tools.md",
     "CTF/linuxprivsec/README.md",
     "README.md",
     "TOOLS/John the Ripper.md",
@@ -138,7 +139,6 @@
     "TOOLS/Reverse_shell.md",
     "TOOLS/Nmap.md",
     "readme again.md",
-    "test 3.md",
-    "test2.md"
+    "test 3.md"
   ]
 }
