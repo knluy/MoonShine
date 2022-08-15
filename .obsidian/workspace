@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/SMBClient.md",
+            "file": "CTF/Kenobi/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/SMBClient.md",
+                "file": "CTF/Kenobi/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/SMBClient.md",
+                "file": "CTF/Kenobi/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/SMBClient.md"
+                "file": "CTF/Kenobi/README.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "TOOLS/SMBClient.md",
     "CTF/Kenobi/README.md",
     "TOOLS/Nmap.md",
     "README.md",
@@ -138,7 +139,6 @@
     "CTF/basic_pentesting/README.md",
     "TOOLS/SCP.md",
     "CTF/Vulnversity/README.md",
-    "TOOLS/Hydra.md",
-    "TOOLS/SMBClient.md"
+    "TOOLS/Hydra.md"
   ]
 }
