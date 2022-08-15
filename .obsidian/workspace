@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/SCP.md",
+            "file": "CTF/basic_pentesting/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/SCP.md",
+                "file": "CTF/basic_pentesting/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/SCP.md",
+                "file": "CTF/basic_pentesting/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/SCP.md"
+                "file": "CTF/basic_pentesting/README.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "TOOLS/SCP.md",
     "CTF/basic_pentesting/README.md",
     "CTF/Vulnversity/README.md",
     "TOOLS/Hydra.md",
@@ -138,7 +139,6 @@
     "TOOLS/enum4linux.md",
     "TOOLS/Gobuster.md",
     "README.md",
-    "TOOLS/Reverse_shell.md",
-    "TOOLS/Privilege Escalation Tools.md"
+    "TOOLS/Reverse_shell.md"
   ]
 }
