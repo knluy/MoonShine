@@ -8,6 +8,8 @@ This room will cover accessing a Samba share, manipulating a vulnerable version 
 Make sure you're connected to our network and deploy the machine.
 
 Scan the machine with nmap, how many ports are open?
+- 7
+
 
 ```
 ┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Kenobi]
@@ -82,3 +84,23 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 69.23 seconds
 
 ```
+
+####  Enumerating Samba for shares
+
+Samba is the standard Windows interoperability suite of programs for Linux and Unix. It allows end users to access and use files, printers and other commonly shared resources on a companies intranet or internet. Its often referred to as a network file system.
+
+Samba is based on the common client/server protocol of Server Message Block (SMB). SMB is developed only for Windows, without Samba, other computer platforms would be isolated from Windows machines, even if they were part of the same network.
+
+
+Using nmap we can enumerate a machine for SMB shares.
+
+Nmap has the ability to run to automate a wide variety of networking tasks. There is a script to enumerate shares!
+
+`nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.150.254`
+
+SMB has two ports, 445 and 139.
+
+Using the nmap command above, how many shares have been found?
+
+
+nmap -p 445 --script=smb-enum-shares.nse,smb-enum.users.nse 10.10.150.254

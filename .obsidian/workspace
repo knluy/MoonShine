@@ -130,6 +130,8 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "TOOLS/Nmap.md",
+    "CTF/Kenobi/README.md",
     "README.md",
     "TOOLS/enum4linux.md",
     "TOOLS/Gobuster.md",
@@ -137,8 +139,6 @@
     "TOOLS/SCP.md",
     "CTF/Vulnversity/README.md",
     "TOOLS/Hydra.md",
-    "TOOLS/SMBClient.md",
-    "TOOLS/John the Ripper.md",
-    "TOOLS/Reverse_shell.md"
+    "TOOLS/SMBClient.md"
   ]
 }
