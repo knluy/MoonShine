@@ -101,6 +101,7 @@ Nmap has the ability to run to automate a wide variety of networking tasks. Ther
 SMB has two ports, 445 and 139.
 
 Using the nmap command above, how many shares have been found?
+- 3
 
 ```
 ┌──(kali㉿kali)-[/usr/share/nmap/scripts]
@@ -147,3 +148,4 @@ Nmap done: 1 IP address (1 host up) scanned in 65.65 seconds
 
 
 ```
+

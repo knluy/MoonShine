@@ -14,7 +14,12 @@ Because we're trying to access an SMB share, we need a client to access resource
 
 We can remotely access the SMB share using the syntax:
 
-`smbclient //[IP]/[SHARE]`
+```
+
+smbclient //[IP]/[SHARE]
+
+smbclient //<ip>/anonymous
+```
 
 Followed by the tags:
 
