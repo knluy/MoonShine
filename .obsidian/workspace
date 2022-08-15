@@ -130,15 +130,15 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
-    "CTF/Vulnversity/Index.md",
+    "README.md",
     "CTF/basic_pentesting/README.md",
+    "CTF/basic_pentesting/README.md",
+    "CTF/Vulnversity/Index.md",
     "TOOLS/Reverse_shell.md",
     "TOOLS/Privilege Escalation Tools.md",
     "TOOLS/Gobuster.md",
     "TOOLS/Nmap.md",
     "TOOLS/Hashcat.md",
-    "TOOLS/John the Ripper.md",
-    "linuxprivsec/README.md",
-    "README.md"
+    "TOOLS/John the Ripper.md"
   ]
 }
