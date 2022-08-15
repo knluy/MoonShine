@@ -101,3 +101,49 @@ Nmap has the ability to run to automate a wide variety of networking tasks. Ther
 SMB has two ports, 445 and 139.
 
 Using the nmap command above, how many shares have been found?
+
+```
+┌──(kali㉿kali)-[/usr/share/nmap/scripts]
+└─$ nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.150.254
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-08-15 10:25 EDT
+Nmap scan report for 10.10.150.254
+Host is up (0.50s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-enum-shares: 
+|   account_used: guest
+|   \\10.10.150.254\IPC$: 
+|     Type: STYPE_IPC_HIDDEN
+|     Comment: IPC Service (kenobi server (Samba, Ubuntu))
+|     Users: 1
+|     Max Users: <unlimited>
+|     Path: C:\tmp
+|     Anonymous access: READ/WRITE
+|     Current user access: READ/WRITE
+|   \\10.10.150.254\anonymous: 
+|     Type: STYPE_DISKTREE
+|     Comment: 
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\home\kenobi\share
+|     Anonymous access: READ/WRITE
+|     Current user access: READ/WRITE
+|   \\10.10.150.254\print$: 
+|     Type: STYPE_DISKTREE
+|     Comment: Printer Drivers
+|     Users: 0
+|     Max Users: <unlimited>
+|     Path: C:\var\lib\samba\printers
+|     Anonymous access: <none>
+|_    Current user access: <none>
+
+Nmap done: 1 IP address (1 host up) scanned in 65.65 seconds
+                                                                                                                       
+┌──(kali㉿kali)-[/usr/share/nmap/scripts]
+└─$ 
+
+
+```
