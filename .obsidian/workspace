@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/basic_pentesting/README.md",
+            "file": "CTF/Kenobi/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/basic_pentesting/README.md",
+                "file": "CTF/Kenobi/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/basic_pentesting/README.md",
+                "file": "CTF/Kenobi/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/basic_pentesting/README.md"
+                "file": "CTF/Kenobi/README.md"
               }
             }
           }
@@ -130,15 +130,15 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
-    "TOOLS/SCP.md",
+    "README.md",
+    "TOOLS/enum4linux.md",
+    "TOOLS/Gobuster.md",
     "CTF/basic_pentesting/README.md",
+    "TOOLS/SCP.md",
     "CTF/Vulnversity/README.md",
     "TOOLS/Hydra.md",
     "TOOLS/SMBClient.md",
     "TOOLS/John the Ripper.md",
-    "TOOLS/enum4linux.md",
-    "TOOLS/Gobuster.md",
-    "README.md",
     "TOOLS/Reverse_shell.md"
   ]
 }
