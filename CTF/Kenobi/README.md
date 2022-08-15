@@ -101,6 +101,3 @@ Nmap has the ability to run to automate a wide variety of networking tasks. Ther
 SMB has two ports, 445 and 139.
 
 Using the nmap command above, how many shares have been found?
-
-
-nmap -p 445 --script=smb-enum-shares.nse,smb-enum.users.nse 10.10.150.254
