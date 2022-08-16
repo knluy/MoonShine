@@ -274,3 +274,12 @@ Shellcodes: No Results
 
 ```
 
+You should have found an exploit from ProFtpd's mod_copy module. 
+
+The mod_copy module implements SITE CPFR and SITE CPTO commands, which can be used to copy files/directories from one place to another on the server. Any unauthenticated client can leverage these commands to copy files from any part of the filesystem to a chosen destination.
+
+We know that the FTP service is running as the Kenobi user (from the file on the share) and an ssh key is generated for that user. 
+
+We're now going to copy Kenobi's private key using SITE CPFR and SITE CPTO commands.
+
+![[Pasted image 20220815233300.png]]
