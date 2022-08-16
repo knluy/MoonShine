@@ -157,3 +157,20 @@ On most distributions of Linux smbclient is already installed. Lets inspect one 
 Using your machine, connect to the machines network share.
 
 smbclient //10.10.167.232/anonymous
+
+```
+┌──(kali㉿kali)-[~]
+└─$ smbclient //10.10.167.232/anonymous
+Password for [WORKGROUP\kali]:
+Try "help" to get a list of possible commands.
+smb: \> dir
+  .                                   D        0  Wed Sep  4 06:49:09 2019
+  ..                                  D        0  Wed Sep  4 06:56:07 2019
+  log.txt                             N    12237  Wed Sep  4 06:49:09 2019
+
+                9204224 blocks of size 1024. 6877112 blocks available
+smb: \> 
+
+
+```
+
