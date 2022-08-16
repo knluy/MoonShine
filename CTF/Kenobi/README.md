@@ -406,8 +406,13 @@ Strings is a command on Linux that looks for human readable strings on a binary.
 
 ![[Pasted image 20220816011411.png]]
 
+This shows us the binary is running without a full path (e.g. not using /usr/bin/curl or /usr/bin/uname).
 
+As this file runs as the root users privileges, we can manipulate our path gain a root shell.
 
+![[Pasted image 20220816011430.png]]
+
+We copied the /bin/sh shell, called it curl, gave it the correct permissions and then put its location in our path. This meant that when the /usr/bin/menu binary was run, its using our path variable to find the "curl" binary.. Which is actually a version of /usr/sh, as well as this file being run as root it runs our shell as root!
 
 ```
 kenobi@kenobi:/tmp$ echo /bin/sh >curl
@@ -437,6 +442,8 @@ root
 ```
 
 
+What is the root flag (/root/root.txt)?
+- 177b3cd8562289f37382721c28381f02
 
 ```
 # cd /root/
@@ -447,3 +454,5 @@ root.txt
 # 
 
 ```
+
+END
