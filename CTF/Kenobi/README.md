@@ -211,3 +211,24 @@ In our case, port 111 is access to a network file system. Lets use nmap to enume
 `nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.167.232`
 
 What mount can we see?
+- /var
+
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Kenobi]
+└─$ nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.167.232
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-08-15 21:39 EDT
+Nmap scan report for 10.10.167.232
+Host is up (0.39s latency).
+
+PORT    STATE SERVICE
+111/tcp open  rpcbind
+| nfs-showmount: 
+|_  /var *
+
+Nmap done: 1 IP address (1 host up) scanned in 3.85 seconds
+                                                                                                                       
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Kenobi]
+└─$ 
+
+```
+
