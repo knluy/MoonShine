@@ -12,3 +12,6 @@ Deploy the machine.
 Who is the employee of the month?
 - bill harper
 
+![[Pasted image 20220816075400.png]]
+![[Pasted image 20220816075342.png]]
+
