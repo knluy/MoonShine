@@ -232,3 +232,20 @@ Nmap done: 1 IP address (1 host up) scanned in 3.85 seconds
 
 ```
 
+#### Gain initial access with ProFtpd
+
+ProFtpd is a free and open-source FTP server, compatible with Unix and Windows systems. Its also been vulnerable in the past software versions.
+
+Lets get the version of ProFtpd. Use netcat to connect to the machine on the FTP port.
+
+What is the version?
+- 1.3.5
+
+```
+┌──(kali㉿kali)-[~]
+└─$ nc 10.10.167.232 21          
+220 ProFTPD 1.3.5 Server (ProFTPD Default Installation) [10.10.167.232]
+
+```
+
+
