@@ -6,3 +6,9 @@ If you don't have the right security tools and environment, deploy your own Kali
 
 Please note that this machine does not respond to ping (ICMP) and may take a few minutes to boot up.
 
+
+Deploy the machine.
+
+Who is the employee of the month?
+- bill harper
+
