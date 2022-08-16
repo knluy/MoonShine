@@ -171,6 +171,43 @@ smb: \> dir
                 9204224 blocks of size 1024. 6877112 blocks available
 smb: \> 
 
+```
+
+
+You can recursively download the SMB share too. Submit the username and password as nothing.
+
+`smbget -R smb://<ip>/anonymous`
+
+Open the file on the share. There is a few interesting things found.
+
+Information generated for Kenobi when generating an SSH key for the user
+Information about the ProFTPD server.
+What port is FTP running on?
+- 21
+
+```
+ This is a basic ProFTPD configuration file (rename it to 
+# 'proftpd.conf' for actual use.  It establishes a single server
+# and a single anonymous login.  It assumes that you have a user/group
+# "nobody" and "ftp" for normal operation and anon.
+
+ServerName                      "ProFTPD Default Installation"
+ServerType                      standalone
+DefaultServer                   on
+
+# Port 21 is the standard FTP port.
+Port                            21
+
+# Don't use IPv6 support by default.
+UseIPv6                         off
 
 ```
 
+
+Your earlier nmap port scan will have shown port 111 running the service rpcbind. This is just a server that converts remote procedure call (RPC) program number into universal addresses. When an RPC service is started, it tells rpcbind the address at which it is listening and the RPC program number its prepared to serve. 
+
+In our case, port 111 is access to a network file system. Lets use nmap to enumerate this.
+
+`nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.167.232`
+
+What mount can we see?
