@@ -149,3 +149,11 @@ Nmap done: 1 IP address (1 host up) scanned in 65.65 seconds
 
 ```
 
+
+On most distributions of Linux smbclient is already installed. Lets inspect one of the shares.
+
+`smbclient //<ip>/anonymous`
+
+Using your machine, connect to the machines network share.
+
+smbclient //10.10.167.232/anonymous
