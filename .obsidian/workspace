@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/mount.md",
+            "file": "CTF/Kenobi/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/mount.md",
+                "file": "CTF/Kenobi/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/mount.md",
+                "file": "CTF/Kenobi/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/mount.md"
+                "file": "CTF/Kenobi/README.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "TOOLS/mount.md",
     "CTF/Kenobi/README.md",
     "TOOLS/Searchsploit.md",
     "TOOLS/Hydra.md",
@@ -138,7 +139,6 @@
     "TOOLS/SMBClient.md",
     "TOOLS/Nmap.md",
     "README.md",
-    "TOOLS/enum4linux.md",
-    "TOOLS/Gobuster.md"
+    "TOOLS/enum4linux.md"
   ]
 }
