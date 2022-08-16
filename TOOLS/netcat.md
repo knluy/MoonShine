@@ -4,4 +4,7 @@
 Syntax:
 
 
-`nc machines_ip 21`
+`nc machines_ip <port>`
+
+`nc -lvnp 4444`
+
