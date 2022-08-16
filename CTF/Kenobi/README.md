@@ -354,3 +354,52 @@ SUID bits can be dangerous, some binaries such as passwd need to be run with ele
 To search the a system for these type of files run the following: find / -perm -u=s -type f 2>/dev/null
 
 What file looks particularly out of the ordinary? 
+- /usr/bin/menu
+
+```
+kenobi@kenobi:~$ find / -perm -u=s -type f 2>/dev/null
+/sbin/mount.nfs
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/snapd/snap-confine
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+/usr/bin/chfn
+/usr/bin/newgidmap
+/usr/bin/pkexec
+/usr/bin/passwd
+/usr/bin/newuidmap
+/usr/bin/gpasswd
+/usr/bin/menu
+/usr/bin/sudo
+/usr/bin/chsh
+/usr/bin/at
+/usr/bin/newgrp
+/bin/umount
+/bin/fusermount
+/bin/mount
+/bin/ping
+/bin/su
+/bin/ping6
+kenobi@kenobi:~$ 
+
+```
+
+
+Run the binary, how many options appear?
+- 3
+
+```
+kenobi@kenobi:~$ /usr/bin/menu
+
+***************************************
+1. status check
+2. kernel version
+3. ifconfig
+** Enter your choice :
+
+```
+
+
+Strings is a command on Linux that looks for human readable strings on a binary.
