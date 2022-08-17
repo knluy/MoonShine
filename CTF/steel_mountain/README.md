@@ -15,3 +15,19 @@ Who is the employee of the month?
 ![[Pasted image 20220816075400.png]]
 ![[Pasted image 20220816075342.png]]
 
+Take a look at the other web server. What file server is running?
+
+- upon checking, port 8080 has httpfile server that can be used to exploit via metasploit
+
+```
+8080/tcp  open  http               syn-ack HttpFileServer httpd 2.3
+|_http-title: HFS /
+|_http-favicon: Unknown favicon MD5: 759792EDD4EF8E6BC2D1877D27153CB1
+| http-methods: 
+|_  Supported Methods: GET HEAD POST
+|_http-server-header: HFS 2.3
+
+```
+
+- upon searching, we can use exploit/windows/http/rejetto_hfs_exec as entry for exploit
+- 
