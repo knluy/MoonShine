@@ -6,7 +6,7 @@ Deploy the machine and attempt the questions!
 
 
 How many services are running under port 1000?
-
+- 2 
 
 ```
 ┌──(kali㉿kali)-[~/ken/MoonShine/CTF/simple_CTF]
@@ -55,3 +55,10 @@ Nmap done: 1 IP address (1 host up) scanned in 73.49 seconds
 
 
 ```
+
+
+What is running on the higher port?
+- ssh
+
+What's the CVE you're using against the application?
+
