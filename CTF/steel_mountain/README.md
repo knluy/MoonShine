@@ -135,3 +135,15 @@ b04763b6fcf51fcd7c13abc7db4fd365
 C:\Users\bill\Desktop>
 
 ```
+
+Now that you have an initial shell on this Windows machine as Bill, we can further enumerate the machine and escalate our privileges to root!
+
+Answer the questions below
+To enumerate this machine, we will use a powershell script called PowerUp, that's purpose is to evaluate a Windows machine and determine any abnormalities - "PowerUp aims to be a clearinghouse of common Windows privilege escalation vectors that rely on misconfigurations."
+
+You can download the script here. Now you can use the upload command in Metasploit to upload the script.
+
+![[Pasted image 20220817024756.png]]
+
+To execute this using Meterpreter, I will type load powershell into meterpreter. Then I will enter powershell by entering powershell_shell:
+
