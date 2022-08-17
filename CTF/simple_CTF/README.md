@@ -61,4 +61,46 @@ What is running on the higher port?
 - ssh
 
 What's the CVE you're using against the application?
+- CVE-2019-9053
+
+- using gobuster, we can check that there is another page linking to a site:
+
+```
+
+┌──(kali㉿kali)-[~]
+└─$ gobuster dir -u "http://10.10.170.151:80" -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o /home/kali/ken/MoonShine/CTF/simple_CTF/http_enum.txt
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.170.151:80
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2022/08/17 10:51:26 Starting gobuster in directory enumeration mode
+===============================================================
+/simple               (Status: 301) [Size: 315] [--> http://10.10.170.151/simple/]
+Progress: 21282 / 220561 (9.65%)                                                 ^C
+[!] Keyboard interrupt detected, terminating.
+                                                                                  
+===============================================================
+2022/08/17 11:05:31 Finished
+===============================================================
+                                                                                                                      
+┌──(kali㉿kali)-[~]
+└─$ 
+
+```
+
+![[Pasted image 20220817110557.png]]
+
+![[Pasted image 20220817110606.png]]
+
+- upon checking on CMS Made Simple version 2.2.8, a vulnerability was found
+
+![[Pasted image 20220817110644.png]]
 
