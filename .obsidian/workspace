@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/steel_mountain/README.md",
+            "file": "CTF/simple_CTF/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/steel_mountain/README.md",
+                "file": "CTF/simple_CTF/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/steel_mountain/README.md",
+                "file": "CTF/simple_CTF/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/steel_mountain/README.md"
+                "file": "CTF/simple_CTF/README.md"
               }
             }
           }
@@ -130,13 +130,13 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "CTF/steel_mountain/README.md",
     "TOOLS/reverse_shell payloads.md",
     "TOOLS/SCP.md",
     "TOOLS/Reverse_shell.md",
     "TOOLS/Privilege Escalation Tools.md",
     "TOOLS/Nmap.md",
     "TOOLS/netcat shell stabilisation.md",
-    "CTF/steel_mountain/README.md",
     "TOOLS/strings.md",
     "CTF/Kenobi/README.md",
     "TOOLS/SUID.md"
