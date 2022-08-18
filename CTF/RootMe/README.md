@@ -3,6 +3,7 @@
 export IP: 10.10.43.146
 
 
+Scan the machine, how many ports are open?
 
 - port 44442 is not included since status is filtered
 
@@ -36,4 +37,11 @@ Nmap done: 1 IP address (1 host up) scanned in 97.26 seconds
 ┌──(kali㉿kali)-[~/ken/MoonShine/CTF/RootMe]
 
 ```
+
+What version of Apache is running?
+- 2.4.29
+
+
+What service is running on port 22?
+- ssh
 
