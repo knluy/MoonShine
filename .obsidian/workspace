@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/RootMe/README.md",
+            "file": "linuxprivsec/Linux Privsec Cheatsheet.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/RootMe/README.md",
+                "file": "linuxprivsec/Linux Privsec Cheatsheet.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/RootMe/README.md",
+                "file": "linuxprivsec/Linux Privsec Cheatsheet.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/RootMe/README.md"
+                "file": "linuxprivsec/Linux Privsec Cheatsheet.md"
               }
             }
           }
@@ -130,11 +130,11 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
-    "CTF/RootMe/reverse_shell.jpg",
+    "linuxprivsec/README.md",
     "CTF/RootMe/README.md",
+    "CTF/RootMe/reverse_shell.jpg",
     "TOOLS/LINUX CHEATSHEET.md",
     "CTF/simple_CTF/README.md",
-    "linuxprivsec/README.md",
     "TOOLS/Hydra.md",
     "CTF/steel_mountain/README.md",
     "TOOLS/reverse_shell payloads.md",

