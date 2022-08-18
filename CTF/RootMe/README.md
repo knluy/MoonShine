@@ -45,3 +45,42 @@ What version of Apache is running?
 What service is running on port 22?
 - ssh
 
+
+What is the hidden directory?
+- /panel/
+
+```
+
+
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/RootMe]
+└─$ gobuster dir -u "http://10.10.43.146:80" -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt -o /home/kali/ken/MoonShine/CTF/RootMe/gobuster_scan.txt
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.43.146:80
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2022/08/18 08:31:57 Starting gobuster in directory enumeration mode
+===============================================================
+/uploads              (Status: 301) [Size: 314] [--> http://10.10.43.146/uploads/]
+/css                  (Status: 301) [Size: 310] [--> http://10.10.43.146/css/]    
+/js                   (Status: 301) [Size: 309] [--> http://10.10.43.146/js/]     
+/panel                (Status: 301) [Size: 312] [--> http://10.10.43.146/panel/]  
+Progress: 5864 / 220561 (2.66%)                                                  ^C
+[!] Keyboard interrupt detected, terminating.
+                                                                                  
+===============================================================
+2022/08/18 08:39:06 Finished
+===============================================================
+                                                                                                                      
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/RootMe]
+└─$ 
+
+```
+
