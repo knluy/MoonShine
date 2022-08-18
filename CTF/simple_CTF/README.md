@@ -109,3 +109,27 @@ Progress: 21282 / 220561 (9.65%)                                                
 new machine IP: 10.10.134.118
 
 10.10.134.118
+
+Using the enumeration acquired:
+
+nmap - found port 80
+gobuster - found /simple and CMS Made Simple version 2.2.8,
+google - found  CVE-2019-9053
+
+we can check that there is a python script for exploit. We will use that:
+
+```
+
+┌──(kali㉿kali)-[~]
+└─$ cd ken/CVE-2019-9053           
+                                                                                                                       
+┌──(kali㉿kali)-[~/ken/CVE-2019-9053]
+└─$ ls
+exploit.py  README.md
+                                                                                                                       
+┌──(kali㉿kali)-[~/ken/CVE-2019-9053]
+└─$ 
+
+
+```
+
