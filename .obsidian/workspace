@@ -130,6 +130,8 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "TOOLS/Hydra.md",
+    "CTF/simple_CTF/README.md",
     "CTF/steel_mountain/README.md",
     "TOOLS/reverse_shell payloads.md",
     "TOOLS/SCP.md",
@@ -137,8 +139,6 @@
     "TOOLS/Privilege Escalation Tools.md",
     "TOOLS/Nmap.md",
     "TOOLS/netcat shell stabilisation.md",
-    "TOOLS/strings.md",
-    "CTF/Kenobi/README.md",
-    "TOOLS/SUID.md"
+    "TOOLS/strings.md"
   ]
 }
