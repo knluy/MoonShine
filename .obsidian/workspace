@@ -130,15 +130,15 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "CTF/RootMe/reverse_shell.jpg",
+    "CTF/RootMe/README.md",
+    "TOOLS/LINUX CHEATSHEET.md",
     "CTF/simple_CTF/README.md",
     "linuxprivsec/README.md",
     "TOOLS/Hydra.md",
     "CTF/steel_mountain/README.md",
     "TOOLS/reverse_shell payloads.md",
     "TOOLS/SCP.md",
-    "TOOLS/Reverse_shell.md",
-    "TOOLS/Privilege Escalation Tools.md",
-    "TOOLS/Nmap.md",
-    "TOOLS/netcat shell stabilisation.md"
+    "TOOLS/Reverse_shell.md"
   ]
 }

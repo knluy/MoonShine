@@ -117,7 +117,18 @@ uid=33(www-data) gid=33(www-data) groups=33(www-data)
 $ whoami
 www-data
 
+```
+
+- Once you got a shell, try to stabilize it first:
 
 ```
 
-
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+www-data@rootme:/$ fg
+www-data@rootme:/$ stty raw -echo
+stty raw -echofg
+www-data@rootme:/$ fg
+bash: fg: current: no such job
+www-data@rootme:/$ export TERM=xterm
+www-data@rootme:/$
+```
