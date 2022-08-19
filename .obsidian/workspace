@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/Agent-sudo/README.md",
+            "file": "CTF/simple_CTF/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Agent-sudo/README.md",
+                "file": "CTF/simple_CTF/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/Agent-sudo/README.md",
+                "file": "CTF/simple_CTF/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/Agent-sudo/README.md"
+                "file": "CTF/simple_CTF/README.md"
               }
             }
           }
@@ -131,14 +131,14 @@
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
     "CTF/RootMe/README.md",
+    "CTF/RootMe/reverse_shell.jpg",
+    "CTF/Agent-sudo/README.md",
     "TOOLS/Reverse_shell.md",
     "TOOLS/reverse_shell payloads.md",
     "linuxprivsec/Linux Privsec Cheatsheet.md",
     "linuxprivsec/README.md",
-    "CTF/RootMe/reverse_shell.jpg",
     "TOOLS/LINUX CHEATSHEET.md",
     "CTF/simple_CTF/README.md",
-    "TOOLS/Hydra.md",
-    "CTF/steel_mountain/README.md"
+    "TOOLS/Hydra.md"
   ]
 }
