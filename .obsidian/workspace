@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 305.5
+    "width": 303.5
   },
   "right": {
     "id": "06060d80d9d7918b",
@@ -131,14 +131,14 @@
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
     "TOOLS/steganography.md",
+    "TOOLS/strings.md",
+    "TOOLS/ZIP unZIP 7z.md",
     "CTF/Agent-sudo/README.md",
     "CTF/simple_CTF/README.md",
     "CTF/RootMe/README.md",
     "CTF/RootMe/reverse_shell.jpg",
     "TOOLS/Reverse_shell.md",
     "TOOLS/reverse_shell payloads.md",
-    "linuxprivsec/Linux Privsec Cheatsheet.md",
-    "linuxprivsec/README.md",
-    "TOOLS/LINUX CHEATSHEET.md"
+    "linuxprivsec/Linux Privsec Cheatsheet.md"
   ]
 }

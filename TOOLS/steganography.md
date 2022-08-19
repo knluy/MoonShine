@@ -26,3 +26,10 @@ how to extract files
 
 - -e = extract
 
+
+#### steghide
+
+`steghide extract -sf file.jpg`
+
+
+![[Pasted image 20220818213108.png]]
