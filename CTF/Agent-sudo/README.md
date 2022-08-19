@@ -179,7 +179,44 @@ cute-alien.jpg  cutie.png  _cutie.png.extracted  gobuster_scan.txt  nmap_results
 
 ```
 
-Once zip file is extracted, i use
+Once zip file is extracted, i used ssh2john to invoke zipfile to convert to hash file:
+
+```
+
+┌──(kali㉿kali)-[~/…/MoonShine/CTF/Agent-sudo/_cutie.png.extracted]
+└─$ ls
+365  365.zlib  8702.zip  To_agentR.txt
+
+┌──(kali㉿kali)-[~/…/MoonShine/CTF/Agent-sudo/_cutie.png.extracted]
+└─$ zip2john 8702.zip > 8702_hash.txt
+                                               
+
+```
+
+Once done, proceed with john the ripper to brute force the hash and extract the password:
+
+```
+
+┌──(kali㉿kali)-[~/…/MoonShine/CTF/Agent-sudo/_cutie.png.extracted]
+└─$ john --wordlist=/usr/share/wordlists/rockyou.txt 8702_hash.txt    
+Using default input encoding: UTF-8
+Loaded 1 password hash (ZIP, WinZip [PBKDF2-SHA1 128/128 AVX 4x])
+Cost 1 (HMAC size) is 78 for all loaded hashes
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+alien            (8702.zip/To_agentR.txt)     
+1g 0:00:00:00 DONE (2022-08-18 20:57) 2.325g/s 57153p/s 57153c/s 57153C/s christal..280789
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+                                                                                                                      
+┌──(kali㉿kali)-[~/…/MoonShine/CTF/Agent-sudo/_cutie.png.extracted]
+└─$ 
+                                                                                                                      
+┌──(kali㉿kali)-[~/…/MoonShine/CTF/Agent-sudo/_cutie.png.extracted]
+└─$ 
+
+
+```
 
 
 
