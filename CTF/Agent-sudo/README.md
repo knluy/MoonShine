@@ -157,7 +157,29 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 
 ```
 
+After that, i extracted the zip file on the image using binwalk -e flag:
 
+```
+
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Agent-sudo]
+└─$ binwalk cutie.png -e  
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+0             0x0             PNG image, 528 x 528, 8-bit colormap, non-interlaced
+869           0x365           Zlib compressed data, best compression
+34562         0x8702          Zip archive data, encrypted compressed size: 98, uncompressed size: 86, name: To_agentR.txt
+34820         0x8804          End of Zip archive, footer length: 22
+
+                                                                                                                      
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Agent-sudo]
+└─$ ls
+cute-alien.jpg  cutie.png  _cutie.png.extracted  gobuster_scan.txt  nmap_results.txt  README.md  To_agentJ.txt
+
+
+```
+
+Once zip file is extracted, i use
 
 
 
