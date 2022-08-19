@@ -19,3 +19,10 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
                 
 ```
 
+how to extract files
+
+
+`binwalk image.jpg -e`
+
+- -e = extract
+
