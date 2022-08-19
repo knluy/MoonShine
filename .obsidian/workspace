@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/Agent-sudo/README.md",
+            "file": "TOOLS/steganography.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Agent-sudo/README.md",
+                "file": "TOOLS/steganography.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/Agent-sudo/README.md",
+                "file": "TOOLS/steganography.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/Agent-sudo/README.md"
+                "file": "TOOLS/steganography.md"
               }
             }
           }
@@ -130,10 +130,10 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "CTF/Agent-sudo/README.md",
     "CTF/simple_CTF/README.md",
     "CTF/RootMe/README.md",
     "CTF/RootMe/reverse_shell.jpg",
-    "CTF/Agent-sudo/README.md",
     "TOOLS/Reverse_shell.md",
     "TOOLS/reverse_shell payloads.md",
     "linuxprivsec/Linux Privsec Cheatsheet.md",
