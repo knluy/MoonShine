@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/Bounty_Hacker/README.md",
+            "file": "CTF/LazyAdmin/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Bounty_Hacker/README.md",
+                "file": "CTF/LazyAdmin/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/Bounty_Hacker/README.md",
+                "file": "CTF/LazyAdmin/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/Bounty_Hacker/README.md"
+                "file": "CTF/LazyAdmin/README.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "CTF/Bounty_Hacker/README.md",
     "CTF/Agent-sudo/README.md",
     "TOOLS/steganography.md",
     "TOOLS/strings.md",
@@ -138,7 +139,6 @@
     "CTF/RootMe/README.md",
     "CTF/RootMe/reverse_shell.jpg",
     "TOOLS/Reverse_shell.md",
-    "TOOLS/reverse_shell payloads.md",
-    "linuxprivsec/Linux Privsec Cheatsheet.md"
+    "TOOLS/reverse_shell payloads.md"
   ]
 }
