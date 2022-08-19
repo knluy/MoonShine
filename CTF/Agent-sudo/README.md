@@ -47,3 +47,32 @@ Nmap done: 1 IP address (1 host up) scanned in 212.52 seconds
                                                               
 ```
 
+Looking at the webpage we are greeted with a message:
+
+![[Pasted image 20220818203145.png]]
+
+From there we can use burp to check what is happening:
+
+![[Pasted image 20220818203258.png]]
+
+Upon checking, we can see the `User-Agent` that Agent R is referring. We can change this to C, like so:
+
+![[Pasted image 20220818203403.png]]
+
+After that we are greeted by a redirection page:
+
+![[Pasted image 20220818203431.png]]
+
+![[Pasted image 20220818203442.png]]
+
+![[Pasted image 20220818203458.png]]
+
+Using these information, we can now use hydra to crack ftp password (remember nmap, port 22 and port )
+
+
+
+
+
+
+
+
