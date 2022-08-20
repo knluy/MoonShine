@@ -112,6 +112,30 @@ Progress: 7455 / 220561 (3.38%)                                                 
 
 ```
 
+Using trial and error, we go to every pages, looking for possible attack vectors and low hanging fruit:
+
+![[Pasted image 20220819220737.png]]
+
+Looking further, we see that there is a mysql_backup folder and we will try to open the file:
+
+![[Pasted image 20220819220836.png]]
+
+
+Opening up the file, we can see that there are lying credentials on the file:
+
+username: manager
+password: hashed pw
+
+
+![[Pasted image 20220819220959.png]]
+
+Lets use crackstation to check the hash and hopefully we can get a plaintext password:
+
+![[Pasted image 20220819221123.png]]
+
+Password: Password123
+
+Using those credentials, we can now login to 10.10.35.168/content/as/
 
 
 
