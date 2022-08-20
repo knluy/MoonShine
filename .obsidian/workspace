@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/sqlmap.md",
+            "file": "CTF/LazyAdmin/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/sqlmap.md",
+                "file": "CTF/LazyAdmin/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/sqlmap.md",
+                "file": "CTF/LazyAdmin/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/sqlmap.md"
+                "file": "CTF/LazyAdmin/README.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "TOOLS/sqlmap.md",
     "TOOLS/Nikto.md",
     "CTF/LazyAdmin/README.md",
     "CTF/Bounty_Hacker/README.md",
@@ -138,7 +139,6 @@
     "TOOLS/strings.md",
     "TOOLS/ZIP unZIP 7z.md",
     "CTF/simple_CTF/README.md",
-    "CTF/RootMe/README.md",
-    "CTF/RootMe/reverse_shell.jpg"
+    "CTF/RootMe/README.md"
   ]
 }
