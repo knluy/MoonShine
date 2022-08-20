@@ -200,7 +200,31 @@ www-data@THM-Chal:/home/itguy$
 
 ```
 
+To proceed with privilege escalation, we can check for sudo privileges first using sudo -l:
 
+```
+www-data@THM-Chal:/home/itguy$ sudo -l
+Matching Defaults entries for www-data on THM-Chal:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User www-data may run the following commands on THM-Chal:
+    (ALL) NOPASSWD: /usr/bin/perl /home/itguy/backup.pl
+www-data@THM-Chal:/home/itguy$ 
+
+```
+
+There, we can see that backup.pl can run on sudo privileges. Then opening up backup.pl, we can see that it is running on /etc/copy.sh:
+
+```
+www-data@THM-Chal:/home/itguy$ cat backup.pl
+#!/usr/bin/perl
+
+system("sh", "/etc/copy.sh");
+www-data@THM-Chal:/home/itguy$ 
+
+
+```
 
 
 
