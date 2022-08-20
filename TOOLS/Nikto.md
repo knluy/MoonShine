@@ -3,4 +3,4 @@
 
 Syntax
 
-nikto -h ip_address -evasion -o file.txt
+`nikto -h ip_address -evasion -o file.txt`
