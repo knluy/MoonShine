@@ -9,6 +9,10 @@ What is the user flag?
 What is the root flag?
 
 
+Enumeration:
+
+
+
 
 
 

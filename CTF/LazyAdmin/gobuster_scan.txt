@@ -1,2 +1,0 @@
-/content              (Status: 301) [Size: 316] [--> http://10.10.231.188/content/]
-/server-status        (Status: 403) [Size: 278]

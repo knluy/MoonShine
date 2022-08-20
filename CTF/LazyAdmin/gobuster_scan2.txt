@@ -1,6 +1,0 @@
-/images               (Status: 301) [Size: 323] [--> http://10.10.231.188/content/images/]
-/js                   (Status: 301) [Size: 319] [--> http://10.10.231.188/content/js/]
-/inc                  (Status: 301) [Size: 320] [--> http://10.10.231.188/content/inc/]
-/as                   (Status: 301) [Size: 319] [--> http://10.10.231.188/content/as/]
-/_themes              (Status: 301) [Size: 324] [--> http://10.10.231.188/content/_themes/]
-/attachment           (Status: 301) [Size: 327] [--> http://10.10.231.188/content/attachment/]
