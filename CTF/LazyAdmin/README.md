@@ -137,6 +137,33 @@ Password: Password123
 
 Using those credentials, we can now login to 10.10.35.168/content/as/
 
+![[Pasted image 20220819221220.png]]
+
+After that, we can explore the website and found an ads page where we can advertise (keyword, advertise!) your code:
+
+![[Pasted image 20220819221307.png]]
+
+We can then craft a php reverse shell like so:
+
+![[Pasted image 20220819221346.png]]
+
+and upload it to the ads page:
+
+![[Pasted image 20220819221442.png]]
+
+We can now look for the reverse_shell.php code on the ip:80/content/inc and under ads, we can click our file:
+
+
+![[Pasted image 20220819221556.png]]
+![[Pasted image 20220819221608.png]]
+
+Setup a netcat listener using port 1234, then stabilize the shell, the capture the first flag:
+
+
+
+
+
+
 
 
 
