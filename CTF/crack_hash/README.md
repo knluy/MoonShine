@@ -40,9 +40,19 @@ n63umy8lkf4i
 Method: used crackstation
 
 
-Hash: $6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.
+Hash: `$6$aReallyHardSalt$6WKUTqzq.UQQmrm0p/T7MPpMbGNnzXPMAXi4bJMl9be.cfi3/qxIf.hsGpS41BqMhSrHVXgMpdjS6xeKZAs02.`
 
 Salt: aReallyHardSalt
+waka99
+Method: used hashcat
+
+hashcat -a 3 -w 4 hash2.txt /usr/share/wordlists/rockyou.txt
+
+
+Hash: e5d8870e5bdd26602cab8dbe07a942c8669e56d6
+Salt: tryhackme
+Method: used hashcat
+
 
 
 
