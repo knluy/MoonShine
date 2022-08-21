@@ -15,3 +15,8 @@ EXAMPLE
        searchsploit -t oracle windows
        searchsploit -p 39446
        searchsploit linux kernel 3.2 --exclude="(PoC)|/dos/"
+
+- -x locate the path
+searchsploit -x /path/path/path
+
+- -m copy the path

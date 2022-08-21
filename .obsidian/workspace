@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/Overpass/README.md",
+            "file": "CTF/TOOLS/Searchsploit.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "nmap",
+                "query": "searchsploit",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Overpass/README.md",
+                "file": "CTF/TOOLS/Searchsploit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/Overpass/README.md",
+                "file": "CTF/TOOLS/Searchsploit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/Overpass/README.md"
+                "file": "CTF/TOOLS/Searchsploit.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "d2a3b80f2efe0cdf",
   "lastOpenFiles": [
+    "CTF/Overpass/README.md",
     "CTF/TOOLS/Hydra.md",
     "CTF/TOOLS/SMBClient.md",
     "CTF/TOOLS/smbmap.md",
@@ -138,7 +139,6 @@
     "CTF/crack_hash/README.md",
     "CTF/TOOLS/Hashcat.md",
     "CTF/LazyAdmin/README.md",
-    "CTF/TOOLS/reverse_shell payloads.md",
-    "CTF/TOOLS/Reverse_shell.md"
+    "CTF/TOOLS/reverse_shell payloads.md"
   ]
 }
