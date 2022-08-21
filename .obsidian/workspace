@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/TOOLS/SMBClient.md",
+            "file": "CTF/TOOLS/Hydra.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/TOOLS/SMBClient.md",
+                "file": "CTF/TOOLS/Hydra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/TOOLS/SMBClient.md",
+                "file": "CTF/TOOLS/Hydra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/TOOLS/SMBClient.md"
+                "file": "CTF/TOOLS/Hydra.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "e37ef389650caf7b",
   "lastOpenFiles": [
+    "CTF/TOOLS/SMBClient.md",
     "CTF/TOOLS/smbmap.md",
     "CTF/TOOLS/Gobuster.md",
     "CTF/Skynet/README.md",
@@ -138,7 +139,6 @@
     "CTF/LazyAdmin/README.md",
     "CTF/TOOLS/reverse_shell payloads.md",
     "CTF/TOOLS/Reverse_shell.md",
-    "img/Pasted image 20220819220959.png",
-    "CTF/TOOLS/sqlmap.md"
+    "img/Pasted image 20220819220959.png"
   ]
 }
