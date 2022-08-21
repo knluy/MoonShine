@@ -1,2 +1,1 @@
-# Nmap 7.92 scan initiated Sat Aug 20 20:24:34 2022 as: nmap -sC -sV -oN nmap_results.txt 10.10.236.200
-# Nmap done at Sat Aug 20 20:24:38 2022 -- 1 IP address (0 hosts up) scanned in 4.38 seconds
+# Nmap 7.92 scan initiated Sat Aug 20 20:28:39 2022 as: nmap -sC -sV -oN nmap_results.txt 10.10.236.200
