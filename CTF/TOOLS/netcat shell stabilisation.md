@@ -33,3 +33,11 @@ in your shell type
 2. `stty cols <number>`
 
 
+Other Links:
+https://sushant747.gitbooks.io/total-oscp-guide/content/spawning_shells.html
+
+We can also use script (alternative)
+
+/usr/bin/script -qc /bin/bash /dev/null
+script
+
