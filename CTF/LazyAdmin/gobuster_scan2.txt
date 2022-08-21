@@ -4,3 +4,4 @@
 /config               (Status: 301) [Size: 315] [--> http://10.10.236.200/config/]
 /ai                   (Status: 301) [Size: 311] [--> http://10.10.236.200/ai/]
 /squirrelmail         (Status: 301) [Size: 321] [--> http://10.10.236.200/squirrelmail/]
+/server-status        (Status: 403) [Size: 278]
