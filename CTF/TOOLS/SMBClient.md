@@ -19,6 +19,9 @@ We can remotely access the SMB share using the syntax:
 smbclient //[IP]/[SHARE]
 
 smbclient //<ip>/anonymous
+
+smbclient -U username \\\\ip\\name_of_share
+
 ```
 
 Followed by the tags:
@@ -26,3 +29,4 @@ Followed by the tags:
 -U [name] : to specify the user
 
 -p [port] : to specify the port
+
