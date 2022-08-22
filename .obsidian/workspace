@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "searchsploit",
+                "query": "elf",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -130,15 +130,15 @@
   },
   "active": "d2a3b80f2efe0cdf",
   "lastOpenFiles": [
-    "TOOLS/Hydra.md",
+    "linuxprivsec/README.md",
     "CTF/Overpass/README.md",
+    "TOOLS/Hydra.md",
     "TOOLS/netcat shell stabilisation.md",
     "TOOLS/Reverse_shell.md",
     "TOOLS/reverse_shell payloads.md",
     "TOOLS/Searchsploit.md",
     "TOOLS/SMBClient.md",
     "TOOLS/smbmap.md",
-    "TOOLS/Gobuster.md",
-    "CTF/Skynet/README.md"
+    "TOOLS/Gobuster.md"
   ]
 }
