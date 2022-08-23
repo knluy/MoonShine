@@ -31,9 +31,13 @@
 4. Prepare the tools needed for the attack. The tools are the following:
 	1. Check if repositories are updated. Perform `sudo apt-get update`
 	   ![[Pasted image 20220823064450.png]]
-	2. Perform repositories 
+	2. Perform repositories upgrade. Use `sudo apt-get upgrade`
+	   ![[Pasted image 20220823064609.png]]
 	3. airmon-ng - this is natively installed on Kali. Otherwise, perform `sudo apt-get install airmon-ng` to install the package.
-	4. hcxdumptool - perform
-	5. hcxpcapngtool
-	6. hashcat
+	   
+	4. hcxdumptool - perform `sudo apt-get install hcxdumptool`, like so. 
+	   ![[Pasted image 20220823064901.png]]
+	5. hcxpcapngtool - perform `sudo apt-get install hcxpcapngtool`, like so:
+	6. hashcat - perform `sudo apt-get install hashcat` on Linux and go to https://hashcat.net/hashcat/ on Windows.
+	   
 
