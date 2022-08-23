@@ -96,4 +96,10 @@ Use `ls` command to check and verify if the new file is now available:
 6. Move the downloaded file (test.2200) to the hashcat directories folder, like so:
    ![[Pasted image 20220823072503.png]]
 7. Open Windows Powershell, you can also use command prompt, but for me powershell gives more flexibility:
+![[Pasted image 20220823084001.png]]
 
+Once done, use this syntax:
+
+```
+
+```
