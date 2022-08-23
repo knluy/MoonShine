@@ -23,4 +23,14 @@
 2. Check if the wifi adapter is connected and enabled in the machine. If you are using vmware workstation, you may check the status of the wifi adapter below, and status must be connected:
 
 ![[Pasted image 20220823063501.png]]
-3. Check 
+3. Check if the wireless interface is up. On the terminal, type `lsusb`  and `iwconfig` to verify, like so:
+
+![[Pasted image 20220823063623.png]]
+	As you can see, in our case, the bus 001 device is registered as Realtek RTL8811AU [Archer T2U Nano]. Further verification on iwconfig shows wlan0 interface with Mode: Managed.
+
+4. Prepare the tools needed for the attack. The tools are the following:
+	1. airmon-ng - this is natively installed on Kali. Otherwise, perform `sudo apt-get install airmon-ng` to install the package.
+	2. hcxdumptool
+	3. hcxpcapngtool
+	4. hashcat
+
