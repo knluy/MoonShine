@@ -92,6 +92,7 @@ Use `ls` command to check and verify if the new file is now available:
 
 3. Upload test.22000 in your drive (google drive, one drive, etc), or check if you can perform file sharing in your virtual machine going to your windows machine (haven't performed this yet).
 4. Download the test.2200 in your windows machine (not kali), I will explain this later:
+   
    ![](../img/Pasted%20image%2020220823192634.png)
 5. Download Hashcat. Use the Part1 tutorial for reference. No need to install, just download and extract.
 6. Move the downloaded file (test.2200) to the hashcat directories folder, like so:
