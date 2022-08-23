@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "elf",
+                "query": "new link format",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -128,7 +129,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d2a3b80f2efe0cdf",
+  "active": "2b916fb6587fafca",
   "lastOpenFiles": [
     "HACK PLDTWIFI/HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS PART 1.md",
     "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md",
