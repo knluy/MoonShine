@@ -29,8 +29,11 @@
 	As you can see, in our case, the bus 001 device is registered as Realtek RTL8811AU [Archer T2U Nano]. Further verification on iwconfig shows wlan0 interface with Mode: Managed.
 
 4. Prepare the tools needed for the attack. The tools are the following:
-	1. airmon-ng - this is natively installed on Kali. Otherwise, perform `sudo apt-get install airmon-ng` to install the package.
-	2. hcxdumptool
-	3. hcxpcapngtool
-	4. hashcat
+	1. Check if repositories are updated. Perform `sudo apt-get update`
+	   ![[Pasted image 20220823064450.png]]
+	2. Perform repositories 
+	3. airmon-ng - this is natively installed on Kali. Otherwise, perform `sudo apt-get install airmon-ng` to install the package.
+	4. hcxdumptool - perform
+	5. hcxpcapngtool
+	6. hashcat
 
