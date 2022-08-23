@@ -4,7 +4,7 @@ Author's Warning:
 - This video is for EDUCATIONAL PURPOSES ONLY. I own all equipment used for this demonstration. Only use the tools demonstrated in this video against networks you have permission to attack.
 
 Note:
-- to disable monitor mode and bring the wifi adapter
+- to disable monitor mode and bring the wifi adapter back to its normal operation, perform `sudo airmon-ng stop wlan0`, then use the syntax `systemctl start NetworkManager`
 #### Steps
 
 1. Check in your home directory of the file captured in the last tutorial. In our case: `test.pcapng`
@@ -89,4 +89,10 @@ processed pcapng files................: 1
 Use `ls` command to check and verify if the new file is now available:
 ![[Pasted image 20220823071839.png]]
 
-3. Upload this in your drive (google drive, one drive, etc), or check if you can perform file sharing in your virtual machine going to your windows machine (haven't performed this yet).
+3. Upload test.22000 in your drive (google drive, one drive, etc), or check if you can perform file sharing in your virtual machine going to your windows machine (haven't performed this yet).
+4. Download the test.2200 in your windows machine (not kali), I will explain this later:
+   ![[Pasted image 20220823072244.png]]
+5. Download Hashcat. Use the Part1 tutorial for reference. No need to install, just download and extract.
+6. Move the downloaded file (test.2200) to the hashcat directories folder, like so:
+   ![[Pasted image 20220823072503.png]]
+7. Open Windows Powershell
