@@ -87,6 +87,7 @@ processed pcapng files................: 1
 ```
 
 Use `ls` command to check and verify if the new file is now available:
+
 ![](../img/Pasted%20image%2020220823192647.png)
 
 3. Upload test.22000 in your drive (google drive, one drive, etc), or check if you can perform file sharing in your virtual machine going to your windows machine (haven't performed this yet).
