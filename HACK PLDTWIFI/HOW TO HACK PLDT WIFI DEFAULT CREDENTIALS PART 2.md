@@ -8,7 +8,7 @@ Note:
 #### Steps
 
 1. Check in your home directory of the file captured in the last tutorial. In our case: `test.pcapng`
-   ![[Pasted image 20220823071552.png]]
+   ![](../img/Pasted%20image%2020220823192703.png)
 2. Before we can crack this password, we will convert this first to a file recognized by hashcat. To do this, we can use the syntax `hcxpcapngtool -E essidlist -I identitylist -U usernamelist -o /home/kali/test.22000 /home/kali/test.pcapng`, like so:
 
 ```
@@ -87,14 +87,14 @@ processed pcapng files................: 1
 ```
 
 Use `ls` command to check and verify if the new file is now available:
-![[Pasted image 20220823071839.png]]
+![](../img/Pasted%20image%2020220823192647.png)
 
 3. Upload test.22000 in your drive (google drive, one drive, etc), or check if you can perform file sharing in your virtual machine going to your windows machine (haven't performed this yet).
 4. Download the test.2200 in your windows machine (not kali), I will explain this later:
-   ![[Pasted image 20220823072244.png]]
+   ![](../img/Pasted%20image%2020220823192634.png)
 5. Download Hashcat. Use the Part1 tutorial for reference. No need to install, just download and extract.
 6. Move the downloaded file (test.2200) to the hashcat directories folder, like so:
-   ![[Pasted image 20220823072503.png]]
+   !![](../img/Pasted%20image%2020220823192608.png)
 7. Open Windows Powershell, you can also use command prompt, but for me powershell gives more flexibility:
 ![](../img/Pasted%20image%2020220823192436.png)
 
@@ -110,6 +110,4 @@ Make sure that the file test.22000 is in the hashcat directory:
 
 Once done, patiently wait for the password to crack and we can test it against the SSID:
 
-
-![](../img/Pasted%20image%2020220823192222.png)
 END

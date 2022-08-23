@@ -14,6 +14,16 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "47b7bacbb9e40074",
+        "type": "leaf",
+        "state": {
+          "type": "image",
+          "state": {
+            "file": "img/Pasted image 20220823071552.png"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -40,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "new link format",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -129,17 +139,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2b916fb6587fafca",
+  "active": "d2a3b80f2efe0cdf",
   "lastOpenFiles": [
-    "HACK PLDTWIFI/HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS PART 1.md",
+    "img/Pasted image 20220823071552.png",
+    "img/Pasted image 20220823071839.png",
     "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md",
+    "img/Pasted image 20220823072244.png",
+    "img/Pasted image 20220823072503.png",
+    "HACK PLDTWIFI/HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS PART 1.md",
     "CTF/Overpass/README.md",
     "linuxprivsec/README.md",
     "TOOLS/Hydra.md",
-    "TOOLS/netcat shell stabilisation.md",
-    "TOOLS/Reverse_shell.md",
-    "TOOLS/reverse_shell payloads.md",
-    "TOOLS/Searchsploit.md",
-    "TOOLS/SMBClient.md"
+    "TOOLS/netcat shell stabilisation.md"
   ]
 }
