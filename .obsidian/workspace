@@ -6,10 +6,11 @@
       {
         "id": "d2a3b80f2efe0cdf",
         "type": "leaf",
+        "dimension": 49.87163029525032,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "HACK PLDTWIFI/HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS PART 1.md",
+            "file": "Sentinel/Sentinel - PART 1.md",
             "mode": "source",
             "source": false
           }
@@ -18,10 +19,11 @@
       {
         "id": "3687bd1aeae61724",
         "type": "leaf",
+        "dimension": 50.12836970474967,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md",
+            "file": "Sentinel/Sentinel - PART 2.md",
             "mode": "source",
             "source": false
           }
@@ -89,7 +91,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md",
+                "file": "Sentinel/Sentinel - PART 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,7 +108,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md",
+                "file": "Sentinel/Sentinel - PART 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -129,7 +131,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md"
+                "file": "Sentinel/Sentinel - PART 1.md"
               }
             }
           }
@@ -140,9 +142,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3687bd1aeae61724",
+  "active": "d2a3b80f2efe0cdf",
   "lastOpenFiles": [
-    "HACK PLDTWIFI/HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS PART 1.md",
+    "Sentinel/Sentinel - PART 2.md",
+    "Sentinel/Sentinel - PART 1.md",
     "CTF/crack_hash/README.md",
     "img/Pasted image 20220823070256.png",
     "img/Pasted image 20220823070005.png",
@@ -150,7 +153,6 @@
     "img/Pasted image 20220823065204.png",
     "img/Pasted image 20220823065142.png",
     "img/Pasted image 20220823064901.png",
-    "img/Pasted image 20220823064609.png",
-    "img/Pasted image 20220823064450.png"
+    "img/Pasted image 20220823064609.png"
   ]
 }

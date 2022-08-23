@@ -1,6 +1,6 @@
 ### How to Hack PLDTWIFI Default Credetials (PART1)
 
-	Author's Warning:
+Author's Warning:
 	- This video is for EDUCATIONAL PURPOSES ONLY. I own all equipment used for this demonstration. Only use the tools demonstrated in this video against networks you have permission to attack.
 
 #### Requirements
