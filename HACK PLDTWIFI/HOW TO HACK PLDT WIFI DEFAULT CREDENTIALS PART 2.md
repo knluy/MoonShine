@@ -111,5 +111,5 @@ Make sure that the file test.22000 is in the hashcat directory:
 Once done, patiently wait for the password to crack and we can test it against the SSID:
 
 
-
+![](../img/Pasted%20image%2020220823192222.png)
 END
