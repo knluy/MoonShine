@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS.md",
+            "file": "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS.md",
+                "file": "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS.md",
+                "file": "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS.md"
+                "file": "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md"
               }
             }
           }
@@ -130,6 +130,8 @@
   },
   "active": "d2a3b80f2efe0cdf",
   "lastOpenFiles": [
+    "HACK PLDTWIFI/HOW TO HACK PLDTWIFI DEFAULT CREDENTIALS PART 1.md",
+    "HACK PLDTWIFI/HOW TO HACK PLDT WIFI DEFAULT CREDENTIALS PART 2.md",
     "CTF/Overpass/README.md",
     "linuxprivsec/README.md",
     "TOOLS/Hydra.md",
@@ -137,8 +139,6 @@
     "TOOLS/Reverse_shell.md",
     "TOOLS/reverse_shell payloads.md",
     "TOOLS/Searchsploit.md",
-    "TOOLS/SMBClient.md",
-    "TOOLS/smbmap.md",
-    "TOOLS/Gobuster.md"
+    "TOOLS/SMBClient.md"
   ]
 }
