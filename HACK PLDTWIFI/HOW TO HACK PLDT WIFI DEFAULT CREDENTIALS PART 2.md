@@ -101,5 +101,15 @@ Use `ls` command to check and verify if the new file is now available:
 Once done, use this syntax:
 
 ```
-
+./hashcat.exe -m 22000 test.22000 -a 3 -w 4 -S --force --increment --increment-min 13 --increment-max 14 -1 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 PLDTWIFI?1?1?1?1?1
 ```
+
+Make sure that the file test.22000 is in the hashcat directory:
+
+![[Pasted image 20220823084207.png]]
+
+Once done, patiently wait for the password to crack and we can test it against the SSID:
+
+
+
+END
