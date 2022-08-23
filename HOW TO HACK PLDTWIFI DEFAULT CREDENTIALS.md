@@ -52,4 +52,18 @@
 	
 	![[Pasted image 20220823070005.png]]
 
-The 
+	The SSID that we will be attacking: PLDTHOMEFIBR5GBCRxh.
+	Also, take note of the mac address. We will be using this later.
+
+7. Perform further enumeration to filter only the mac address of the attacking router. Use `sudo airodump-ng wlan0 --band a -d 24:91:BB:40:62:44`, like so:
+   ![[Pasted image 20220823070256.png]]
+   Take note of the channel (CH) number, we will be using it later.
+8. Open up another terminal. Then use the syntax `hcxdumptool -i wlan0 -o test.pcapng --enable_status=1 -c 149`
+   Where: 
+	   -i = interface
+	   -o = output file
+	   --enable_status = filter only the needed protocol (1 is used for PKMID+EAPOL)
+	   -c = channel
+
+
+
