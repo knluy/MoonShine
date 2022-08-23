@@ -73,7 +73,9 @@ Author's Warning:
 	   -c = channel
 Once performed, wait patiently until you can see an out of the blue notification like this:
 
-`07:06:28 5745/149 a2d5ba6cef07 2491bb406244 PLDTHOMEFIBR5GBCRxh [EAPOL:M2M3 EAPOLTIME:7498 RC:2 KDV:2]
+```
+```07:06:28 5745/149 a2d5ba6cef07 2491bb406244 PLDTHOMEFIBR5GBCRxh [EAPOL:M2M3 EAPOLTIME:7498 RC:2 KDV:2]
+```
 
 If you get it, you have now captured the password hash of the attacking wifi adapter!
 
