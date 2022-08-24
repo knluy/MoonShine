@@ -6,12 +6,24 @@
       {
         "id": "f733407affe73165",
         "type": "leaf",
+        "dimension": 50,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/Cyborg/README.md",
+            "file": "CTF/basic_pentesting/README.md",
             "mode": "source",
             "source": false
+          }
+        }
+      },
+      {
+        "id": "1204f3f54316cd00",
+        "type": "leaf",
+        "dimension": 50,
+        "state": {
+          "type": "image",
+          "state": {
+            "file": "img/Pasted image 20220815095201.png"
           }
         }
       }
@@ -77,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Cyborg/README.md",
+                "file": "CTF/basic_pentesting/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +106,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/Cyborg/README.md",
+                "file": "CTF/basic_pentesting/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +129,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/Cyborg/README.md"
+                "file": "CTF/basic_pentesting/README.md"
               }
             }
           }
@@ -130,15 +142,15 @@
   },
   "active": "f733407affe73165",
   "lastOpenFiles": [
-    "TOOLS/SCP.md",
+    "img/Pasted image 20220815095201.png",
+    "img/Pasted image 20220815094830.png",
+    "CTF/basic_pentesting/README.md",
     "CTF/Cyborg/README.md",
+    "TOOLS/SCP.md",
     "Sentinel/Sentinel - PART 2.md",
     "Sentinel/Sentinel - PART 1.md",
     "CTF/crack_hash/README.md",
     "img/Pasted image 20220823070256.png",
-    "img/Pasted image 20220823070005.png",
-    "img/Pasted image 20220823065350.png",
-    "img/Pasted image 20220823065204.png",
-    "img/Pasted image 20220823065142.png"
+    "img/Pasted image 20220823070005.png"
   ]
 }
