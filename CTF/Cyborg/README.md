@@ -1,6 +1,6 @@
 ### CYBORG
 
-export IP=10.10.124.137
+export IP=10.10.43.162
 
 Please deploy the machine so you can get started. Please allow a few minutes to make sure all the services boot up. Good luck!
 
@@ -19,7 +19,7 @@ Scan the machine, how many ports are open?
 
 ```
 
-![](../../img/Pasted%20image%2020220823212944.png)
+
 
 
 What service is running on port 22?
@@ -37,6 +37,15 @@ http
 ```
 
 
+What is the user.txt flag?
+
+
+nmap scan:
+
+
+
+
+
 
 borg password
 squidward
@@ -50,3 +59,7 @@ music_archive:$apr1$BpZ.Q.1m$F0qqPwHSOG50URuOVQTTn.
 alex:S3cretP@s3
 
 
+
+
+
+flag{Than5s_f0r_play1ng_H0p£_y0u_enJ053d}
