@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "d2a3b80f2efe0cdf",
+        "id": "f733407affe73165",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/SCP.md",
+            "file": "CTF/Cyborg should wo/cyborg.md",
             "mode": "source",
             "source": false
           }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/SCP.md",
+                "file": "CTF/Cyborg should wo/cyborg.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/SCP.md",
+                "file": "CTF/Cyborg should wo/cyborg.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/SCP.md"
+                "file": "CTF/Cyborg should wo/cyborg.md"
               }
             }
           }
@@ -129,8 +128,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d2a3b80f2efe0cdf",
+  "active": "f733407affe73165",
   "lastOpenFiles": [
+    "TOOLS/SCP.md",
     "CTF/Cyborg should wo/cyborg.md",
     "Sentinel/Sentinel - PART 2.md",
     "Sentinel/Sentinel - PART 1.md",
@@ -139,7 +139,6 @@
     "img/Pasted image 20220823070005.png",
     "img/Pasted image 20220823065350.png",
     "img/Pasted image 20220823065204.png",
-    "img/Pasted image 20220823065142.png",
-    "img/Pasted image 20220823064901.png"
+    "img/Pasted image 20220823065142.png"
   ]
 }
