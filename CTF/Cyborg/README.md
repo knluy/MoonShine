@@ -124,12 +124,27 @@ We are asked for a password, lets try using the password cracked earlier:
 ![](../../img/Pasted%20image%2020220824092623.png)
 
 
-Once done, we have now opened alex's directory on
-
-
+Once done, we have now opened alex's directory on home/alex/. Further enumeration shows the user's password:
 
 alex:S3cretP@s3
 
+![](../../img/Pasted%20image%2020220824092740.png)
+
+Voila! We can use this to login to alex's host using SSH and acquire a bash shell:
+
+![](../../img/Pasted%20image%2020220824092917.png)
+
+First flag: Done
+
+Further enumeration for privilege escalation using sudo -l gives us a file that can run as root:
+
+![](../../img/Pasted%20image%2020220824093018.png)
+
+Opening file /etc/mp3backups/backup.sh and upon understanding at the end of the code, we can perform any commands here:
+
+![](../../img/Pasted%20image%2020220824093113.png)
+
+We can further escalate this by calling the binary and then perform -c for command and "chmod +s "
 
 
 
