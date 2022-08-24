@@ -105,7 +105,26 @@ Exploring the directory extracted, we are stumbled by a README page:
 
 It says : Borg Backup repository.
 
-Looking at the intern
+Looking at the internet further, we can learn how to use the borg backup repository:
+
+![](../../img/Pasted%20image%2020220824092252.png)
+
+We can install this repository using git or pip.
+
+Once installed, we can check for ways to extract this archive.tar (since this file has the repository of Alex's files, documents, etc)
+
+![](../../img/Pasted%20image%2020220824092449.png)
+
+Using the syntax `borg extract /path/to/repo::my-files`, we can use this against alex's archive, like so:
+
+![](../../img/Pasted%20image%2020220824092541.png)
+
+We are asked for a password, lets try using the password cracked earlier:
+
+![](../../img/Pasted%20image%2020220824092623.png)
+
+
+Once done, we have now opened alex's directory on
 
 
 
