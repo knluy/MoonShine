@@ -144,9 +144,22 @@ Opening file /etc/mp3backups/backup.sh and upon understanding at the end of the 
 
 ![](../../img/Pasted%20image%2020220824093113.png)
 
-We can further escalate this by calling the binary and then perform -c for command and "chmod +s "
+We can further escalate this by calling the binary and then perform -c for command and "chmod +s /bin/bash", like so:
+
+
+`sudo /etc/mp3backups/backup.sh -c "chmod +s /bin/bash"
+ `
+![](../../img/Pasted%20image%2020220824093306.png)
+
+Once done, perform bash -p to obtain a shell.
+
+Further checking using whoami shows we are now root. We can now capture the root flag:
+
+![](../../img/Pasted%20image%2020220824093359.png)
+
+
+Flag: flag{Than5s_f0r_play1ng_H0p£_y0u_enJ053d}
 
 
 
-
-flag{Than5s_f0r_play1ng_H0p£_y0u_enJ053d}
+END
