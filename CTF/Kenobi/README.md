@@ -100,7 +100,7 @@ Nmap has the ability to run to automate a wide variety of networking tasks. Ther
 
 SMB has two ports, 445 and 139.
 
-Using the nmap command above, how many shares have been found?
+Using the [Nmap](../../TOOLS/Nmap.md) command above, how many shares have been found?
 - 3
 
 ```

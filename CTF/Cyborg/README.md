@@ -40,13 +40,13 @@ http
 What is the user.txt flag?
 
 
-nmap scan:
+[Nmap](../../TOOLS/Nmap.md) scan:
 
 ![](../../img/Pasted%20image%2020220824094314.png)
 
 As we can see, there are 2 ports open, ssh and http
 
-Let's proceed with gobuster scan for further enumeration:
+Let's proceed with [Gobuster](../../TOOLS/Gobuster.md) scan for further enumeration:
 
 ![](../../img/Pasted%20image%2020220824090117.png)
 
@@ -86,7 +86,7 @@ To get Alex's password, we will crack the hash file using the hash and salts loc
 
 ![](../../img/Pasted%20image%2020220824091602.png)
 
-Cracking the hash, we have a password:
+Cracking the hash using [John the Ripper](../../TOOLS/John%20the%20Ripper.md), we have a password:
 
 ![](../../img/Pasted%20image%2020220824091923.png)
 
@@ -135,7 +135,7 @@ Voila! We can use this to login to alex's host using SSH and acquire a bash shel
 
 First flag: Done
 
-Further enumeration for privilege escalation using sudo -l gives us a file that can run as root:
+Further enumeration for privilege escalation using sudo -l (see [Privilege Escalation Tools](../../TOOLS/Privilege%20Escalation%20Tools.md)gives us a file that can run as root:
 
 ![](../../img/Pasted%20image%2020220824093018.png)
 
