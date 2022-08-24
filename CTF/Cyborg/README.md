@@ -68,8 +68,6 @@ Opened squid.conf:
 
 This seems to be a configuration file for squid proxy. 
 
-Lets go back and check /admin. However, site is still loading. So we enumerate /admin further using gobuster:
-
 
 
 
