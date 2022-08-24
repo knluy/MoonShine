@@ -1,5 +1,2 @@
-/downloads            (Status: 301) [Size: 0] [--> downloads/]
-/img                  (Status: 301) [Size: 0] [--> img/]
-/aboutus              (Status: 301) [Size: 0] [--> aboutus/]
-/admin                (Status: 301) [Size: 42] [--> /admin/]
-/css                  (Status: 301) [Size: 0] [--> css/]
+/admin                (Status: 301) [Size: 314] [--> http://10.10.155.109/admin/]
+/etc                  (Status: 301) [Size: 312] [--> http://10.10.155.109/etc/]

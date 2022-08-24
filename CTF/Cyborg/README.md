@@ -42,29 +42,31 @@ What is the user.txt flag?
 
 nmap scan:
 
-![](../../img/Pasted%20image%2020220824015320.png)
+
+
+
 As we can see, there are 2 ports open, ssh and http
 
 Let's proceed with gobuster scan for further enumeration:
 
-![](../../img/Pasted%20image%2020220824015546.png)
+![](../../img/Pasted%20image%2020220824090117.png)
 
 We have checked that there are also 2 pages, /admin and /etc. Let's explore those sites:
 
 for /etc, we have checked a folder called squid. Lets explore:
 
-![](../../img/Pasted%20image%2020220824015732.png)
+
 
 There are 2 files, passwd and squid.conf. Opened passwd and we are greeted by a hash file:
 
-![](../../img/Pasted%20image%2020220824015821.png)
+
 
 `music_archive:$apr1$BpZ.Q.1m$F0qqPwHSOG50URuOVQTTn.`
 
 Opened squid.conf:
 
 
-![](../../img/Pasted%20image%2020220824015917.png)
+
 
 This seems to be a configuration file for squid proxy. 
 
