@@ -38,12 +38,15 @@ http
 
 
 
-alex
+borg password
 squidward
 
 
 
 music_archive:$apr1$BpZ.Q.1m$F0qqPwHSOG50URuOVQTTn.
 
+
+
+alex:S3cretP@s3
 
 
