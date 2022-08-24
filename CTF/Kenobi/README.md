@@ -282,7 +282,7 @@ We know that the FTP service is running as the Kenobi user (from the file on the
 
 We're now going to copy Kenobi's private key using SITE CPFR and SITE CPTO commands.
 
-![[Pasted image 20220815233300.png]]
+![](../../img/Pasted%20image%2020220824093924.png)
 
 We knew that the /var directory was a mount we could see (task 2, question 4). So we've now moved Kenobi's private key to the /var/tmp directory.
 
@@ -294,8 +294,8 @@ mount machine_ip:/var /mnt/kenobiNFS
 ls -la /mnt/kenobiNFS
 ```
 
-![[Pasted image 20220816000703.png]]
-![[Pasted image 20220816000716.png]]
+![](../../img/Pasted%20image%2020220824094002.png)
+![](../../img/Pasted%20image%2020220824094014.png)
 
 ```
 ┌──(kali㉿kali)-[~/ken/MoonShine/CTF/Kenobi]
@@ -336,7 +336,7 @@ kenobi@kenobi:~$
 #### Privilege Escalation with Path Variable Manipulation
 
 
-![[Pasted image 20220816003120.png]]
+![](../../img/Pasted%20image%2020220824094032.png)
 
 
 Lets first understand what what SUID, SGID and Sticky Bits are.
@@ -410,7 +410,7 @@ This shows us the binary is running without a full path (e.g. not using /usr/bin
 
 As this file runs as the root users privileges, we can manipulate our path gain a root shell.
 
-![[Pasted image 20220816011430.png]]
+![](../../img/Pasted%20image%2020220824094047.png)
 
 We copied the /bin/sh shell, called it curl, gave it the correct permissions and then put its location in our path. This meant that when the /usr/bin/menu binary was run, its using our path variable to find the "curl" binary.. Which is actually a version of /usr/sh, as well as this file being run as root it runs our shell as root!
 

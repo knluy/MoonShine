@@ -94,7 +94,7 @@ On locks.txt, we can also see that it is a wordlist for potential bruteforce att
 
 Webpage at port 80:
 
-![[Pasted image 20220819053420.png]]
+![](../../img/Pasted%20image%2020220824093825.png)
 
 After enumerating those things, we can now proceed with brutefoce `lin` using hydra and the locks.txt wordlist:
 
@@ -164,7 +164,7 @@ lin@bountyhacker:~/Desktop$
 
 Looking at GTFObins documentation, we can see that tar can be exploited if user has sudo previleges (on sudo -l)
 
-![[Pasted image 20220819053759.png]]
+![](../../img/Pasted%20image%2020220824093848.png)
 
 We can now perform the attack and capture the flag:
 
