@@ -1,0 +1,2 @@
+/admin                (Status: 301) [Size: 314] [--> http://10.10.124.137/admin/]
+/etc                  (Status: 301) [Size: 312] [--> http://10.10.124.137/etc/]
