@@ -42,8 +42,7 @@ What is the user.txt flag?
 
 nmap scan:
 
-
-
+![](../../img/Pasted%20image%2020220824094314.png)
 
 As we can see, there are 2 ports open, ssh and http
 

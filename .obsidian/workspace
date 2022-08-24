@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/LazyAdmin/README.md",
+            "file": "CTF/Cyborg/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/LazyAdmin/README.md",
+                "file": "CTF/Cyborg/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/LazyAdmin/README.md",
+                "file": "CTF/Cyborg/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/LazyAdmin/README.md"
+                "file": "CTF/Cyborg/README.md"
               }
             }
           }
@@ -130,8 +130,8 @@
   },
   "active": "f733407affe73165",
   "lastOpenFiles": [
-    "img/Pasted image 20220816011430.png",
     "CTF/LazyAdmin/README.md",
+    "img/Pasted image 20220816011430.png",
     "CTF/Kenobi/README.md",
     "img/Pasted image 20220816003120.png",
     "img/Pasted image 20220816000716.png",
