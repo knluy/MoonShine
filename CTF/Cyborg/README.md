@@ -69,6 +69,21 @@ Opened squid.conf:
 
 
 This seems to be a configuration file for squid proxy. 
+Looking back and exploring, we see an admin page that looks like this:
+
+![](../../img/Pasted%20image%2020220824091324.png)
+
+It says my backup 'music_archive' is safe. Seems confident.
+
+Checking also on the Downloads page, there is an archive file that needs to download:
+
+![](../../img/Pasted%20image%2020220824091439.png)
+
+Save this and copy the file to your directory
+
+To get Alex's password, we will crack the hash file using the hash and salts located on passwd page:
+
+![](../../img/Pasted%20image%2020220824091602.png)
 
 
 
