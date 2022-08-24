@@ -83,17 +83,29 @@ Save this and copy the file to your directory
 
 To get Alex's password, we will crack the hash file using the hash and salts located on passwd page:
 
+`music_archive:$apr1$BpZ.Q.1m$F0qqPwHSOG50URuOVQTTn.`
+
 ![](../../img/Pasted%20image%2020220824091602.png)
 
+Cracking the hash, we have a password:
 
+![](../../img/Pasted%20image%2020220824091923.png)
 
+Password: squidward
 
-borg password
-squidward
+Looking back at the archive.tar file, we will try to extract these and enumerate further:
 
+`tar -vxf archive.tar`
 
+Exploring the directory extracted, we are stumbled by a README page:
 
-music_archive:$apr1$BpZ.Q.1m$F0qqPwHSOG50URuOVQTTn.
+![](../../img/Pasted%20image%2020220824092108.png)
+
+![](../../img/Pasted%20image%2020220824092124.png)
+
+It says : Borg Backup repository.
+
+Looking at the intern
 
 
 
