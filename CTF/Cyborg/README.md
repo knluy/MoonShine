@@ -1,6 +1,6 @@
 ### CYBORG
 
-export IP=10.10.43.162
+export IP=10.10.49.133
 
 Please deploy the machine so you can get started. Please allow a few minutes to make sure all the services boot up. Good luck!
 
