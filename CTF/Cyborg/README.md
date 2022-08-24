@@ -55,7 +55,22 @@ for /etc, we have checked a folder called squid. Lets explore:
 
 ![](../../img/Pasted%20image%2020220824015732.png)
 
-There are 2 files, passwd and squid.conf. 
+There are 2 files, passwd and squid.conf. Opened passwd and we are greeted by a hash file:
+
+![](../../img/Pasted%20image%2020220824015821.png)
+
+`music_archive:$apr1$BpZ.Q.1m$F0qqPwHSOG50URuOVQTTn.`
+
+Opened squid.conf:
+
+
+![](../../img/Pasted%20image%2020220824015917.png)
+
+This seems to be a configuration file for squid proxy. 
+
+Lets go back and check /admin. However, site is still loading. So we enumerate /admin further using gobuster:
+
+
 
 
 borg password
