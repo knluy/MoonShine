@@ -78,5 +78,18 @@ SETUP:
 ![](../../img/Pasted%20image%2020220825111912.png)
 
 
-3. Once done, we can to go james user and change 
+3. Once done, we can to go james user and change overpass.thm parameters in /etc/hosts:
 
+![](../../img/Pasted%20image%2020220825112034.png)
+
+4. So now, everytime the crontab run jobs every minute, overpass.thm will call on our kali machine box IP (10.13.48.47), and NOT THE LOCALHOST:
+
+5. setup your server and listener. On your default directory, use python3 -m http.server 80 and in another terminal, use netcat as listener:
+
+![](../../img/Pasted%20image%2020220825112322.png)
+6. Lastly, patiently wait for your low hanging fruit to pick and capture the root flag:
+
+![](../../img/Pasted%20image%2020220825112403.png)
+
+Congratulations! You have captured the flag.
+For me this will be my most grittiest and the most grindiest CTF I have ever done, for the steps provided here are new to me and takes a steep lear
