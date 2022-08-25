@@ -1,0 +1,5 @@
+/img                  (Status: 301) [Size: 0] [--> img/]
+/downloads            (Status: 301) [Size: 0] [--> downloads/]
+/aboutus              (Status: 301) [Size: 0] [--> aboutus/]
+/admin                (Status: 301) [Size: 42] [--> /admin/]
+/css                  (Status: 301) [Size: 0] [--> css/]
