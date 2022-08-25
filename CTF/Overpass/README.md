@@ -4,7 +4,6 @@ What happens when a group of broke Computer Science students try to make a passw
 Obviously a perfect commercial success!
 
 
-
 User Flag:
 thm{65c1aaf000506e56996822c6281e6bf7}
 
@@ -46,9 +45,17 @@ This is the part where I struggle the most. For now, once sessionTokens are prov
 
 ![](../../img/Pasted%20image%2020220825110424.png)
 
-Now that we have the RSA pem key, we can crack these using john:
+Now that we have the RSA pem key, we can crack these using john. Convert the RSA pem key first using ssh2john, then crack it away:
 
+![](../../img/Pasted%20image%2020220825110712.png)
+
+Now we have the ssh password, lets go ahead and login to get our first flag:
+
+![](../../img/Pasted%20image%2020220825110829.png)
 
 
 Root Flag:
 thm{7f336f8c359dbac18d54fdd64ea753bb}
+
+To capture the rootflag, since we cannot use sudo -l to check for previleges, we can use LinEnum as tool for enumeration. We can setup an http server on our machine to copy linenum.sh, like so:
+
