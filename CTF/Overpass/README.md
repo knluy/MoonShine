@@ -92,4 +92,9 @@ SETUP:
 ![](../../img/Pasted%20image%2020220825112403.png)
 
 Congratulations! You have captured the flag.
-For me this will be my most grittiest and the most grindiest CTF I have ever done, for the steps provided here are new to me and takes a steep lear
+For me this will be my most grittiest and the most grindiest CTF I have ever done, for the steps provided here are new to me and takes a steep learning curve to get it right. 
+
+I hope this has been informative to you and see you on the next CTF.
+
+
+END
