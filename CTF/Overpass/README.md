@@ -65,4 +65,18 @@ After that, we run linenum to check for attack vectors that can lead us to root:
 
 ![](../../img/Pasted%20image%2020220825111415.png)
 
-Out of the box, we can see under crontabs (jobs that can run on a specific time interval) that there is a curl that calls the website and specifi
+Out of the box, we can see under crontabs (jobs that can run on a specific time interval) that there is a curl that calls the website and specific page every minute. We can exploit this by overriding the /etc/hosts, change the host of the website from localhost to our Kali machine (since we have permissions to write /etc/hosts) and then create a fake path that leads to our buildscript.sh that we will inject a reverse shell payload using bash:
+
+SETUP:
+
+1. in our Kali box, we will setup a fake directory path by performing mkdir downloads/src/ and from there we will copy our buildscript.sh:
+![](../../img/Pasted%20image%2020220825111818.png)
+![](../../img/Pasted%20image%2020220825111835.png)
+
+2. Opening our buildscript.sh file, we have checked that the reverse shell was written in bash. Inject your kalibox IP address as well as the port number of your liking:
+
+![](../../img/Pasted%20image%2020220825111912.png)
+
+
+3. Once done, we can to go james user and change 
+
