@@ -38,7 +38,17 @@ Looks like we can't find any hints on the admin credentials. Hence, we tried to 
 
 ![](../../img/Pasted%20image%2020220825105837.png)
 
-Take a look the login.js. There is an if statement that says, if credentials are wrong, page will echo "incorrect credentials". Else, browser will create a session token. Therefore, we can abuse this by manually creating a sessionToken on the debugger
+Take a look the login.js. There is an if statement that says, if credentials are wrong, page will echo "incorrect credentials". Else, browser will create a session token. Therefore, we can abuse this by manually creating a sessionToken on the cookies's tab:
+
+![](../../img/Pasted%20image%2020220825110036.png)
+
+This is the part where I struggle the most. For now, once sessionTokens are provided and path is set to /, we can reload and see the admin user:
+
+![](../../img/Pasted%20image%2020220825110424.png)
+
+Now that we have the RSA pem key, we can crack these using john:
+
+
 
 Root Flag:
 thm{7f336f8c359dbac18d54fdd64ea753bb}
