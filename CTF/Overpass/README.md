@@ -59,3 +59,10 @@ thm{7f336f8c359dbac18d54fdd64ea753bb}
 
 To capture the rootflag, since we cannot use sudo -l to check for previleges, we can use LinEnum as tool for enumeration. We can setup an http server on our machine to copy linenum.sh, like so:
 
+![](../../img/Pasted%20image%2020220825111137.png)
+
+After that, we run linenum to check for attack vectors that can lead us to root:
+
+![](../../img/Pasted%20image%2020220825111415.png)
+
+Out of the box, we can see under crontabs (jobs that can run on a specific time interval) that there is a curl that calls the website and specifi
