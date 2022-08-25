@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/ZIP unZIP 7z.md",
+            "file": "CTF/LianYu/README.md",
             "mode": "source",
             "source": false
           }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/ZIP unZIP 7z.md",
+                "file": "CTF/LianYu/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/ZIP unZIP 7z.md",
+                "file": "CTF/LianYu/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/ZIP unZIP 7z.md"
+                "file": "CTF/LianYu/README.md"
               }
             }
           }
@@ -131,6 +130,7 @@
   },
   "active": "8288b5bf194d82fb",
   "lastOpenFiles": [
+    "TOOLS/ZIP unZIP 7z.md",
     "CTF/Overpass/README.md",
     "TOOLS/http.server.md",
     "CTF/Cyborg/README.md",
@@ -139,7 +139,6 @@
     "img/Pasted image 20220816011430.png",
     "img/Pasted image 20220816003120.png",
     "img/Pasted image 20220816000716.png",
-    "img/Pasted image 20220816000703.png",
-    "img/Pasted image 20220815233300.png"
+    "img/Pasted image 20220816000703.png"
   ]
 }
