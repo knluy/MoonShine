@@ -22,6 +22,7 @@ Whose name can you find from this directory?
 - bob 
 
 ![](../../img/Pasted%20image%2020220826070002.png)
+
 What directory has basic authentication?
 
 - protected
@@ -30,7 +31,13 @@ What directory has basic authentication?
 
 What is bob's password to the protected part of the website?
 
-- password
+- bubbles
+
+Using hydra, use the syntax `hydra -l bob -P /usr/share/wordlists/rockyou.txt -t 4 10.10.87.93 http-get /protected -V `
+
+![](../../img/Pasted%20image%2020220826070316.png)
+
+![](../../img/Pasted%20image%2020220826070324.png)
 
 What other port that serves a webs service is open on the machine?
 - 1234
@@ -47,6 +54,7 @@ Use Nikto with the credentials you have found and scan the /manager/html directo
 
 How many documentation files did Nikto identify?
 - 5
+![](../../img/Pasted%20image%2020220826070430.png)
 
 What is the server version (run the scan against port 80)?
 
