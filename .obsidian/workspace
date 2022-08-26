@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/Hydra.md",
+            "file": "CTF/ToolsRus/README.md",
             "mode": "source",
             "source": false
           }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/Hydra.md",
+                "file": "CTF/ToolsRus/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/Hydra.md",
+                "file": "CTF/ToolsRus/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/Hydra.md"
+                "file": "CTF/ToolsRus/README.md"
               }
             }
           }
@@ -131,6 +130,7 @@
   },
   "active": "85ee04ce3040df23",
   "lastOpenFiles": [
+    "TOOLS/Hydra.md",
     "CTF/ToolsRus/README.md",
     "CTF/LianYu/README.md",
     "TOOLS/ZIP unZIP 7z.md",
@@ -139,7 +139,6 @@
     "CTF/Cyborg/README.md",
     "CTF/Kenobi/README.md",
     "CTF/LazyAdmin/README.md",
-    "img/Pasted image 20220816011430.png",
-    "img/Pasted image 20220816003120.png"
+    "img/Pasted image 20220816011430.png"
   ]
 }
