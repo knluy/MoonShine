@@ -11,4 +11,6 @@ Credit to berzerk0 for creating this machine. This machine is used here with the
 Deploy the machine. On the top right of this you will see a Deploy button. Click on this to deploy the machine into the cloud. Wait a minute for it to become live.
 
 Using nmap, scan this machine. What ports are open?
-- 
+- 4
+
+![](../../img/Pasted%20image%2020220826073159.png)
