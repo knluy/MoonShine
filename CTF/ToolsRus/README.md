@@ -69,7 +69,13 @@ What version of Apache-Coyote is this service using?
 Use Metasploit to exploit the service and get a shell on the system.
 
 What user did you get a shell as?
+- root
 
-
+![](../../img/Pasted%20image%2020220826070505.png)
 
 What text is in the file /root/flag.txt
+ - ff1fc4a81affcc7688cf89ae7dc6e0e1
+
+![](../../img/Pasted%20image%2020220826070522.png)
+
+END
