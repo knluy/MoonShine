@@ -1,2 +1,3 @@
 /images               (Status: 301) [Size: 313] [--> http://10.10.208.29/images/]
 /assets               (Status: 301) [Size: 313] [--> http://10.10.208.29/assets/]
+/server-status        (Status: 403) [Size: 300]
