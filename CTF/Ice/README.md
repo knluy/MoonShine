@@ -116,5 +116,25 @@ Set this option now. You might have to check your IP on the TryHackMe network us
 
 After we've set this last option, we can now run our privilege escalation exploit. Run this now using the command `run`. Note, this might take a few attempts and you may need to relaunch the box and exploit the service in the case that this fails. 
 
+![](../../img/Pasted%20image%2020220827193547.png)
+
+#### Looting
+
+Prior to further action, we need to move to a process that actually has the permissions that we need to interact with the lsass service, the service responsible for authentication within Windows. First, let's list the processes using the command `ps`. Note, we can see processes being run by NT AUTHORITY\SYSTEM as we have escalated permissions (even though our process doesn't). 
+
+![](../../img/Pasted%20image%2020220827193634.png)
+
+
+In order to interact with lsass we need to be 'living in' a process that is the same architecture as the lsass service (x64 in the case of this machine) and a process that has the same permissions as lsass. The printer spool service happens to meet our needs perfectly for this and it'll restart if we crash it! What's the name of the printer service?
+
+Mentioned within this question is the term 'living in' a process. Often when we take over a running program we ultimately load another shared library into the program (a dll) which includes our malicious code. From this, we can spawn a new thread that hosts our shell. 
+
+![](../../img/Pasted%20image%2020220827193743.png)
+
+Migrate to this process now with the command `migrate -N PROCESS_NAME`
+
+
+
+Let's check what user we are now with the command `getuid`. What user is listed?
 
 
