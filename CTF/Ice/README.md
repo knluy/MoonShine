@@ -63,3 +63,30 @@ Following selecting our module, we now have to check what options we have to set
 
 First let's check that the LHOST option is set to our tun0 IP (which can be found on the access page). With that done, let's set that last option to our target IP. Now that we have everything ready to go, let's run our exploit using the command `exploit`
 
+![](../../img/Pasted%20image%2020220827190045.png)
+
+#### Escalate
+
+Enumerate the machine and find potential privilege escalation paths to gain Admin powers!
+
+
+Woohoo! We've gained a foothold into our victim machine! What's the name of the shell we have now?
+- meterpreter
+
+What user was running that Icecast process? The commands used in this question and the next few are taken directly from the 'RP: Metasploit' room.
+- Dark
+
+
+What build of Windows is the system?
+- 7601
+![](../../img/Pasted%20image%2020220827190156.png)
+
+
+Now that we know some of the finer details of the system we are working with, let's start escalating our privileges. First, what is the architecture of the process we're running?
+- x64
+
+
+Now that we know the architecture of the process, let's perform some further recon. While this doesn't work the best on x64 machines, let's now run the following command `run post/multi/recon/local_exploit_suggester`. *This can appear to hang as it tests exploits and might take several minutes to complete*
+
+
+
