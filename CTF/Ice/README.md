@@ -45,3 +45,21 @@ What is the CVE number for this vulnerability? This will be in the format: CVE-0
 
 Now that we've found our vulnerability, let's find our exploit. For this section of the room, we'll use the Metasploit module associated with this exploit. Let's go ahead and start Metasploit using the command `msfconsole`
 
+![](../../img/Pasted%20image%2020220827185433.png)
+
+
+After Metasploit has started, let's search for our target exploit using the command 'search icecast'. What is the full path (starting with exploit) for the exploitation module? This module is also referenced in 'RP: Metasploit' which is recommended to be completed prior to this room, although not entirely necessary. 
+
+![](../../img/Pasted%20image%2020220827185524.png)
+
+
+Let's go ahead and select this module for use. Type either the command `use icecast` or `use 0` to select our search result.
+
+
+Following selecting our module, we now have to check what options we have to set. Run the command `show options`. What is the only required setting which currently is blank?
+
+![](../../img/Pasted%20image%2020220827185603.png)
+
+
+First let's check that the LHOST option is set to our tun0 IP (which can be found on the access page). With that done, let's set that last option to our target IP. Now that we have everything ready to go, let's run our exploit using the command `exploit`
+
