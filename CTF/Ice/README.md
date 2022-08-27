@@ -199,3 +199,7 @@ Exploit link: https://www.exploit-db.com/exploits/568
 
 To learn more about alternative exploitation methods, check out the sequel to this room Blaster!
 
+
+As you advance in your pentesting skills, you will be faced eventually with exploitation without the usage of Metasploit. Provided above is the link to one of the exploits found on Exploit DB for hijacking Icecast for remote code execution. While not required by the room, it's recommended to attempt exploitation via the provided code or via another similar exploit to further hone your skills.
+
+END
