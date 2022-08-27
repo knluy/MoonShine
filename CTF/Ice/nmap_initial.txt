@@ -1,1 +1,105 @@
 # Nmap 7.92 scan initiated Sat Aug 27 07:55:27 2022 as: nmap -sC -sV -vv -oN nmap_initial.txt 10.10.69.208
+Increasing send delay for 10.10.69.208 from 0 to 5 due to 205 out of 683 dropped probes since last increase.
+Increasing send delay for 10.10.69.208 from 5 to 10 due to 11 out of 18 dropped probes since last increase.
+Increasing send delay for 10.10.69.208 from 10 to 20 due to 16 out of 52 dropped probes since last increase.
+Increasing send delay for 10.10.69.208 from 20 to 40 due to 11 out of 29 dropped probes since last increase.
+Increasing send delay for 10.10.69.208 from 40 to 80 due to 11 out of 22 dropped probes since last increase.
+Increasing send delay for 10.10.69.208 from 80 to 160 due to 11 out of 16 dropped probes since last increase.
+Increasing send delay for 10.10.69.208 from 160 to 320 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 10.10.69.208 from 320 to 640 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for 10.10.69.208 from 640 to 1000 due to 11 out of 12 dropped probes since last increase.
+Nmap scan report for 10.10.69.208
+Host is up, received reset ttl 125 (0.47s latency).
+Scanned at 2022-08-27 07:55:28 EDT for 380s
+Not shown: 988 closed tcp ports (reset)
+PORT      STATE SERVICE            REASON          VERSION
+135/tcp   open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+139/tcp   open  netbios-ssn        syn-ack ttl 125 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       syn-ack ttl 125 Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  ssl/ms-wbt-server? syn-ack ttl 125
+| ssl-cert: Subject: commonName=Dark-PC
+| Issuer: commonName=Dark-PC
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2022-08-26T11:12:21
+| Not valid after:  2023-02-25T11:12:21
+| MD5:   b1d4 9986 2cd3 0e4d 47fd 6208 2706 0445
+| SHA-1: eb72 715d 702c 74c1 af5f 349f 3ddc d852 2db0 6f9c
+| -----BEGIN CERTIFICATE-----
+| MIIC0jCCAbqgAwIBAgIQHBN4tigLspRP2189r3oETDANBgkqhkiG9w0BAQUFADAS
+| MRAwDgYDVQQDEwdEYXJrLVBDMB4XDTIyMDgyNjExMTIyMVoXDTIzMDIyNTExMTIy
+| MVowEjEQMA4GA1UEAxMHRGFyay1QQzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+| AQoCggEBAMdYfwnvfa1pE/bEYWNU60r09+2G0hxxk6jDrfPql/9pHrBkvYfq/zlM
+| 64mwqb6ns/nLNoydNVyE5J69dYS6Zdq2cIOB4dYjn1UV54eUp+2JwMoZgrRaqZz/
+| 1O4WM+k0QQXtLK0zqssTLNt3IcNDMvvU9vaPUE0cms4mZ+oq7AguHadT8/tB0dDg
+| LtE96kuiu+fD58u/+QoFCAJKqFHrAT/jFXb08ZJhZT2gLLdiJMkECRsR6skwae2M
+| MgXRmTiEHcSx2pTonh7vtovYeA2y2xMSTqsj4KxZoDbnxMsrNybpbn/HwoR2eHim
+| SSVj7FHqphFcZc/tpy4O3eHHaOESMf0CAwEAAaMkMCIwEwYDVR0lBAwwCgYIKwYB
+| BQUHAwEwCwYDVR0PBAQDAgQwMA0GCSqGSIb3DQEBBQUAA4IBAQADmjViUwZvEHUr
+| xzJ1F+IzdvR9vhrpnIXnf56ua3oBHU9K5SyRqOBVKmr05P33FItlXFz3DDJjHHN0
+| P3ljMEO0ISY1uyJSPl724KJkxuFZfJ7UwPDfdHQANX+Ev6ug89RYjt/ajuM6qzEr
+| WDC5yxM4HP/ytuFAspHDshox5+55+/j+y4TdthfFNXA2S0DyqhmvuQO5AUNRjh/O
+| cRjrZC+wZkFWJD8YcCHdt/e104SczCpCsaN0aRNJQ5ReFQjPAdL+9kNXWYPOaS8V
+| P6zGWc/EMhIPCNojUjL8xVRw4+qNk3PRUgfsna8dLzK832fnaD6DT/xmQ5+X6ENz
+| 333eTBkB
+|_-----END CERTIFICATE-----
+|_ssl-date: 2022-08-27T12:01:48+00:00; +1s from scanner time.
+5357/tcp  open  http               syn-ack ttl 125 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Service Unavailable
+8000/tcp  open  http               syn-ack ttl 125 Icecast streaming media server
+| http-methods: 
+|_  Supported Methods: GET
+|_http-title: Site doesn't have a title (text/html).
+49152/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49153/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49154/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49158/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49159/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+49160/tcp open  msrpc              syn-ack ttl 125 Microsoft Windows RPC
+Service Info: Host: DARK-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1:professional
+|   Computer name: Dark-PC
+|   NetBIOS computer name: DARK-PC\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2022-08-27T07:01:37-05:00
+| nbstat: NetBIOS name: DARK-PC, NetBIOS user: <unknown>, NetBIOS MAC: 02:79:5b:35:b1:8f (unknown)
+| Names:
+|   DARK-PC<00>          Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   DARK-PC<20>          Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+| Statistics:
+|   02 79 5b 35 b1 8f 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| smb2-time: 
+|   date: 2022-08-27T12:01:37
+|_  start_date: 2022-08-27T11:12:19
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.1: 
+|_    Message signing enabled but not required
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 59180/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 51853/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 34081/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 62173/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_clock-skew: mean: 1h15m01s, deviation: 2h30m01s, median: 0s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Aug 27 08:01:48 2022 -- 1 IP address (1 host up) scanned in 381.09 seconds
