@@ -145,3 +145,57 @@ Now that we've made our way to full administrator permissions we'll set our sigh
 
 ![](../../img/Pasted%20image%2020220827194338.png)
 
+Loading kiwi into our meterpreter session will expand our help menu, take a look at the newly added section of the help menu now via the command `help`. 
+
+![](../../img/Pasted%20image%2020220827194405.png)
+
+
+Which command allows up to retrieve all credentials?
+- creds_all
+
+
+Run this command now. What is Dark's password? Mimikatz allows us to steal this password out of memory even without the user 'Dark' logged in as there is a scheduled task that runs the Icecast as the user 'Dark'. It also helps that Windows Defender isn't running on the box ;) (Take a look again at the ps list, this box isn't in the best shape with both the firewall and defender disabled)
+- Password01!
+
+
+![](../../img/Pasted%20image%2020220827194438.png)
+
+#### Post-Exploitation
+
+Explore post-exploitation actions we can take on Windows.
+
+
+Before we start our post-exploitation, let's revisit the help menu one last time in the meterpreter shell. We'll answer the following questions using that menu.
+
+
+What command allows us to dump all of the password hashes stored on the system? We won't crack the Administrative password in this case as it's pretty strong (this is intentional to avoid password spraying attempts)
+- hashdump
+
+
+While more useful when interacting with a machine being used, what command allows us to watch the remote user's desktop in real time?
+- screenshare
+
+
+How about if we wanted to record from a microphone attached to the system?
+- record_mic
+
+
+To complicate forensics efforts we can modify timestamps of files on the system. What command allows us to do this? Don't ever do this on a pentest unless you're explicitly allowed to do so! This is not beneficial to the defending team as they try to breakdown the events of the pentest after the fact.
+- timestomp
+
+Mimikatz allows us to create what's called a `golden ticket`, allowing us to authenticate anywhere with ease. What command allows us to do this?
+
+Golden ticket attacks are a function within Mimikatz which abuses a component to Kerberos (the authentication system in Windows domains), the ticket-granting ticket. In short, golden ticket attacks allow us to maintain persistence and authenticate as any user on the domain.
+- golden_ticket_create
+
+
+One last thing to note. As we have the password for the user 'Dark' we can now authenticate to the machine and access it via remote desktop (MSRDP). As this is a workstation, we'd likely kick whatever user is signed onto it off if we connect to it, however, it's always interesting to remote into machines and view them as their users do. If this hasn't already been enabled, we can enable it via the following Metasploit module: `run post/windows/manage/enable_rdp`
+
+
+#### Extra Credit
+
+Explore manual exploitation via exploit code found on exploit-db. 
+Exploit link: https://www.exploit-db.com/exploits/568
+
+To learn more about alternative exploitation methods, check out the sequel to this room Blaster!
+
