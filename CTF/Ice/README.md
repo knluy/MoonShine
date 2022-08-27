@@ -36,6 +36,12 @@ Exploit the target vulnerable service to gain a foothold!
 
 
 Now that we've identified some interesting services running on our target machine, let's do a little bit of research into one of the weirder services identified: Icecast. Icecast, or well at least this version running on our target, is heavily flawed and has a high level vulnerability with a score of 7.5 (7.4 depending on where you view it). What type of vulnerability is it? Use https://www.cvedetails.com for this question and the next.
+- Execute CodeOverflow
 
+What is the CVE number for this vulnerability? This will be in the format: CVE-0000-0000
+- CVE-2004-1561
 
+![](../../img/Pasted%20image%2020220827185010.png)
+
+Now that we've found our vulnerability, let's find our exploit. For this section of the room, we'll use the Metasploit module associated with this exploit. Let's go ahead and start Metasploit using the command `msfconsole`
 

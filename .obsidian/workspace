@@ -130,6 +130,8 @@
   },
   "active": "85ee04ce3040df23",
   "lastOpenFiles": [
+    "CTF/Ice/RhsuvtUM.jpeg",
+    "CTF/Ice/README.md",
     "README.md",
     "TOOLS/Bash_scripting/README.md",
     "TOOLS/bash.md",
@@ -137,8 +139,6 @@
     "TOOLS/updog.md",
     "CTF/Fowsniff/README.md",
     "CTF/ToolsRus/README.md",
-    "TOOLS/Hydra.md",
-    "CTF/LianYu/README.md",
-    "TOOLS/ZIP unZIP 7z.md"
+    "TOOLS/Hydra.md"
   ]
 }
