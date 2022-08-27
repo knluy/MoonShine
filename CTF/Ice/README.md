@@ -133,8 +133,15 @@ Mentioned within this question is the term 'living in' a process. Often when we 
 
 Migrate to this process now with the command `migrate -N PROCESS_NAME`
 
-
+![](../../img/Pasted%20image%2020220827194054.png)
 
 Let's check what user we are now with the command `getuid`. What user is listed?
+- NT AUTHORITY\SYSTEM
 
+![](../../img/Pasted%20image%2020220827194126.png)
+
+
+Now that we've made our way to full administrator permissions we'll set our sights on looting. Mimikatz is a rather infamous password dumping tool that is incredibly useful. Load it now using the command `load kiwi` (Kiwi is the updated version of Mimikatz)
+
+![](../../img/Pasted%20image%2020220827194338.png)
 
