@@ -15,13 +15,27 @@ Launch a scan against our target machine, I recommend using a SYN scan set to sc
 
 
 Once the scan completes, we'll see a number of interesting ports open on this machine. As you might have guessed, the firewall has been disabled (with the service completely shutdown), leaving very little to protect this machine. One of the more interesting ports that is open is Microsoft Remote Desktop (MSRDP). What port is this open on?
-- 
+- 3389
+
+![](../../img/Pasted%20image%2020220827082349.png)
 
 What service did nmap identify as running on port 8000? (First word of this service)
+- icecast
 
-
+![](../../img/Pasted%20image%2020220827082402.png)
 
 What does Nmap identify as the hostname of the machine? (All caps for the answer)
+- DARK-PC
+
+![](../../img/Pasted%20image%2020220827082429.png)
+
+
+#### Gain Access
+
+Exploit the target vulnerable service to gain a foothold!
+
+
+Now that we've identified some interesting services running on our target machine, let's do a little bit of research into one of the weirder services identified: Icecast. Icecast, or well at least this version running on our target, is heavily flawed and has a high level vulnerability with a score of 7.5 (7.4 depending on where you view it). What type of vulnerability is it? Use https://www.cvedetails.com for this question and the next.
 
 
 
