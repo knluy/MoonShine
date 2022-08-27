@@ -1,1 +1,1 @@
-# Nmap 7.92 scan initiated Sat Aug 27 07:45:52 2022 as: nmap -p- -sC -sV -vv -oN nmap_initial.txt 10.10.69.208
+# Nmap 7.92 scan initiated Sat Aug 27 07:55:27 2022 as: nmap -sC -sV -vv -oN nmap_initial.txt 10.10.69.208
