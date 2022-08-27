@@ -1,5 +1,7 @@
 ### Ice
 
+export IP=10.10.69.208
+
 
 Scan and enumerate our victim!
 
@@ -13,7 +15,7 @@ Launch a scan against our target machine, I recommend using a SYN scan set to sc
 
 
 Once the scan completes, we'll see a number of interesting ports open on this machine. As you might have guessed, the firewall has been disabled (with the service completely shutdown), leaving very little to protect this machine. One of the more interesting ports that is open is Microsoft Remote Desktop (MSRDP). What port is this open on?
-
+- 
 
 What service did nmap identify as running on port 8000? (First word of this service)
 
