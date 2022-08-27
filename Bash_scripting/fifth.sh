@@ -1,13 +1,13 @@
 #!/bin/bash
 
-guess=" "
-value=10
+guess=$1
+value="guessme"
 
 echo "try to guess me: "
 
 read guess  
 
-if [ "$guess" = "$value" ]
+if [ "$guess" =  "$value" ]
 	then
 		echo "guess is true"
 
