@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/vim.md",
+            "file": "Bash_scripting/README.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/vim.md",
+                "file": "Bash_scripting/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/vim.md",
+                "file": "Bash_scripting/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/vim.md"
+                "file": "Bash_scripting/README.md"
               }
             }
           }
@@ -130,6 +130,8 @@
   },
   "active": "85ee04ce3040df23",
   "lastOpenFiles": [
+    "TOOLS/bash.md",
+    "TOOLS/vim.md",
     "TOOLS/updog.md",
     "CTF/Fowsniff/README.md",
     "CTF/ToolsRus/README.md",
@@ -137,8 +139,6 @@
     "CTF/LianYu/README.md",
     "TOOLS/ZIP unZIP 7z.md",
     "CTF/Overpass/README.md",
-    "TOOLS/http.server.md",
-    "CTF/Cyborg/README.md",
-    "CTF/Kenobi/README.md"
+    "TOOLS/http.server.md"
   ]
 }
