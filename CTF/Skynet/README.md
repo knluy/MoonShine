@@ -5,6 +5,8 @@ export IP=10.10.68.81
 #### Deploy and compromise the vulnerable machine!
 
 What is Miles password for his emails?
+- cyborg007haloterminator
+
 
 nmap scan:
 
@@ -38,6 +40,10 @@ Opening up log1.txt:
 ![](../../img/Pasted%20image%2020220827203447.png)
 
 Other logs provide no details.
+
+Since we have a possible wordlist of passwords to be used on user milesdyson, we can either use hydra or burpsuite to bruteforce login and provide us the correct password. I use hydra for this challenge:
+
+![](../../img/Pasted%20image%2020220827203818.png)
 
 
 
