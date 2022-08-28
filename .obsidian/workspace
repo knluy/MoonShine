@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "CVE-2021-3156",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -128,7 +129,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "85ee04ce3040df23",
+  "active": "2b916fb6587fafca",
   "lastOpenFiles": [
     "CTF/Skynet/README.md",
     "TOOLS/reverse_shell payloads.md",
