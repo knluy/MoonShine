@@ -93,6 +93,7 @@ Now, we need to escalate our privileges.
 
 Find a form to escalate your privileges.
 What is the root's password?
+- football
 
 First, we peform sudo -l for any allowed permissions:
 
@@ -100,7 +101,20 @@ First, we peform sudo -l for any allowed permissions:
 
 As we can see, /bin/cat can be run in sudo. Tried to check for GTFObins for cat escalations, but i was wrong. Cat is so powerful it can open even /etc/shadow! 
 
+![](../../img/Pasted%20image%2020220828055635.png)
 
+Once we have the root hash, we can crack this using hashcat:
+
+![](../../img/Pasted%20image%2020220828055708.png)
+
+We can now login as root: su root
+
+![](../../img/Pasted%20image%2020220828055743.png)
+
+root.txt
+- THM{pr1v1l3g3_3sc4l4t10n}
+
+END
 
 
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.166.204 http-post-form "/admin/index.php:user=^USER^&pass=^PASS^:F=incorrect" -V         
