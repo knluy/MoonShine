@@ -61,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5
+    "width": 289.5
   },
   "right": {
     "id": "06060d80d9d7918b",
@@ -130,6 +130,8 @@
   },
   "active": "85ee04ce3040df23",
   "lastOpenFiles": [
+    "TOOLS/Privilege Escalation Tools.md",
+    "CTF/Brooklyn_99/README.md",
     "CTF/Gaming_server/README.md",
     "CTF/Skynet/README.md",
     "TOOLS/reverse_shell payloads.md",
@@ -137,8 +139,6 @@
     "CTF/Fowsniff/README.md",
     "TOOLS/Hydra.md",
     "TOOLS/SMBClient.md",
-    "TOOLS/smbmap.md",
-    "CTF/Ice/README.md",
-    "CTF/Ice/RhsuvtUM.jpeg"
+    "TOOLS/smbmap.md"
   ]
 }

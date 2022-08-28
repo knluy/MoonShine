@@ -12,4 +12,11 @@ User flag
 
 Root flag
 
+nmap scan:
+
+![](../../img/Pasted%20image%2020220828040401.png)
+
+ports open - 21 (ftp), 22 (ssh), and 80 (http)
+
+
 
