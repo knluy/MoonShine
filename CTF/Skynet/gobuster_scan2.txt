@@ -8,3 +8,4 @@
 /class                (Status: 403) [Size: 276]
 /functions            (Status: 403) [Size: 276]
 /po                   (Status: 403) [Size: 276]
+/locale               (Status: 403) [Size: 276]

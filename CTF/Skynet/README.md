@@ -45,6 +45,35 @@ Since we have a possible wordlist of passwords to be used on user milesdyson, we
 
 ![](../../img/Pasted%20image%2020220827203818.png)
 
+After logging in the credentials on the /squirrelmail page, we are now inside miles's inbox:
+
+![](../../img/Pasted%20image%2020220827204045.png)
+
+We can check for email called 'Samba Password reset'
+
+![](../../img/Pasted%20image%2020220827204115.png)
+
+Message:
+
+```
+We have changed your smb password after system malfunction.
+Password: )s{A&2Z=F^n_E.B`
+```
+
+Using these credentials, we can now login to miles' smb share:
+
+![](../../img/Pasted%20image%2020220827204226.png)
+
+We have noticed the /notes folder:
+
+![](../../img/Pasted%20image%2020220827204438.png)
+
+looking inside notes directory, 
+
+
+What is the hidden directory?
+- /45kra24zxs28v3yd
+
 
 
 
