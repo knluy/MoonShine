@@ -68,11 +68,22 @@ We have noticed the /notes folder:
 
 ![](../../img/Pasted%20image%2020220827204438.png)
 
-looking inside notes directory, 
+looking inside notes directory, all files have .md pdf files except important.txt:
+
+![](../../img/Pasted%20image%2020220827204520.png)
+
+These are the details of important.txt:
+
+![](../../img/Pasted%20image%2020220827204601.png)
 
 
 What is the hidden directory?
 - /45kra24zxs28v3yd
+
+We visit the page and we are greeted by a picture:
+
+![](../../img/Pasted%20image%2020220827204644.png)
+
 
 
 
