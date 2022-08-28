@@ -24,8 +24,36 @@ Visiting the webpage, we are greeted on the homepage:
 
 Performing gobuster scan reveals that there are secret pages inside:
 
+![](../../img/Pasted%20image%2020220828013219.png)
+
 dict.list
 
 ![](../../img/Pasted%20image%2020220828012737.png)
+
+secretKey
+
+![](../../img/Pasted%20image%2020220828012748.png)
+
+Uploads
+
+![](../../img/Pasted%20image%2020220828012819.png)
+
+manifesto:
+
+![](../../img/Pasted%20image%2020220828012837.png)
+
+So we have the rsa key, we will try to crack the hash using john the ripper:
+
+
+![](../../img/Pasted%20image%2020220828012926.png)
+
+
+Now that we have the password, what is the username?
+
+Inspecting the page using F12 reveals a username: john
+
+![](../../img/Pasted%20image%2020220828013014.png)
+
+We can now login using ssh and the id_rsa key. 
 
 
