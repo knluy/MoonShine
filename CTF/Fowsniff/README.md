@@ -14,3 +14,16 @@ Using nmap, scan this machine. What ports are open?
 - 4
 
 ![](../../img/Pasted%20image%2020220826073159.png)
+
+Being stuck here for ideas, i tried to perform enumeration again on the secret page using gobuster, and it revealed /administrator page
+
+![](../../img/Pasted%20image%2020220827205818.png)
+
+We checked the /administrator page :
+
+![](../../img/Pasted%20image%2020220827205853.png)
+
+Not sure what this does, we checked the 'cuppa' using searchsploit:
+
+![](../../img/Pasted%20image%2020220827205927.png)
+
