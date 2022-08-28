@@ -66,6 +66,43 @@ Once we have the password, we can now login to the admin panel:
 ![](../../img/Pasted%20image%2020220828055116.png)
 
 
+![](../../img/Pasted%20image%2020220828055134.png)
+
+Crack the RSA key you found.
+What is John's RSA Private Key passphrase?
+ ![](../../img/Pasted%20image%2020220828055210.png)
+We can copy the rsa keys and create a new file called id_rsa. use chmod 600 to elevate privileges, brute force using john, and login to ssh:
+
+![](../../img/Pasted%20image%2020220828055404.png)
+
+Crack the RSA key you found.
+What is John's RSA Private Key passphrase?
+- rockinroll
+
+![](../../img/Pasted%20image%2020220828055331.png)
+
+user.txt
+- THM{a_password_is_not_a_barrier}
+
+Webshell
+-   THM{brut3_f0rce_is_e4sy}
+
+#### Privilege Escalation
+
+Now, we need to escalate our privileges.
+
+Find a form to escalate your privileges.
+What is the root's password?
+
+First, we peform sudo -l for any allowed permissions:
+
+![](../../img/Pasted%20image%2020220828055526.png)
+
+As we can see, /bin/cat can be run in sudo. Tried to check for GTFObins for cat escalations, but i was wrong. Cat is so powerful it can open even /etc/shadow! 
+
+
+
+
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.166.204 http-post-form "/admin/index.php:user=^USER^&pass=^PASS^:F=incorrect" -V         
 
 hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.166.204 http-post-form “/admin/index.php:user=^USER^&pass=^PASS^:F=Username or password invalid” -V
