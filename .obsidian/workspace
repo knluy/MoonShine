@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/ToolsRus/README.md",
+            "file": "CTF/Brute it/README.md",
             "mode": "source",
             "source": false
           }
@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/ToolsRus/README.md",
+                "file": "CTF/Brute it/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/ToolsRus/README.md",
+                "file": "CTF/Brute it/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/ToolsRus/README.md"
+                "file": "CTF/Brute it/README.md"
               }
             }
           }
@@ -131,6 +130,7 @@
   },
   "active": "85ee04ce3040df23",
   "lastOpenFiles": [
+    "CTF/ToolsRus/README.md",
     "TOOLS/Hydra.md",
     "CTF/Brute it/README.md",
     "CTF/Brooklyn_99/README.md",
@@ -139,7 +139,6 @@
     "TOOLS/steganography.md",
     "TOOLS/Privilege Escalation Tools.md",
     "CTF/Gaming_server/README.md",
-    "CTF/Skynet/README.md",
-    "TOOLS/reverse_shell payloads.md"
+    "CTF/Skynet/README.md"
   ]
 }
