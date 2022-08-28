@@ -28,7 +28,36 @@ Once note_to_jake.txt was transferred to our local machine, we check its content
 
 ![](../../img/Pasted%20image%2020220828042518.png)
 
-From there we can check that usernames are amy, jake and holt. We wil focus on Jake first:
+From there we can check that usernames are amy, jake and holt. We wil focus on Jake first.
+
+Since usernames are already provided, and there is a hint that his password is weak, we can use hydra to brute force jake's password and login to ssh:
+
+![](../../img/Pasted%20image%2020220828042649.png)
+
+![](../../img/Pasted%20image%2020220828042701.png)
+
+Jake is logged in, but user.txt is nowhere to be found. Lets check thoroughly:
+
+![](../../img/Pasted%20image%2020220828042806.png)
+
+As you can see, holt has the user.txt file and thus we capture the user flag.
+
+Looking at sudo -l for privilege escalation, we can see that user jake has sudo privileges for /usr/bin/less:
+
+![](../../img/Pasted%20image%2020220828042904.png)
+
+We can abuse this and obtain root shell by using an arbitrary file (in our case, /etc/profile, as per GTFObins)
+
+![](../../img/Pasted%20image%2020220828043011.png)
+
+We can perform the following:
+
+`sudo /usr/bin/less /etc/pr`
+
+![](../../img/Pasted%20image%2020220828043042.png)
+
+
+
 
 
 
