@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/Skynet/README.md",
+            "file": "TOOLS/SMBClient.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Skynet/README.md",
+                "file": "TOOLS/SMBClient.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/Skynet/README.md",
+                "file": "TOOLS/SMBClient.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/Skynet/README.md"
+                "file": "TOOLS/SMBClient.md"
               }
             }
           }
@@ -130,6 +130,8 @@
   },
   "active": "85ee04ce3040df23",
   "lastOpenFiles": [
+    "TOOLS/smbmap.md",
+    "CTF/Skynet/README.md",
     "CTF/Ice/README.md",
     "CTF/Ice/RhsuvtUM.jpeg",
     "README.md",
@@ -137,8 +139,6 @@
     "TOOLS/bash.md",
     "TOOLS/vim.md",
     "TOOLS/updog.md",
-    "CTF/Fowsniff/README.md",
-    "CTF/ToolsRus/README.md",
-    "TOOLS/Hydra.md"
+    "CTF/Fowsniff/README.md"
   ]
 }

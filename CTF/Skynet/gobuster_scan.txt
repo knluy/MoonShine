@@ -3,3 +3,4 @@
 /js                   (Status: 301) [Size: 307] [--> http://10.10.68.81/js/]
 /config               (Status: 301) [Size: 311] [--> http://10.10.68.81/config/]
 /ai                   (Status: 301) [Size: 307] [--> http://10.10.68.81/ai/]
+/squirrelmail         (Status: 301) [Size: 317] [--> http://10.10.68.81/squirrelmail/]

@@ -30,3 +30,6 @@ Followed by the tags:
 
 -p [port] : to specify the port
 
+Sample:
+`smbclient -U milesdyson \\\\10.10.162.178\\milesdyson`
+
