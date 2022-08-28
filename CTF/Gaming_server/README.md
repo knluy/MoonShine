@@ -14,3 +14,18 @@ What is the root flag?
 
 nmap scan:
 
+![](../../img/Pasted%20image%2020220828012352.png)
+
+Per checking, we only have 2 ports, ssh and http
+
+Visiting the webpage, we are greeted on the homepage:
+
+![](../../img/Pasted%20image%2020220828012437.png)
+
+Performing gobuster scan reveals that there are secret pages inside:
+
+dict.list
+
+![](../../img/Pasted%20image%2020220828012737.png)
+
+
