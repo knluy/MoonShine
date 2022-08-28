@@ -18,16 +18,16 @@ Before attacking, let's get information about the target
 
 Search for open ports using nmap.
 How many ports are open?
-
+- 2
 
 What version of SSH is running?
-
+- OpenSSH 7.6p1
 
 What version of Apache is running?
-
+- 2.4.29
 
 Which Linux distribution is running?
-
+- Ubuntu
 
 Search for hidden directories on web server.
 What is the hidden directory?
