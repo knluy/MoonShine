@@ -149,6 +149,21 @@ Then performed search for user.txt using find:
 User flag:
 7ce5c2109a40f958099283600a9ae807
 
+For the privilege escalation, we performed sudo -l , transfer linenum, but to no luck. Instead, we checked /etc/crontabs and we found the following:
+
+![](../../img/Pasted%20image%2020220827224758.png)
+
+We opened the backup.sh and it says that we cd to var/ww/html and backup all the contents there every minute:
+
+![](../../img/Pasted%20image%2020220827224846.png)
+
+This is where i got stuck and searched for help. Here is the syntax for obtaining root:
+
+![](../../img/Pasted%20image%2020220827224955.png)
+
+Link: https://medium.com/azkrath/tryhackme-walkthrough-skynet-69399702ee5a
+
+
 
 
 
