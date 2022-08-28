@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "linuxprivsec/README.md",
+            "file": "CTF/Kenobi/README.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linuxprivsec/README.md",
+                "file": "CTF/Kenobi/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linuxprivsec/README.md",
+                "file": "CTF/Kenobi/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linuxprivsec/README.md"
+                "file": "CTF/Kenobi/README.md"
               }
             }
           }
@@ -131,6 +131,7 @@
   },
   "active": "85ee04ce3040df23",
   "lastOpenFiles": [
+    "linuxprivsec/README.md",
     "TOOLS/steganography.md",
     "CTF/Brooklyn_99/README.md",
     "TOOLS/Privilege Escalation Tools.md",
@@ -139,7 +140,6 @@
     "TOOLS/reverse_shell payloads.md",
     "TOOLS/Reverse_shell.md",
     "CTF/Fowsniff/README.md",
-    "TOOLS/Hydra.md",
-    "TOOLS/SMBClient.md"
+    "TOOLS/Hydra.md"
   ]
 }
