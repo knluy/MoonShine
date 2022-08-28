@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/Brute it/README.md",
+            "file": "TOOLS/Hydra.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "strings",
+                "query": "hydra",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Brute it/README.md",
+                "file": "TOOLS/Hydra.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/Brute it/README.md",
+                "file": "TOOLS/Hydra.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/Brute it/README.md"
+                "file": "TOOLS/Hydra.md"
               }
             }
           }
@@ -130,6 +131,7 @@
   },
   "active": "85ee04ce3040df23",
   "lastOpenFiles": [
+    "CTF/Brute it/README.md",
     "CTF/Brooklyn_99/README.md",
     "CTF/Kenobi/README.md",
     "linuxprivsec/README.md",
@@ -138,7 +140,6 @@
     "CTF/Gaming_server/README.md",
     "CTF/Skynet/README.md",
     "TOOLS/reverse_shell payloads.md",
-    "TOOLS/Reverse_shell.md",
-    "CTF/Fowsniff/README.md"
+    "TOOLS/Reverse_shell.md"
   ]
 }

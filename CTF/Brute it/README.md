@@ -29,5 +29,14 @@ What version of Apache is running?
 Which Linux distribution is running?
 - Ubuntu
 
+![](../../img/Pasted%20image%2020220828045234.png)
+
+
+
 Search for hidden directories on web server.
 What is the hidden directory?
+- /admin
+
+![](../../img/Pasted%20image%2020220828045211.png)
+
+
