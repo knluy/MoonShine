@@ -6,10 +6,10 @@ Can you gain access to this gaming server built by amateurs with no experience o
 
 
 What is the user flag?
-
+- a5c2ff8b9c2e3d4fe9d4ff2f1a5a6e7e
 
 What is the root flag?
-
+- 2e337b8c9f3aff0c2b3e8d4e6a7c88fc
 
 
 nmap scan:
@@ -60,6 +60,12 @@ Password for id_rsa: letmein
 
 ![](../../img/Pasted%20image%2020220828013258.png)
 
+
+User flag:
+
+![](../../img/Pasted%20image%2020220828013859.png)
+
+#### Privilege Escalation
 Upon checking, we cannot perform sudo -l as well as no crontab jobs and writable /etc/shadow, we can perform linenum, like so:
 
 ![](../../img/Pasted%20image%2020220828013401.png)
@@ -95,4 +101,9 @@ lxc exec ignite /bin/sh
 
 ```
 
-Once done, go to /mnt/root and capture the flag
+Once done, go to /mnt/root and capture the flag!
+
+![](../../img/Pasted%20image%2020220828013759.png)
+
+
+END
