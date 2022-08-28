@@ -1,0 +1,2 @@
+/uploads              (Status: 301) [Size: 310] [--> http://10.10.3.50/uploads/]
+/secret               (Status: 301) [Size: 309] [--> http://10.10.3.50/secret/]
