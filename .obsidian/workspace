@@ -7,12 +7,8 @@
         "id": "85ee04ce3040df23",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "xss.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "xss.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "xss.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "xss.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -128,7 +120,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "85ee04ce3040df23",
+  "active": "e883b8bc4934a695",
   "lastOpenFiles": [
     "CTF/RootMe/README.md",
     "CTF/Skynet/README.md",
