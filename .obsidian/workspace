@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "TOOLS/Passive Reconaissance Tools.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "TOOLS/Passive Reconaissance Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "TOOLS/Passive Reconaissance Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "TOOLS/Passive Reconaissance Tools.md"
               }
             }
           }
@@ -128,8 +128,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "85ee04ce3040df23",
+  "active": "e883b8bc4934a695",
   "lastOpenFiles": [
+    "README.md",
     "CTF/RootMe/README.md",
     "CTF/Skynet/README.md",
     "CTF/ToolsRus/README.md",
@@ -138,7 +139,6 @@
     "CTF/Brute it/README.md",
     "TOOLS/Hydra.md",
     "CTF/Brooklyn_99/README.md",
-    "CTF/Kenobi/README.md",
-    "linuxprivsec/README.md"
+    "CTF/Kenobi/README.md"
   ]
 }
