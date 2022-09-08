@@ -32,4 +32,8 @@ use:
 
 -PE - to discover live hosts
 
+	-PP - uses ICMP Timestamp
+
+-PM - uses ICMP Mask
+
 
