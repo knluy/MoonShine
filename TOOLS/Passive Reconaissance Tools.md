@@ -10,10 +10,13 @@ whois
 nslookup
 -   `nslookup` to query DNS servers
 
+![](../img/Pasted%20image%2020220908080920.png)
+
 
 dig
 -   `dig` to query DNS servers
 
+![](../img/Pasted%20image%2020220908080938.png)
 
 We will also learn the usage of two online services:
 
