@@ -21,4 +21,10 @@ dig
 We will also learn the usage of two online services:
 
 -   DNSDumpster
+
+![](../img/Pasted%20image%2020220908090129.png)
+
+![](../img/Pasted%20image%2020220908090143.png)
+
+![](../img/Pasted%20image%2020220908090156.png)
 -   Shodan.io
