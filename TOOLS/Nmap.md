@@ -21,3 +21,15 @@ nmap -sC -sV -oN nmap_results.txt <IP>
 
 `nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.150.254`
 
+Note:
+
+nmap scans all subnet first to check live hosts, then proceed with port scanning of every live hosts.
+
+use:
+-sn - to avoid port scanning
+
+-PR - to perform ARP query
+
+-PE - to discover live hosts
+
+
