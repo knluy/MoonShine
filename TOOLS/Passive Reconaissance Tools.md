@@ -28,3 +28,5 @@ We will also learn the usage of two online services:
 
 ![](../img/Pasted%20image%2020220908090156.png)
 -   Shodan.io
+
+![](../img/Pasted%20image%2020220908095516.png)
