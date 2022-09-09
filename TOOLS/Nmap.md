@@ -6,16 +6,17 @@
 nmap -sC -sV -oN nmap_results.txt <IP>
 ```
 
-```
--sV Attempts to determine the version of the services running
--p <x> or -p- Port scan for port <x> or scan all ports
--Pn Disable host discovery and just scan for open ports
--A Enables OS and version detection, executes in-build scripts for further enumeration 
--sC Scan with the default nmap scripts
--v Verbose mode
--sU UDP port scan
--sS TCP SYN port scan
-```
+Option | Purpose
+-|-
+-sV |Attempts to determine the version of the services running
+-p &lt;x&gt; or -p- | Port scan for port &lt;x&gt; or scan all ports
+-Pn | Disable host discovery and just scan for open ports
+-A |  Enables OS and version detection, executes in-build scripts for further enumeration 
+-sC | Scan with the default nmap scripts
+-v | Verbose mode
+-sU | UDP port scan
+-sS | TCP SYN port scan
+
 
 #### NMAP SAMBA
 
@@ -24,8 +25,6 @@ nmap -sC -sV -oN nmap_results.txt <IP>
 Note:
 
 nmap scans all subnet first to check live hosts, then proceed with port scanning of every live hosts.
-
-
 
 ### Advanced Flags
 
@@ -68,7 +67,31 @@ Option | Purpose
 `-T<0-5>` | -T0 being the slowest and T5 the fastest
 `--max-rate 50` | rate <= 50 packets/sec
 `--min-rate 15` | rate >= 15 packets/sec
+`--min-parallelism 100` | at least 100 probes in parallel
 
-`--min-parallelism 100`
 
-at least 100 probes in parallel
+Port Scan Type | Example Command
+-|-
+TCP Null Scan | `sudo nmap -sN 10.10.141.133`
+TCP FIN Scan | `sudo nmap -sF 10.10.141.133`
+TCP Xmas Scan | `sudo nmap -sX 10.10.141.133`
+TCP Maimon Scan | `sudo nmap -sM 10.10.141.133`
+TCP ACK Scan | `sudo nmap -sA 10.10.141.133`
+TCP Window Scan | `sudo nmap -sW 10.10.141.133`
+Custom TCP Scan | `sudo nmap --scanflags URGACKPSHRSTSYNFIN 10.10.141.133`
+Spoofed Source IP | `sudo nmap -S SPOOFED_IP 10.10.141.133`
+Spoofed MAC Address | `--spoof-mac SPOOFED_MAC`
+Decoy Scan | `nmap -D DECOY_IP,ME 10.10.141.133`
+Idle (Zombie) Scan | `sudo nmap -sI ZOMBIE_IP 10.10.141.133`
+Fragment IP data into 8 bytes | `-f`
+Fragment IP data into 16 bytes | `-ff`
+
+
+Option | Purpose
+-|-
+`--source-port PORT_NUM`  | specify source port number
+`--data-length NUM` | append random data to reach given length
+
+These scan types rely on setting TCP flags in unexpected ways to prompt ports for a reply. Null, FIN, and Xmas scan provoke a response from closed ports, while Maimon, ACK, and Window scans provoke a response from open and closed ports.
+
+
