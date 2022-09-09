@@ -29,7 +29,7 @@ nmap scans all subnet first to check live hosts, then proceed with port scanning
 ### Advanced Flags
 
 Scan Type | Example Command
-	- | -
+	-|-
 	ARP Scan | `sudo nmap -PR -sn MACHINE_IP/24`
 	ICMP Echo Scan | `sudo nmap -PE -sn MACHINE_IP/24`
 	ICMP Timestamp Scan | `sudo nmap -PP -sn MACHINE_IP/24`
@@ -38,7 +38,6 @@ Scan Type | Example Command
 	TCP ACK Ping Scan | `sudo nmap -PA22,80,443 -sn MACHINE_IP/30`
 	UDP Ping Scan | `sudo nmap -PU53,161,162 -sn MACHINE_IP/30`
 	 
-
 Remember to add `-sn` if you are only interested in host discovery without port-scanning. Omitting `-sn` will let Nmap default to port-scanning the live hosts.
 
 Option | Purpose
