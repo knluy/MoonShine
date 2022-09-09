@@ -8,14 +8,14 @@ nmap -sC -sV -oN nmap_results.txt <IP>
 
 Option | Purpose
 -|-
--sV |Attempts to determine the version of the services running
+`-sV `|Attempts to determine the version of the services running
 -p &lt;x&gt; or -p- | Port scan for port &lt;x&gt; or scan all ports
--Pn | Disable host discovery and just scan for open ports
--A |  Enables OS and version detection, executes in-build scripts for further enumeration 
--sC | Scan with the default nmap scripts
--v | Verbose mode
--sU | UDP port scan
--sS | TCP SYN port scan
+`-Pn` | Disable host discovery and just scan for open ports
+`-A `|  Enables OS and version detection, executes in-build scripts for further enumeration 
+`-sC` | Scan with the default nmap scripts
+`-v `| Verbose mode
+`-sU` | UDP port scan
+`-sS` | TCP SYN port scan
 
 
 #### NMAP SAMBA
@@ -95,3 +95,10 @@ Option | Purpose
 These scan types rely on setting TCP flags in unexpected ways to prompt ports for a reply. Null, FIN, and Xmas scan provoke a response from closed ports, while Maimon, ACK, and Window scans provoke a response from open and closed ports.
 
 
+Option | Purpose
+-|-
+`--reason` | explains how Nmap made its conclusion
+`-v` | verbose
+`-vv` | very verbose
+`-d` | debugging
+`-dd` | more details for debugging
