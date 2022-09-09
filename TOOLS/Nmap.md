@@ -30,18 +30,19 @@ nmap scans all subnet first to check live hosts, then proceed with port scanning
 ### Advanced Flags
 
 Scan Type | Example Command
+	- | -
+	 ARP Scan | `sudo nmap -PR -sn MACHINE_IP/24`
+	 ICMP Echo Scan | `sudo nmap -PE -sn MACHINE_IP/24`
+	 ICMP Timestamp Scan | `sudo nmap -PP -sn MACHINE_IP/24`
+	 
 
-ARP Scan
 
-`sudo nmap -PR -sn MACHINE_IP/24`
 
-ICMP Echo Scan
 
-`sudo nmap -PE -sn MACHINE_IP/24`
 
-ICMP Timestamp Scan
 
-`sudo nmap -PP -sn MACHINE_IP/24`
+
+
 
 ICMP Address Mask Scan
 
