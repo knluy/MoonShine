@@ -19,3 +19,25 @@ To copy a file from a local to a remote system run the following command:
 scp file_from_local file_to_remote
 
 
+#### Transferring Files From Your Host - SCP (SSH)
+
+`scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt`
+
+Variable | Value
+-|-
+The IP address of the remote system | 192.168.1.30
+User on the remote system | ubuntu
+Name of the file on the local system | important.txt
+Name that we wish to store the file as on the remote system | transferred.txt
+
+
+#### Reverse
+
+`scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt`
+
+Variable | Value
+-|-
+IP address of the remote system | 192.168.1.30
+User on the remote system | ubuntu
+Name of the file on the remote system | documents.txt
+Name that we wish to store the file as on our system | notes.txt
