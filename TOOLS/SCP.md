@@ -17,3 +17,5 @@ To copy a file from a local to a remote system run the following command:
 `scp file.txt remote_username@10.10.0.2:/remote/directory`
 
 scp file_from_local file_to_remote
+
+

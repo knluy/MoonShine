@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "TOOLS/LINUX CHEATSHEET.md",
+            "file": "TOOLS/SCP.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "linux",
+                "query": "scp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TOOLS/LINUX CHEATSHEET.md",
+                "file": "TOOLS/SCP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TOOLS/LINUX CHEATSHEET.md",
+                "file": "TOOLS/SCP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TOOLS/LINUX CHEATSHEET.md"
+                "file": "TOOLS/SCP.md"
               }
             }
           }
@@ -131,6 +131,7 @@
   },
   "active": "44d1ce9fff31685c",
   "lastOpenFiles": [
+    "TOOLS/LINUX CHEATSHEET.md",
     "TOOLS/Nmap.md",
     "CTF/Fowsniff/README.md",
     "TOOLS/Passive Reconaissance Tools.md",
@@ -139,7 +140,6 @@
     "CTF/Skynet/README.md",
     "CTF/ToolsRus/README.md",
     "CTF/Agent-sudo/README.md",
-    "CTF/Agent-sudo/Alien_autospy.jpg",
-    "CTF/Brute it/README.md"
+    "CTF/Agent-sudo/Alien_autospy.jpg"
   ]
 }
