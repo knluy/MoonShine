@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Untitled.md",
+            "file": "TOOLS/Nmap.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "TOOLS/Nmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "TOOLS/Nmap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "TOOLS/Nmap.md"
               }
             }
           }
@@ -130,6 +130,7 @@
   },
   "active": "44d1ce9fff31685c",
   "lastOpenFiles": [
+    "Untitled.md",
     "README.md",
     "TOOLS/Nmap.md",
     "TOOLS/Hydra.md",
@@ -138,7 +139,6 @@
     "TOOLS/LINUX CHEATSHEET.md",
     "CTF/Fowsniff/README.md",
     "TOOLS/Passive Reconaissance Tools.md",
-    "CTF/RootMe/README.md",
-    "CTF/Skynet/README.md"
+    "CTF/RootMe/README.md"
   ]
 }
