@@ -16,4 +16,8 @@ PORT      STATE    SERVICE      REASON
 47932/tcp filtered unknown      no-response
 
 
-445
+-p 445, 470, 8080, 10021
+
+
+eddie - jordan
+quinn - andrea
