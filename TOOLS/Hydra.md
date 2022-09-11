@@ -9,6 +9,19 @@ Hydra is a brute force online password cracking program; a quick system login pa
 
 We can use Hydra to run through a list and 'bruteforce' some authentication service. Imagine trying to manually guess someones password on a particular service (SSH, Web Application Form, FTP or SNMP) - we can use Hydra to run through a password list and speed this process up for us, determining the correct password.
 
+
+
+
+Option | Explanation
+-|-
+`-l username` | Provide the login name
+`-P WordList.txt` | Specify the password list to use
+`server service` | Set the server address and service to attack
+`-s PORT` | Use in case of non-default service port number
+`-V` or `-vV` | Show the username and password combinations being tried
+`-d` | Display debugging output if the verbose output is not helping
+
+
 #### Hydra Commands
 
 `hydra -l user -P passlist.txt ftp://MACHINE_IP`
