@@ -6,4 +6,5 @@
 	- HOW THEY CUSTOMIZE OBSIDIAN
 	- HOW THEY USE USE OBSIDIAN
 	- ZETTELKASTEN
-	- 
+
+[[zettelkasten for cyber]]

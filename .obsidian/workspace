@@ -14,6 +14,18 @@
             "source": false
           }
         }
+      },
+      {
+        "id": "9df5303d7ec7e0bc",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "zettelkasten for cyber.md",
+            "mode": "source",
+            "source": false
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -40,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "payload",
+                "query": "tag:#Antinet",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +69,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -77,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DRAFT/DRAFT IDEAS.md",
+                "file": "zettelkasten for cyber.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DRAFT/DRAFT IDEAS.md",
+                "file": "zettelkasten for cyber.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DRAFT/DRAFT IDEAS.md"
+                "file": "zettelkasten for cyber.md"
               }
             }
           }
@@ -128,14 +141,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e883b8bc4934a695",
+  "active": "2b916fb6587fafca",
   "lastOpenFiles": [
+    "DRAFT/DRAFT IDEAS.md",
     "Linux/Automated Enumeration Tools.md",
     "Linux/Enumeration.md",
     "privsec/Linux Privsec Cheatsheet.md",
     "privsec/README.md",
     "TOOLS/reverse_shell payloads.md",
-    "DRAFT/DRAFT IDEAS.md",
     "TOOLS/Nmap.md",
     "README.md",
     "TOOLS/Hydra.md",
