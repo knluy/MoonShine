@@ -1,4 +1,4 @@
-### Linux Privilege Escalation
+### Enumeration
 
 
 hostname
@@ -16,4 +16,8 @@ uname -a
 /etc/issue
 
 ![](../img/Pasted%20image%2020220912083923.png)
+
+ps
+
+![](../img/Pasted%20image%2020220912084841.png)
 
