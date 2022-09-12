@@ -69,5 +69,19 @@ netstat
 other commands:
 - netstat -a
 - netstat -at
-- netstat 
+- netstat -au
+- netstat -l (list ports)
+- netstat -s (list network usage by statistics)
+- netstat -tp (list connections)
+- netstat -i (interface statistics)
+
+In most blogs, they use netstat -ano
+
+-   `-a`: Display all sockets
+-   `-n`: Do not resolve names
+-   `-o`: Display timers
+
 ![](../img/Pasted%20image%2020220912094757.png)
+
+find
+
