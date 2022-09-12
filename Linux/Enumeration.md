@@ -21,3 +21,5 @@ ps
 
 ![](../img/Pasted%20image%2020220912084841.png)
 
+env
+
