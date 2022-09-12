@@ -57,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -129,10 +128,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "44d1ce9fff31685c",
+  "active": "e883b8bc4934a695",
   "lastOpenFiles": [
     "linuxprivsec/README.md",
-    "Untitled.md",
+    "DRAFT/Untitled.md",
     "TOOLS/Nmap.md",
     "README.md",
     "TOOLS/Hydra.md",
