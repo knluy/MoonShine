@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/Enumeration.md",
+            "file": "Linux/Automated Enumeration Tools.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Enumeration.md",
+                "file": "Linux/Automated Enumeration Tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Enumeration.md",
+                "file": "Linux/Automated Enumeration Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Enumeration.md"
+                "file": "Linux/Automated Enumeration Tools.md"
               }
             }
           }
@@ -130,9 +130,9 @@
   },
   "active": "44d1ce9fff31685c",
   "lastOpenFiles": [
+    "Linux/Enumeration.md",
     "privsec/Linux Privsec Cheatsheet.md",
     "privsec/README.md",
-    "Linux/Enumeration.md",
     "TOOLS/reverse_shell payloads.md",
     "DRAFT/Untitled.md",
     "TOOLS/Nmap.md",
