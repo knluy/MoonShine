@@ -7,4 +7,9 @@
 	- HOW THEY USE USE OBSIDIAN
 	- ZETTELKASTEN
 
-[[zettelkasten for cyber]]
+- [[zettelkasten for cyber]]
+
+vim key bindings
+https://www.youtube.com/watch?v=4ZXK7wiBvQI
+
+https://www.youtube.com/watch?v=XDYZXRxJ-T8

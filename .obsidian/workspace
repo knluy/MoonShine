@@ -70,7 +70,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zettelkasten for cyber.md",
+                "file": "DRAFT/DRAFT IDEAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +107,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zettelkasten for cyber.md",
+                "file": "DRAFT/DRAFT IDEAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zettelkasten for cyber.md"
+                "file": "DRAFT/DRAFT IDEAS.md"
               }
             }
           }
@@ -141,8 +141,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "2b916fb6587fafca",
+  "active": "44d1ce9fff31685c",
   "lastOpenFiles": [
+    "zettelkasten for cyber.md",
     "DRAFT/DRAFT IDEAS.md",
     "Linux/Automated Enumeration Tools.md",
     "Linux/Enumeration.md",
@@ -151,7 +152,6 @@
     "TOOLS/reverse_shell payloads.md",
     "TOOLS/Nmap.md",
     "README.md",
-    "TOOLS/Hydra.md",
-    "TOOLS/Default Ports.md"
+    "TOOLS/Hydra.md"
   ]
 }
