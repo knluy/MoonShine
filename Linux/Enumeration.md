@@ -41,3 +41,13 @@ sudo -l
 
 ![](../img/Pasted%20image%2020220912090612.png)
 
+ls -la
+
+![](../img/Pasted%20image%2020220912091404.png)
+
+id
+![](../img/Pasted%20image%2020220912091431.png)
+
+/etc/passwd
+
+![](../img/Pasted%20image%2020220912091505.png)
