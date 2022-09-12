@@ -8,7 +8,12 @@
     {
       "type": "file",
       "title": "zettelkasten for cyber",
-      "path": "zettelkasten for cyber.md"
+      "path": "DRAFT/zettelkasten for cyber.md"
+    },
+    {
+      "type": "file",
+      "title": "readme",
+      "path": "CTF/Wonderland/Wonderland.md"
     }
   ]
 }

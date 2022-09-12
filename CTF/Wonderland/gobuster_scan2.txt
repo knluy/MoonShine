@@ -1,0 +1,6 @@
+/http%3A%2F%2Fwww     (Status: 301) [Size: 0] [--> /r/a/b/b/i/t/http:/www]
+/http%3A%2F%2Fyoutube (Status: 301) [Size: 0] [--> /r/a/b/b/i/t/http:/youtube]
+/http%3A%2F%2Fblogs   (Status: 301) [Size: 0] [--> /r/a/b/b/i/t/http:/blogs]
+/http%3A%2F%2Fblog    (Status: 301) [Size: 0] [--> /r/a/b/b/i/t/http:/blog]
+/**http%3A%2F%2Fwww   (Status: 301) [Size: 0] [--> /r/a/b/b/i/t/%2A%2Ahttp:/www]
+www]
