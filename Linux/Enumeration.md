@@ -65,3 +65,9 @@ ifconfig /ip route
 ![](../img/Pasted%20image%2020220912092606.png)
 
 netstat
+
+other commands:
+- netstat -a
+- netstat -at
+- netstat 
+![](../img/Pasted%20image%2020220912094757.png)
