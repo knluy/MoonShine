@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Linux/Automated Enumeration Tools.md",
+            "file": "DRAFT/DRAFT IDEAS.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux/Automated Enumeration Tools.md",
+                "file": "DRAFT/DRAFT IDEAS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux/Automated Enumeration Tools.md",
+                "file": "DRAFT/DRAFT IDEAS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux/Automated Enumeration Tools.md"
+                "file": "DRAFT/DRAFT IDEAS.md"
               }
             }
           }
@@ -128,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "44d1ce9fff31685c",
+  "active": "e883b8bc4934a695",
   "lastOpenFiles": [
+    "Linux/Automated Enumeration Tools.md",
     "Linux/Enumeration.md",
     "privsec/Linux Privsec Cheatsheet.md",
     "privsec/README.md",
     "TOOLS/reverse_shell payloads.md",
-    "DRAFT/Untitled.md",
+    "DRAFT/DRAFT IDEAS.md",
     "TOOLS/Nmap.md",
     "README.md",
     "TOOLS/Hydra.md",
-    "TOOLS/Default Ports.md",
-    "TOOLS/SCP.md"
+    "TOOLS/Default Ports.md"
   ]
 }
