@@ -98,3 +98,27 @@ Command | Purpose
 `find / -cmin -60` | find files changed within the last hour (60 minutes)
 `find / -amin -60` | find files accesses within the last hour (60 minutes)
 `find / -size 50M` | find files with a 50 MB size
+
+This command can also be used with (+) and (-) signs to specify a file that is larger or smaller than the given size.
+
+Folders and files that can be written to or executed from:
+
+-   `find / -writable -type d 2>/dev/null` : Find world-writeable folders
+-   `find / -perm -222 -type d 2>/dev/null`: Find world-writeable folders
+-   `find / -perm -o w -type d 2>/dev/null`: Find world-writeable folders
+
+Find development tools and supported languages:
+
+-   `find / -name perl*`
+-   `find / -name python*`
+-   `find / -name gcc*`
+
+Find specific file permissions:
+
+Below is a short example used to find files that have the SUID bit set. The SUID bit allows the file to run with the privilege level of the account that owns it, rather than the account which runs it. This allows for an interesting privilege escalation path,we will see in more details on task 6. The example below is given to complete the subject on the “find” command.
+
+-   `find / -perm -u=s -type f 2>/dev/null`: Find files with the SUID bit, which allows us to run the file with a higher privilege level than the current user.
+
+### General Linux Commands
+
+As we are in the Linux realm, familiarity with Linux commands, in general, will be very useful. Please spend some time getting comfortable with commands such as `find`, `locate`, `grep`, `cut`, `sort`, etc.
