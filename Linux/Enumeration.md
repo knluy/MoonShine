@@ -51,3 +51,17 @@ id
 /etc/passwd
 
 ![](../img/Pasted%20image%2020220912091505.png)
+
+pwede ring cat /etc/passwd | cut -d ";" -f 1
+
+![](../img/Pasted%20image%2020220912092432.png)
+
+history
+
+![](../img/Pasted%20image%2020220912092509.png)
+
+ifconfig /ip route
+
+![](../img/Pasted%20image%2020220912092606.png)
+
+netstat
