@@ -23,3 +23,21 @@ ps
 
 env
 
+![](../img/Pasted%20image%2020220912090134.png)
+
+ps -A
+
+![](../img/Pasted%20image%2020220912090346.png)
+
+ps axjf
+
+![](../img/Pasted%20image%2020220912090429.png)
+
+ps aux
+
+![](../img/Pasted%20image%2020220912090528.png)
+
+sudo -l
+
+![](../img/Pasted%20image%2020220912090612.png)
+
