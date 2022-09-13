@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Daily/09-12-2022.md",
+            "file": "CTF/PickleRick/PickleRick.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -58,7 +58,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -78,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily/09-12-2022.md",
+                "file": "CTF/PickleRick/PickleRick.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +96,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily/09-12-2022.md",
+                "file": "CTF/PickleRick/PickleRick.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily/09-12-2022.md"
+                "file": "CTF/PickleRick/PickleRick.md"
               }
             }
           }
@@ -131,15 +132,15 @@
   },
   "active": "44d1ce9fff31685c",
   "lastOpenFiles": [
-    "CTF/PickleRick/PickleRick.md",
     "Daily/09-13-2022.md",
+    "Daily/09-12-2022.md",
+    "CTF/PickleRick/PickleRick.md",
     "CTF/Vulnversity/README.md",
     "CTF/Agent-sudo/README.md",
     "DRAFT/DRAFT IDEAS.md",
     "DRAFT/zettelkasten for cyber.md",
     "CTF/Agent-sudo/cute-alien.jpg",
     "CTF/Agent-sudo/Alien_autospy.jpg",
-    "DRAFT/page template.md",
-    "Daily/2022-09-13.md"
+    "DRAFT/page template.md"
   ]
 }
