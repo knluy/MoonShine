@@ -4,15 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "9df5303d7ec7e0bc",
+        "id": "44d1ce9fff31685c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/Wonderland/Wonderland.md",
+            "file": "DRAFT/DRAFT IDEAS.md",
             "mode": "source",
             "source": false
           }
+        }
+      },
+      {
+        "id": "9df5303d7ec7e0bc",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -40,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gobuster",
+                "query": "tag:#Antinet",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +86,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/Wonderland/Wonderland.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +102,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/Wonderland/Wonderland.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,9 +123,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CTF/Wonderland/Wonderland.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -131,15 +135,15 @@
   },
   "active": "9df5303d7ec7e0bc",
   "lastOpenFiles": [
-    "TOOLS/Gobuster.md",
-    "CTF/Wonderland/Wonderland.md",
-    "DRAFT/zettelkasten for cyber.md",
     "DRAFT/DRAFT IDEAS.md",
+    "zettelkasten for cyber.md",
     "Linux/Automated Enumeration Tools.md",
     "Linux/Enumeration.md",
     "privsec/Linux Privsec Cheatsheet.md",
     "privsec/README.md",
     "TOOLS/reverse_shell payloads.md",
-    "TOOLS/Nmap.md"
+    "TOOLS/Nmap.md",
+    "README.md",
+    "TOOLS/Hydra.md"
   ]
 }
