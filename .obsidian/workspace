@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CTF/PickleRick/PickleRick.md",
+            "file": "Daily/09-12-2022.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CTF/PickleRick/PickleRick.md",
+                "file": "Daily/09-12-2022.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CTF/PickleRick/PickleRick.md",
+                "file": "Daily/09-12-2022.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CTF/PickleRick/PickleRick.md"
+                "file": "Daily/09-12-2022.md"
               }
             }
           }
@@ -131,8 +131,8 @@
   },
   "active": "44d1ce9fff31685c",
   "lastOpenFiles": [
-    "Daily/09-13-2022.md",
     "CTF/PickleRick/PickleRick.md",
+    "Daily/09-13-2022.md",
     "CTF/Vulnversity/README.md",
     "CTF/Agent-sudo/README.md",
     "DRAFT/DRAFT IDEAS.md",
