@@ -14,6 +14,15 @@ Author's Warning:
 2. Kali Linux Distro, or any other Linux Distro
 3. Windows powershell
 
+ADDITIONAL NOTE
+This tutorial is working on the following distro
+Kali Linux: 2020.3 - please download here: https://www.kali.org/releases/
+
+![image](https://github.com/knluy/MoonShine/assets/96321839/fc5c9339-17ca-4162-bcff-4dd0f21f06dc)
+
+hcxdumptool - use v6.1.4 - link here: https://repology.org/project/hcxdumptool/packages
+
+RTL8821AU Driver - use this link: https://github.com/ivanovborislav/rtl8821au
 
 #### Steps
 
