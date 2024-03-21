@@ -24,6 +24,11 @@ hcxdumptool - use v6.1.4 - link here: https://repology.org/project/hcxdumptool/p
 
 RTL8821AU Driver - use this link: https://github.com/ivanovborislav/rtl8821au
 
+UPDATED RTL8812 DRIVER 
+https://github.com/aircrack-ng/rtl8812au
+
+note: this works on kali linux kernel 	Linux kali 6.6.9-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.9-1kali1 (2024-01-08) x86_64 GNU/Linux
+
 #### Steps
 
 1. Open Linux OS in a virtual machine setting (using vmware, or  virtualbox). Then login to the machine and spawn a terminal, like so:
